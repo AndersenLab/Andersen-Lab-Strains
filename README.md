@@ -30,8 +30,18 @@ Tracking and Information for Andersen Lab Strains
 
 Current state of backup:
 
+#### Original
+
 * [ ] BGI1
 * [ ] BGI2
 * [ ] BGI3
 * [X] UChicago (2015-09-05) - original
 * [X] UChicago2 (2015-10-08) - original
+
+#### Trim
+
+* [ ] BGI1
+* [ ] BGI2
+* [ ] BGI3
+* [ ] UChicago (2015-09-05) - original
+* [ ] UChicago2 (2015-10-08) - original
