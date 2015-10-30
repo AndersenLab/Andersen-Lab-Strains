@@ -25,3 +25,13 @@ Tracking and Information for Andersen Lab Strains
 * Concordance
 * Fastq statistics
 * Bam Depth of Coverage
+
+### Backup
+
+Current state of backup:
+
+* [ ] BGI1
+* [ ] BGI2
+* [ ] BGI3
+* [X] UChicago (2015-09-05) - original
+* [X] UChicago2 (2015-10-08) - original
