@@ -9,7 +9,7 @@ r_packages:
   - readr
 
 install:
-  - Rscript -e "rmarkdown::render('analysis.Rmd')"
+  - Rscript -e "library(rmarkdown); rmarkdown::render('analysis.Rmd')"
 
 addons:
   artifacts: true
