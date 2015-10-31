@@ -7,6 +7,8 @@ r_binary_packages:
 
 r_packages:
   - readr
+  - rmarkdown
+  - knitr
 
 install:
   - Rscript -e "library(rmarkdown); rmarkdown::render('analysis.Rmd')"
