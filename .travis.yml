@@ -10,7 +10,7 @@ r_packages:
   - knitr
 
 install:
-  - Rscript -e "library(knitr); knitr::knit2html('analysis.Rmd')"
+  - Rscript -e "library(knitr); knitr::knit2html('analysze.Rmd')"
 
 addons:
   artifacts: true
