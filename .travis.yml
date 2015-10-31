@@ -1,16 +1,17 @@
 language: r
 sudo: required
 
-r_binary_packages:
-  - rmarkdown
-  - knitr
+apt_packages:
+ - libcurl4-openssl-dev
+ - libxml2-dev
 
 r_packages:
   - readr
+  - rmarkdown
   - knitr
 
 install:
-  - Rscript -e "library(knitr); knitr::knit2html('analysze.Rmd')"
+  - Rscript -e "library(knitr); knitr::knit2html('analyze.Rmd')"
 
 addons:
   artifacts: true
