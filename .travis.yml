@@ -8,13 +8,11 @@ apt_packages:
 r_packages:
   - readr
   - rmarkdown
-  - knitr
 
 install:
-  - Rscript -e "library(knitr); knitr::knit2html('analyze.Rmd')"
+  - which R
+  - Rscript -e 'install.packages("rmarkdown")'
+  - Rscript -e "library(rmarkdown); rmarkdown:render('analyze.Rmd')"
 
 addons:
   artifacts: true
-
-#r_github_packages:
-#  - jimhester/covr
