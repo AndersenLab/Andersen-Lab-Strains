@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AndersenLab/Andersen-Lab-Strains.svg?branch=master)](https://travis-ci.org/AndersenLab/Andersen-Lab-Strains)
+
 # Andersen-Lab-Strains
 Tracking and Information for Andersen Lab Strains
 
