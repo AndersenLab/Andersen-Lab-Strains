@@ -9,9 +9,7 @@ r_packages:
   - readr
   - rmarkdown
 
-install:
-  - which R
-  - Rscript -e 'install.packages("rmarkdown", lib = .libPaths()[1], repos = "http://cran.us.r-project.org")'
+script:
   - Rscript -e "library(rmarkdown); rmarkdown:render('analyze.Rmd')"
 
 addons:
