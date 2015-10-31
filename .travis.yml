@@ -11,8 +11,9 @@ r_packages:
 
 install:
   - which R
-  - Rscript -e 'install.packages("rmarkdown")'
+  - Rscript -e 'install.packages("rmarkdown", lib = .libPaths()[1], repos = "http://cran.us.r-project.org")'
   - Rscript -e "library(rmarkdown); rmarkdown:render('analyze.Rmd')"
 
 addons:
   artifacts: true
+
