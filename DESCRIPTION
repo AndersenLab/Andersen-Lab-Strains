@@ -1,0 +1,11 @@
+Package: andersen
+Title: placeholder for travis 
+Version: 1.00
+Authors@R: person("Dan", "Cook", email = "dec@u.northwestern.edu", role = c("aut", "cre"))
+Description: Andersen Lab Strains
+Depends: R (>= 3.2.0)
+Imports: doParallel,
+	iterators,
+	dplyr
+License: GPL
+LazyData: true
