@@ -18,3 +18,4 @@ addons:
     debug: true
     target_paths: $TRAVIS_REPO_SLUG
     permissions: public_read
+    cache_control: public
