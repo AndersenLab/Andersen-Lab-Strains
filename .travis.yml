@@ -15,3 +15,4 @@ addons:
   artifacts:
     debug: true
     target_paths: $TRAVIS_REPO_SLUG
+    cache_control: public
