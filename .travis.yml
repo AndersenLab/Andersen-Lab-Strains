@@ -1,6 +1,6 @@
 language: r
 
-sudo: required
+sudo: false
 
 apt_packages:
 - libcurl4-openssl-dev

@@ -9,6 +9,7 @@ Imports:
 	tidyr,
 	readr,
 	rmarkdown,
-	ggplot2
+	ggplot2,
+	DT
 License: GPL
 LazyData: true
