@@ -5,9 +5,10 @@ apt_packages:
  - libcurl4-openssl-dev
  - libxml2-dev
 
-r_packages:
-  - readr
+r_binary_packages:
   - rmarkdown
+  - dplyr
+  - readr
 
 script:
   - Rscript -e "library(rmarkdown); rmarkdown:render('analyze.Rmd')"
