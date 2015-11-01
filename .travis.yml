@@ -13,7 +13,9 @@ r_packages:
   - readr
 
 script:
+  - export ARTIFACTS_TARGET_PATHS="artifacts/$TRAVIS_REPO_SLUG/"
   - Rscript -e "library(rmarkdown); rmarkdown::render('analyze.Rmd')"
+
 
 addons:
   artifacts: true
