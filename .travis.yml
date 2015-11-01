@@ -12,5 +12,7 @@ script:
 - Rscript -e "library(rmarkdown); rmarkdown::render('analyze.Rmd')"
 
 addons:
-  artifacts: true
-  target_paths: rmarkdown/$TRAVIS_REPO_SLUG
+  artifacts: 
+    - debug: true
+    - target_paths: $TRAVIS_REPO_SLUG
+    - bucket: rmarkdown
