@@ -14,11 +14,3 @@ script:
 addons:
   artifacts: true
   target_paths: rmarkdown/$TRAVIS_REPO_SLUG
-
-deploy:
-  provider: releases
-  api_key:
-    secure: gMiCbUnbs4HJCXCoLsni6zb4s6bWKf0CqmP0UmMNBsSB1hP9BzbPII7p/MGiEAswifPpuTvwObZe2PQw6Jqc3h+OagdqXlDyP6tKTDkLB1Awo3fgXCKgIcUOVDHNKdus2DL6iJWirBoUfgIU0fdB42xSRUS//tAbvfYmfWkqQ/pFOBN0Aq3HQ3HWwdT8gmh6KM1zk0FuAOzAOTlI0tsaarDhb2HXnexG0rsX7iBe6xiWYARj5tWQcx7NNaIkjBo9c62Mb4JmN69HpyVoYizS5ug5x8lLPgrkzj2SD8uiaEW+8ezIJmTqURsXl5joQPDmDPFKz4zRxv0LA8JFOQ4T359RUpBqVYjSqwjkKHy4wDeAQ/93iGWev22flJt5TmTsEyqg0RmOz98pUdrWANcvUK1fLUjQaPkaB4KMmfYT39hDHlK47qLk9f/ImeAe73CPHKk18Yc8n3XeKsYo17Myqo05J4wbciw3mZ5ckelVLz+d4mvo1s89WrwufxgV1os8O52FSJxjhXZnFbyDf/Lxa1cImltnnWOEKtPw92nwSPK2bU7Nz4vGWmmrW61upP1r0js71MoRyK7hLxOSImR+muWBKB08UNWSS3+bamSlhAiUBVPt/t/bzfaS9axfCb/Civwt5aK8zXOFrfXNIXvAnq5UaslvltgUEdt1YtAmdtM=
-  file: analysis.html
-  on:
-    repo: AndersenLab/Andersen-Lab-Strains
