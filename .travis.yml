@@ -8,6 +8,8 @@ apt_packages:
 r_binary_packages:
   - rmarkdown
   - dplyr
+
+r_packages:
   - readr
 
 script:
