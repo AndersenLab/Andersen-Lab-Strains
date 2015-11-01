@@ -6,11 +6,12 @@ output: html_document
 ---
 
 
-```{r}
+```{r, echo = F}
 library(readr)
+library(tidyr)
+library(ggplot2)
 
-
-readr::read_tsv("raw/seq.raw.tsv")
+seqs <- readr::read_tsv("raw/seq.raw.tsv")
 
 
 

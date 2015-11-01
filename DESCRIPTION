@@ -4,8 +4,11 @@ Version: 1.00
 Authors@R: person("Dan", "Cook", email = "dec@u.northwestern.edu", role = c("aut", "cre"))
 Description: Andersen Lab Strains
 Depends: R (>= 3.2.0)
-Imports: doParallel,
-	iterators,
-	dplyr
+Imports: 
+	dplyr,
+	tidyr,
+	readr,
+	rmarkdown,
+	ggplot2
 License: GPL
 LazyData: true
