@@ -10,13 +10,12 @@ script:
 - Rscript -e "library(rmarkdown); rmarkdown::render('analysis.Rmd')"
 deploy:
   provider: gcs
-  skip_cleanup: true
   acl: public-read
   file: analysis.html
-  access_key_id: travis-ci
+  access_key_id: GOOGUBIGSXVJFZXI3WDE
+  remote-dir: distribute/Andersen-Lab-Strains
   secret_access_key:
-    secure: WVTWW4PPrwefybQb15P/XLD8CNQGBsD6vuGSNWBrABkSLwDc+YVXVHwS6Fwl/iwSmpJ9H72jXNnfxlXEE5P+b9gknk+5dCBiKYpwOQ8R1f1hzh5qY1TWdPlhsSFHos1iWisiAmcbJNy6QlGEG/+Kon+/18j8ul0w9FUBVzBHldA7cXVsPt6b9Md9zppqTTTfP9EU5tZDJLmlnGSSDzdvoFjQsVa9+5PW1hj8X4NF1Rl7/PveGDCzvDL4kfVgy8Jv93DXmy8GQzPihoXgDqplo1PQrUUQSc4mRZhHpDifWCthIi78NOp7e6FiVMxgAfsw+b95x8M7Cib7humjw/tvgtjtYz8CWStqxLx7+bOKMZRozShnp7Bm3OH7ApB+oVoX/aVNsZ+MaEkNtW9Zz+Jifp1tWVDrEyBQYc6ZIECsNTm0NgH30VEi5iE7ELzaJP6mYMVBlCMBE7Rr1QJ38VamlFzlrhKEa1vCAJeWeGFXUMHxXeBLExWldszuOExEJKNizKi5+TrfZGNkmv7sYVcEL7DITDb5D3agBhdy2PpVGmeTMY1HAbMgoYGZee8NPF1aHFHP9lg7VQ+rXjK7GcMg0WS81KLMh5ngS+Mgcy+QGCselCqWwS/rCf2DZMIvXT7u5jYGL4HKfdjOxmXhp18071jkteYFmvp3XTYMw7FMmL4=
+    secure: dzwoikuAfyeZB7RLj7a1cChDmdxly1eCsyS9Lrv110xcGsQKahfYJDIsfFxjRWnMT+2yj1/IgJGnq/NKzZEoLYkpe4dC+hxz+O8og3AzOjXIaqAVFFs6d5yzOCTaCfB+YocPA8zPzu7h/pSsFALkGYrfH1QnqUEcy6MB88JVqvjlHujzCOxhdn+qtMNplY3zn3Z5/Oy2zd2QNqNo8gw79k3lKE5YVYyJcHi7ssPk9y/P6y7515HM24ApcUcuxPmUmogrw8n3hLDxqYbyEODmDeOvDlB2jvDINHfAi+a9xjIKHJcISBcVjMu6xi0hDCPTAo6iaP9aVgZLSeBB2l3HaLS99sWNdHl/J/FI0IyzDuP1U0uzpPIyIQPhPGH9TxzE+emtcvKbYyUAkU/QvPG/AxIBXuBN5Ey/rT3j8tKFofY3SSHH5tO2VtAZM7hEcOWv/kdhoRwCgEsLtxxepis2pUDTEVy5OKhkDndafcLo7hlJ0RZ1pHEPWwxjRWtJMlTch6bGyH/Wn4akosKNffCnbxUzHpTQdePc5mZZFhhBRLYMkWfVdHamgOVu4zBtwZUBpjp/H152Mk5gTY7V4vKaEhz1xAfL4TBjZaGcOpBQz5QEx+IjnjLLcd6pv6OXvzplkskHFmaZ6JHHYKCpJ85hZt8/8aZNN2Sxb36YItAXGDQ=
   bucket: andersen
-  local-dir: distribute/Andersen-Lab-Strains
   on:
     repo: AndersenLab/Andersen-Lab-Strains
