@@ -5,7 +5,7 @@ Tracking and Information for Andersen Lab Strains
 
 ### Reports
 
-* [Analysis](http://rmarkdown.s3.amazonaws.com/AndersenLab/Andersen-Lab-Strains/analyze.html)
+* [Analysis](https://storage.googleapis.com/andersen_lab_strains/analysis.html)
 
 ### Conventions
 
