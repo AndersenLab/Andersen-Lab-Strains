@@ -12,6 +12,7 @@ deploy:
   provider: gcs
   acl: public-read
   file: analysis.html
+  skip_cleanup: true
   access_key_id: GOOGUBIGSXVJFZXI3WDE
   remote-dir: distribute/Andersen-Lab-Strains
   secret_access_key:
