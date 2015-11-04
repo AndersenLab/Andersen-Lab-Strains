@@ -14,9 +14,8 @@ deploy:
   file: analysis.html
   skip_cleanup: true
   access_key_id: GOOGUBIGSXVJFZXI3WDE
-  remote-dir: distribute/Andersen-Lab-Strains
   secret_access_key:
     secure: dzwoikuAfyeZB7RLj7a1cChDmdxly1eCsyS9Lrv110xcGsQKahfYJDIsfFxjRWnMT+2yj1/IgJGnq/NKzZEoLYkpe4dC+hxz+O8og3AzOjXIaqAVFFs6d5yzOCTaCfB+YocPA8zPzu7h/pSsFALkGYrfH1QnqUEcy6MB88JVqvjlHujzCOxhdn+qtMNplY3zn3Z5/Oy2zd2QNqNo8gw79k3lKE5YVYyJcHi7ssPk9y/P6y7515HM24ApcUcuxPmUmogrw8n3hLDxqYbyEODmDeOvDlB2jvDINHfAi+a9xjIKHJcISBcVjMu6xi0hDCPTAo6iaP9aVgZLSeBB2l3HaLS99sWNdHl/J/FI0IyzDuP1U0uzpPIyIQPhPGH9TxzE+emtcvKbYyUAkU/QvPG/AxIBXuBN5Ey/rT3j8tKFofY3SSHH5tO2VtAZM7hEcOWv/kdhoRwCgEsLtxxepis2pUDTEVy5OKhkDndafcLo7hlJ0RZ1pHEPWwxjRWtJMlTch6bGyH/Wn4akosKNffCnbxUzHpTQdePc5mZZFhhBRLYMkWfVdHamgOVu4zBtwZUBpjp/H152Mk5gTY7V4vKaEhz1xAfL4TBjZaGcOpBQz5QEx+IjnjLLcd6pv6OXvzplkskHFmaZ6JHHYKCpJ85hZt8/8aZNN2Sxb36YItAXGDQ=
-  bucket: andersen
+  bucket: andersen_lab_strains
   on:
     repo: AndersenLab/Andersen-Lab-Strains
