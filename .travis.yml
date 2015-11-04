@@ -1,21 +1,22 @@
 language: r
-
 sudo: required
-
 apt_packages:
 - libcurl4-openssl-dev
 - libxml2-dev
-
 r_binary_packages:
 - rmarkdown
 - dplyr
-
 script:
-- Rscript -e "library(rmarkdown); rmarkdown::render('analyze.Rmd')"
-
-addons:
-  artifacts:
-    debug: true
-    target_paths: $TRAVIS_REPO_SLUG
-    permissions: public_read
-    cache_control: public_read
+- Rscript -e "library(rmarkdown); rmarkdown::render('analysis.Rmd')"
+deploy:
+  provider: gcs
+  skip_cleanup: true
+  acl: public-read
+  file: analysis.html
+  access_key_id: travis-ci
+  secret_access_key:
+    secure: WVTWW4PPrwefybQb15P/XLD8CNQGBsD6vuGSNWBrABkSLwDc+YVXVHwS6Fwl/iwSmpJ9H72jXNnfxlXEE5P+b9gknk+5dCBiKYpwOQ8R1f1hzh5qY1TWdPlhsSFHos1iWisiAmcbJNy6QlGEG/+Kon+/18j8ul0w9FUBVzBHldA7cXVsPt6b9Md9zppqTTTfP9EU5tZDJLmlnGSSDzdvoFjQsVa9+5PW1hj8X4NF1Rl7/PveGDCzvDL4kfVgy8Jv93DXmy8GQzPihoXgDqplo1PQrUUQSc4mRZhHpDifWCthIi78NOp7e6FiVMxgAfsw+b95x8M7Cib7humjw/tvgtjtYz8CWStqxLx7+bOKMZRozShnp7Bm3OH7ApB+oVoX/aVNsZ+MaEkNtW9Zz+Jifp1tWVDrEyBQYc6ZIECsNTm0NgH30VEi5iE7ELzaJP6mYMVBlCMBE7Rr1QJ38VamlFzlrhKEa1vCAJeWeGFXUMHxXeBLExWldszuOExEJKNizKi5+TrfZGNkmv7sYVcEL7DITDb5D3agBhdy2PpVGmeTMY1HAbMgoYGZee8NPF1aHFHP9lg7VQ+rXjK7GcMg0WS81KLMh5ngS+Mgcy+QGCselCqWwS/rCf2DZMIvXT7u5jYGL4HKfdjOxmXhp18071jkteYFmvp3XTYMw7FMmL4=
+  bucket: andersen
+  local-dir: distribute/Andersen-Lab-Strains
+  on:
+    repo: AndersenLab/Andersen-Lab-Strains
