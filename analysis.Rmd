@@ -2,17 +2,79 @@
 title: "analyze"
 author: "Dan Cook"
 date: "`r Sys.Date()`"
-output: html_document
+output: 
+  html_document:
+    keep_md: yes
+    theme: cosmo
+    toc: yes
+  pdf_document: 
+    toc: yes
 ---
 
 
-```{r, echo = F}
+```{r, echo = F, warning=FALSE, message=FALSE}
 library(readr)
 library(tidyr)
+library(dplyr)
+library(knitr)
 library(ggplot2)
+library(scales)
 
 seqs <- readr::read_tsv("raw/seq.raw.tsv")
 
+na_to_0 <- function(x) {
+  ifelse(is.na(x), 0, x)
+}
 
+summarize_column <- function(colnames) {
+       seqs %>%
+       dplyr::group_by_(.dots = colnames, "use_in_analysis") %>%
+       dplyr::filter(!is.na(trimming)) %>%
+       dplyr::summarize(sum = n()) %>% 
+       dplyr::ungroup() %>%
+       tidyr::spread(use_in_analysis, sum) %>%
+       dplyr::rename("YES" = `TRUE`, "NO" = `FALSE`) %>%
+       dplyr::mutate_each(funs(na_to_0), everything()) %>%
+       dplyr::mutate(use_rate = YES / (NO + YES))
+}
+
+run_count <- summarize_column("run")
+lib_count <- summarize_column(c("run","lib"))
+strain_count <- summarize_column(c("run","lib","strain","isotype"))
+
+total_strains <- (strain_count %>%
+                 dplyr::filter(use_rate > 0) %>%
+                 dplyr::distinct(strain) %>%
+                 dplyr::ungroup() %>%
+                 dplyr::summarize(n = n()))$n
+
+total_isotypes <- (strain_count %>%
+                 dplyr::filter(use_rate > 0) %>%
+                 dplyr::distinct(isotype) %>%
+                 dplyr::ungroup() %>%
+                 dplyr::summarize(n = n()))$n
+
+total_sequences <- (dplyr::filter(seqs, use_in_analysis == TRUE) %>%
+                   dplyr::summarize(n_reads = comma(sum(reads))))$n_reads
+
+libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 
 ```
+
+#### Statistics
+
+* __Total Strains__: `r total_strains`
+* __Total Isotypes__: `r total_isotypes`
+* __Total Sequences__: `r total_sequences`
+
+#### Runs
+
+`r kable(run_count)`
+
+#### Libraries
+
+`r kable(lib_count)`
+
+#### Strains
+
+`r kable(strain_count)`
