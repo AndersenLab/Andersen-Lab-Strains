@@ -29,6 +29,7 @@ na_to_0 <- function(x) {
 
 summarize_column <- function(colnames) {
        seqs %>%
+       dplyr::filter(processed == TRUE) %>%
        dplyr::group_by_(.dots = colnames, "use_in_analysis") %>%
        dplyr::summarize(sum = n()) %>% 
        dplyr::ungroup() %>%
@@ -92,12 +93,15 @@ libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 ```{r generate isotype file, echo = F}
 
 # Output clean seqs file
-readr::write_tsv(dplyr::filter(seqs, use_in_analysis == T), "processed/seqs.tsv")
+analysis_seqs <- dplyr::filter(seqs, use_in_analysis == T) %>%
+                 dplyr::arrange(run, lib, isotype, strain)
+readr::write_tsv(analysis_seqs, "processed/seqs.tsv")
 
 isotype_set <- seqs %>% 
   dplyr::select(isotype, strain) %>%
   dplyr::filter(!is.na(isotype)) %>%
-  dplyr::distinct()
+  dplyr::distinct() %>%
+  dplyr::arrange(isotype)
 
 readr::write_tsv(isotype_set, "processed/isotypes.tsv")
 
