@@ -56,7 +56,7 @@ total_isotypes <- (strain_count %>%
                  dplyr::summarize(n = n()))$n
 
 total_sequences <- (dplyr::filter(seqs, use_in_analysis == TRUE) %>%
-                   dplyr::summarize(n_reads = comma(sum(reads))))$n_reads
+                   dplyr::summarize(n_reads = comma(sum(as.numeric(reads), na.rm = TRUE))))$n_reads
 
 total_fastq_pairs <- nrow(dplyr::filter(seqs, use_in_analysis == TRUE))
 
