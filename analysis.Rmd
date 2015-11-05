@@ -21,7 +21,7 @@ library(ggplot2)
 library(scales)
 library(gdata)
 
-seqs <- readr::read_tsv("raw/seq.raw.tsv")
+seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A"))
 
 na_to_0 <- function(x) {
   ifelse(is.na(x), 0, x)
@@ -61,7 +61,7 @@ total_sequences <- (dplyr::filter(seqs, use_in_analysis == TRUE) %>%
 total_fastq_pairs <- nrow(dplyr::filter(seqs, use_in_analysis == TRUE))
 
 total_file_size <- dplyr::filter(seqs, use_in_analysis == TRUE) %>%
-                    dplyr::mutate(filesize =filesize1 + filesize2) %>% 
+                    dplyr::mutate(filesize = fq1_size + fq2_size) %>% 
                     dplyr::summarize(humanReadable(sum(as.numeric(filesize))))
         
 
