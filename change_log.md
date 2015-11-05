@@ -1,8 +1,8 @@
 
 #### 2015-11-05
 
-* [ ] Add script that checks for fastq set errors.
-* [ ] Add depth of coverage for individual fastqs
+* Updated number of wild isolates, isotypes, and more by adding UChicago and UChicago2 Strains.
+* Finished fastq sheet.
 
 #### 2015-11-04
 

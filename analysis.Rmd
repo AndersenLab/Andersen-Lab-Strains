@@ -97,12 +97,19 @@ analysis_seqs <- dplyr::filter(seqs, use_in_analysis == T) %>%
                  dplyr::arrange(run, lib, isotype, strain)
 readr::write_tsv(analysis_seqs, "processed/seqs.tsv")
 
-isotype_set <- seqs %>% 
+isotypes <- seqs %>% 
+  dplyr::select(isotype) %>%
+  dplyr::filter(!is.na(isotype)) %>%
+  dplyr::distinct() %>%
+  dplyr::arrange(isotype)
+
+isotype_strain <- seqs %>% 
   dplyr::select(isotype, strain) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct() %>%
   dplyr::arrange(isotype)
 
-readr::write_tsv(isotype_set, "processed/isotypes.tsv")
+readr::write_tsv(isotypes, "processed/isotypes.tsv")
+readr::write_tsv(isotype_strain, "processed/isotype_strain.tsv")
 
 ```
