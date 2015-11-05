@@ -8,6 +8,7 @@
 * `strain` - strain name
 * `prev_names` - previous names
 * `use_in_analysis` - whether the fastq is ready for analysis
+* `processed` - Has the fastq been processed for use in analysis (however, may still not be used in analysis)
 * `trimming_program` - Trimming program used
 * `trimming` - trimming parameters used
 * `reads` - number of reads

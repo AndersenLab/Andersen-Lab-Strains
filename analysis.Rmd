@@ -30,7 +30,6 @@ na_to_0 <- function(x) {
 summarize_column <- function(colnames) {
        seqs %>%
        dplyr::group_by_(.dots = colnames, "use_in_analysis") %>%
-       dplyr::filter(!is.na(trimming)) %>%
        dplyr::summarize(sum = n()) %>% 
        dplyr::ungroup() %>%
        tidyr::spread(use_in_analysis, sum) %>%
