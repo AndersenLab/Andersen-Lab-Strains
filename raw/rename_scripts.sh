@@ -124,3 +124,36 @@ find * -type -f -name 'Rockman*QG335*.fq.gz' | rename -s QG335 JU319
 find * -type -f -name 'Rockman*QG336*.fq.gz' | rename -s QG336 PX174
 find * -type -f -name 'Rockman*QG337*.fq.gz' | rename -s QG337 N2
 find * -type -f -name 'Rockman*QG338*.fq.gz' | rename -s QG338 JU345
+
+# Replace names within files
+function replace_strain_names() {
+mv ${1} ${1}.old
+gawk '{ gsub("CB4851_CGC","ECA243" , $0); print }' ${1}.old |\
+gawk '{ gsub("CB4851_UK","ECA244" , $0); print }' |\
+gawk '{ gsub("CB4853_CGC","ECA245" , $0); print }' |\
+gawk '{ gsub("CB4853_UK","ECA246" , $0); print }' |\
+gawk '{ gsub("CB4855_CGC","ECA247" , $0); print }' |\
+gawk '{ gsub("CB4855_UK","ECA248" , $0); print }' |\
+gawk '{ gsub("CB4856","CB4856" , $0); print }' |\
+gawk '{ gsub("CB4856_CGC3","CB4856" , $0); print }' |\
+gawk '{ gsub("CB4856_CGC_3","CB4856" , $0); print }' |\
+gawk '{ gsub("CB4857_CGC","ECA249" , $0); print }' |\
+gawk '{ gsub("CB4857_UK","ECA250" , $0); print }' |\
+gawk '{ gsub("CB4858_CGC","ECA251" , $0); print }' |\
+gawk '{ gsub("CB4858_UK","ECA252" , $0); print }' |\
+gawk '{ gsub("N2_CGC","ECA253" , $0); print }' |\
+gawk '{ gsub("N2_Baer","ECA254" , $0); print }' |\
+gawk '{ gsub("N2_Baer2","ECA255" , $0); print }' |\
+gawk '{ gsub("N2_HRH","N2" , $0); print }' |\
+gawk '{ gsub("N2_Kammenga","ECA257" , $0); print }' |\
+gawk '{ gsub("PB306_Baer","ECA258" , $0); print }' |\
+gawk '{ gsub("PB306_CGC","ECA259" , $0); print }' |\
+gawk '{ gsub("CB4856_Kammenga","ECA260" , $0); print }' |\
+gawk '{ gsub("PB800_CGC","PB800" , $0); print }' |\
+gawk '{ gsub("PB800_Baer","ECA261" , $0); print }' |\
+gawk '{ gsub("HK104_CGC","HK104" , $0); print }' |\
+gawk '{ gsub("HK104_Baer","ECA262" , $0); print }' |\
+gawk '{ gsub("HK104_Baird","ECA263" , $0); print }' |\
+gawk '{ gsub("AF16_CGC","AF16" , $0); print }' |\
+gawk '{ gsub("AF16_Baird","ECA264" , $0); print }' > $1
+}

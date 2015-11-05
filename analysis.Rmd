@@ -19,6 +19,7 @@ library(dplyr)
 library(knitr)
 library(ggplot2)
 library(scales)
+library(gdata)
 
 seqs <- readr::read_tsv("raw/seq.raw.tsv")
 
@@ -57,6 +58,13 @@ total_isotypes <- (strain_count %>%
 total_sequences <- (dplyr::filter(seqs, use_in_analysis == TRUE) %>%
                    dplyr::summarize(n_reads = comma(sum(reads))))$n_reads
 
+total_fastq_pairs <- nrow(dplyr::filter(seqs, use_in_analysis == TRUE))
+
+total_file_size <- dplyr::filter(seqs, use_in_analysis == TRUE) %>%
+                    dplyr::mutate(filesize =filesize1 + filesize2) %>% 
+                    dplyr::summarize(humanReadable(sum(as.numeric(filesize))))
+        
+
 libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 
 ```
@@ -66,6 +74,8 @@ libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 * __Total Strains__: `r total_strains`
 * __Total Isotypes__: `r total_isotypes`
 * __Total Sequences__: `r total_sequences`
+* __Total Fastq Pairs__: `r total_fastq_pairs`
+* __Total File Size__: `r total_file_size`
 
 #### Runs
 
