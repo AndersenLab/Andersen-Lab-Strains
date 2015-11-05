@@ -9,8 +9,9 @@ Tracking and Information for Andersen Lab Strains
 
 ### Files
 
-* [Isotypes](https://storage.googleapis.com/andersen_lab_strains/processed/isotypes.tsv)
-* [Fastqs](https://storage.googleapis.com/andersen_lab_strains/processed/seqs.tsv)
+* __[Isotypes](https://storage.googleapis.com/andersen_lab_strains/processed/isotypes.tsv)__ - List of isotypes.
+* __[Isotype-Strain](https://storage.googleapis.com/andersen_lab_strains/processed/isotype_strain.tsv)__ - Isotype - Strain mapping
+* __[Fastqs](https://storage.googleapis.com/andersen_lab_strains/processed/seqs.tsv)__ - List of fastqs
 
 ### Conventions
 
