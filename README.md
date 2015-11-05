@@ -7,6 +7,11 @@ Tracking and Information for Andersen Lab Strains
 
 * [Analysis](https://storage.googleapis.com/andersen_lab_strains/analysis.html)
 
+### Files
+
+* [Isotypes](https://storage.googleapis.com/andersen_lab_strains/processed/isotypes.tsv)
+* [Fastqs](https://storage.googleapis.com/andersen_lab_strains/processed/seqs.tsv)
+
 ### Conventions
 
 * lowercase variable names.
@@ -52,3 +57,9 @@ Current state of backup:
 * [ ] UChicago (2015-09-05) - original
 * [ ] UChicago2 (2015-10-08) - original
 
+#### To Do
+
+__To Do__
+* [ ] Add script that checks for fastq set errors.
+* [ ] Add depth of coverage for individual fastqs.
+* [ ] Removed Princeton1-PL_23-CGATGTA; no resolved strain.
