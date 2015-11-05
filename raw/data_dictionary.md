@@ -1,14 +1,14 @@
 #### seq.raw.tsv
 
-* `date_sequenced` - date sequenced.
+* `date_sequenced` - date sequenced
 * `readgroup` - readgroup
-* `isotype` - assigned isotype, if applicable.
+* `isotype` - assigned isotype, if applicable
 * `run` - run
 * `lib` - library
 * `strain` - strain name
-* `prev_names` - previous names.
+* `prev_names` - previous names
 * `use_in_analysis` - whether the fastq is ready for analysis
-* `trimming_program` - Trimming program used.
+* `trimming_program` - Trimming program used
 * `trimming` - trimming parameters used
 * `reads` - number of reads
 * `seq_read_len` - desired read length when seqeuenced
@@ -22,4 +22,5 @@
 * `fq2_sha1` - sha1 of fastq2
 * `fq1_size` - size in bytes
 * `fq2_size` - size in bytes
-* `WS245_DOC` - Depth of coverage for WS245.
+* `library_prep` - method used to prepare library
+* `WS245_DOC` - Depth of coverage for WS245
