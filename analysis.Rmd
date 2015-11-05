@@ -88,3 +88,18 @@ libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 #### Strains
 
 `r kable(strain_count)`
+
+
+```{r generate isotype file, echo = F}
+
+# Output clean seqs file
+readr::write_tsv(dplyr::filter(seqs, use_in_analysis == T), "processed/seqs.tsv")
+
+isotype_set <- seqs %>% 
+  dplyr::select(isotype, strain) %>%
+  dplyr::filter(!is.na(isotype)) %>%
+  dplyr::distinct()
+
+readr::write_tsv(isotype_set, "processed/isotypes.tsv")
+
+```

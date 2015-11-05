@@ -6,6 +6,7 @@
 * `run` - run
 * `lib` - library
 * `strain` - strain name
+* `prev_names` - previous names.
 * `use_in_analysis` - whether the fastq is ready for analysis
 * `trimming_program` - Trimming program used.
 * `trimming` - trimming parameters used
@@ -19,3 +20,6 @@
 * `index2` - index2, if applicable
 * `fq1_sha1` - sha1 of fastq1
 * `fq2_sha1` - sha1 of fastq2
+* `fq1_size` - size in bytes
+* `fq2_size` - size in bytes
+* `WS245_DOC` - Depth of coverage for WS245.
