@@ -1,5 +1,5 @@
 ---
-title: "analyze"
+title: "Andersen Lab Strains"
 author: "Dan Cook"
 date: "`r Sys.Date()`"
 output: 
