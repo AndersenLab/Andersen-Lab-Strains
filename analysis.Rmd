@@ -78,7 +78,7 @@ libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 
 ### Strain Locations
 
-```{r, echo = F, fig.width = 9.5, fig.height = 8, warning=FALSE, message=FALSE}
+```{r, echo = F, fig.width = 9.5, fig.height = 5, warning=FALSE, message=FALSE}
 library(leaflet)
 
 width <- 50
@@ -113,8 +113,8 @@ leaflet(data = strain_info) %>%
 
 ```
 
-*  <img src="red.png" height="20x" width="20x" /> - Sequenced
-*  <img src="grey.png" height="20x" width="20x" /> - In collection (not sequenced)
+<img src="red.png" height="20x" width="20x" /> - Sequenced
+<img src="grey.png" height="20x" width="20x" /> - In collection (not sequenced)
 
 
 ### Runs
