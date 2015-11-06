@@ -4,13 +4,11 @@ author: "Dan Cook"
 date: "`r Sys.Date()`"
 output: 
   html_document:
-    keep_md: yes
-    theme: cosmo
+    theme: united
     toc: yes
   pdf_document: 
     toc: yes
 ---
-
 
 ```{r, echo = F, warning=FALSE, message=FALSE}
 library(readr)
@@ -78,17 +76,25 @@ libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 * __Total Fastq Pairs__: `r total_fastq_pairs`
 * __Total File Size__: `r total_file_size`
 
-#### Runs
+### Runs
 
 `r kable(run_count)`
 
-#### Libraries
+```{r, echo = F}
+
+runs <- table(c(dplyr::filter(seqs, use_in_analysis == TRUE) %>% dplyr::select(run)))
+
+colors=c("#882E72", "#B178A6", "#D6C1DE", "#1965B0", "#5289C7", "#7BAFDE", "#4EB265", "#90C987", "#CAE0AB", "#F7EE55", "#F6C141", "#F1932D", "#E8601C", "#DC050C")
+
+waffle(runs, rows=30, size=0.5, 
+       colors=rev(colors))
+```
+n = `r sum(runs)`
+
+
+### Libraries
 
 `r kable(lib_count)`
-
-#### Strains
-
-`r kable(strain_count)`
 
 ```{r generate isotype file, echo = F}
 
@@ -112,21 +118,11 @@ isotype_strain <- seqs %>%
 readr::write_tsv(isotypes, "processed/isotypes.tsv")
 readr::write_tsv(isotype_strain, "processed/isotype_strain.tsv")
 
+# Generate Sample File
+sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dplyr::select(fq1, fq2, readgroup, isotype) %>%                   tidyr::separate(readgroup, into = c("RUN", "LB", "STRAIN"), extra = "drop", remove = F) %>%
+  dplyr::select(FQ1 = fq1, FQ2 = fq2, ID = readgroup, LB, SM = isotype)
+
+readr::write_tsv(sample_file, "processed/sample_file.tsv")
+
 ```
 
-# Add waffle plot!
-
-```{r}
-
-runs <- table(c(dplyr::filter(seqs, use_in_analysis == TRUE) %>% dplyr::select(run)))
-
-
-colors=c("#882E72", "#B178A6", "#D6C1DE", "#1965B0", "#5289C7", "#7BAFDE", "#4EB265", "#90C987", "#CAE0AB", "#F7EE55", "#F6C141", "#F1932D", "#E8601C", "#DC050C")
-
-
-
-waffle(runs, rows=30, size=0.5, 
-       colors=rev(colors), 
-       title=paste0(sum(runs), " Sequencing Pairs by Run"), 
-       xlab="1 square == $392")
-```
