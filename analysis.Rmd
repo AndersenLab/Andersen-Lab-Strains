@@ -76,6 +76,47 @@ libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 * __Total Fastq Pairs__: `r total_fastq_pairs`
 * __Total File Size__: `r total_file_size`
 
+### Strain Locations
+
+```{r, echo = F, fig.width = 9.5, fig.height = 8, warning=FALSE, message=FALSE}
+library(leaflet)
+
+width <- 50
+height <- 50
+
+icons <- iconList(
+red = makeIcon(
+  iconUrl = "red.png",
+  iconWidth = width, iconHeight = height,
+  popupAnchorX = 0.00001, popupAnchorY = -height+13,
+  iconAnchorX = width/2, iconAnchorY = height), 
+grey = makeIcon(
+  iconUrl = "grey.png",
+  iconWidth  = width, iconHeight = height, 
+  popupAnchorX = 0.00001, popupAnchorY = -height+13,
+  iconAnchorX = width/2, iconAnchorY  = height
+))
+
+
+strain_info <- readr::read_tsv("processed/strain_info.tsv") %>%               dplyr::filter(!is.na(latitude)) %>%
+               dplyr::left_join(seqs) %>%
+               dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey"))
+               
+
+
+attach(strain_info)
+leaflet(data = strain_info) %>% 
+  addTiles() %>%
+  addMarkers(~longitude, ~latitude, popup = paste0(strain, " - ", location, " - ", isolation), 
+             icon = ~icons[type] )
+
+
+```
+
+*  <img src="red.png" height="20x" width="20x" /> - Sequenced
+*  <img src="grey.png" height="20x" width="20x" /> - In collection (not sequenced)
+
+
 ### Runs
 
 `r kable(run_count)`
@@ -126,4 +167,5 @@ sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dp
 readr::write_tsv(sample_file, "processed/sample_file.tsv")
 
 ```
+
 

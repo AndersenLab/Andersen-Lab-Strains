@@ -12,6 +12,7 @@ Imports:
 	ggplot2,
 	gdata,
 	waffle,
+	leaflet,
 	DT
 License: GPL
 LazyData: true

@@ -38,29 +38,7 @@ Tracking and Information for Andersen Lab Strains
 * Fastq statistics
 * Bam Depth of Coverage
 
-### Backup
+### To Do
 
-Current state of backup:
-
-#### Original
-
-* [ ] BGI1
-* [ ] BGI2
-* [ ] BGI3
-* [X] UChicago (2015-09-05) - original
-* [X] UChicago2 (2015-10-08) - original
-
-#### Trim
-
-* [ ] BGI1
-* [ ] BGI2
-* [ ] BGI3
-* [ ] UChicago (2015-09-05) - original
-* [ ] UChicago2 (2015-10-08) - original
-
-#### To Do
-
-__To Do__
-* [ ] Add script that checks for fastq set errors.
-* [ ] Add depth of coverage for individual fastqs.
-* [ ] Removed Princeton1-PL_23-CGATGTA; no resolved strain.
+* [ ] Add comment regarding source of non-CGC/UK strains (e.g. CB4851, CB4855, CB4851, etc.) came from original princeton sequencing; original strain not known.
+* [ ] Add depth of coverage data.
