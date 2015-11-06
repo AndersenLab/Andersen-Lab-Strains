@@ -120,7 +120,8 @@ readr::write_tsv(isotype_strain, "processed/isotype_strain.tsv")
 
 # Generate Sample File
 sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dplyr::select(fq1, fq2, readgroup, isotype) %>%                   tidyr::separate(readgroup, into = c("RUN", "LB", "STRAIN"), extra = "drop", remove = F) %>%
-  dplyr::select(FQ1 = fq1, FQ2 = fq2, ID = readgroup, LB, SM = isotype)
+  dplyr::mutate(PL = "") %>%
+  dplyr::select(FQ1 = fq1, FQ2 = fq2, ID = readgroup, LB, SM = isotype, PL) 
 
 readr::write_tsv(sample_file, "processed/sample_file.tsv")
 
