@@ -11,6 +11,7 @@ Imports:
 	rmarkdown,
 	ggplot2,
 	gdata,
+	waffle,
 	DT
 License: GPL
 LazyData: true

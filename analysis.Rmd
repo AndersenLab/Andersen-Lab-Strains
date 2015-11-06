@@ -20,6 +20,7 @@ library(knitr)
 library(ggplot2)
 library(scales)
 library(gdata)
+library(waffle)
 
 seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A"))
 
@@ -89,7 +90,6 @@ libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
 
 `r kable(strain_count)`
 
-
 ```{r generate isotype file, echo = F}
 
 # Output clean seqs file
@@ -112,4 +112,21 @@ isotype_strain <- seqs %>%
 readr::write_tsv(isotypes, "processed/isotypes.tsv")
 readr::write_tsv(isotype_strain, "processed/isotype_strain.tsv")
 
+```
+
+# Add waffle plot!
+
+```{r}
+
+runs <- table(c(dplyr::filter(seqs, use_in_analysis == TRUE) %>% dplyr::select(run)))
+
+
+colors=c("#882E72", "#B178A6", "#D6C1DE", "#1965B0", "#5289C7", "#7BAFDE", "#4EB265", "#90C987", "#CAE0AB", "#F7EE55", "#F6C141", "#F1932D", "#E8601C", "#DC050C")
+
+
+
+waffle(runs, rows=30, size=0.5, 
+       colors=rev(colors), 
+       title=paste0(sum(runs), " Sequencing Pairs by Run"), 
+       xlab="1 square == $392")
 ```
