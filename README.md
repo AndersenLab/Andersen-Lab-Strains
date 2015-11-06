@@ -5,7 +5,7 @@ Tracking and Information for Andersen Lab Strains
 
 ### Reports
 
-* [Analysis](https://storage.googleapis.com/andersen_lab_strains/analysis.html)
+* [Analysis](http://htmlpreview.github.io/?https://github.com/AndersenLab/Andersen-Lab-Strains/blob/master/analysis.html)
 
 ### Files
 
