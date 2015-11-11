@@ -20,6 +20,7 @@ library(scales)
 library(gdata)
 library(waffle)
 library(DT)
+library(pryr)
 
 
 
@@ -217,3 +218,18 @@ sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dp
 readr::write_tsv(sample_file, "processed/sample_file.tsv")
 
 ```
+
+# Fastq Stats
+
+```{r}
+
+fastq <- load_eav("raw/fastq.tsv.gz") %>%
+         dplyr::select(-SUB, -DATE) %>%
+         tidyr::spread(ATTR, VALUE, convert = TRUE) %>%
+         dplyr::select(fastq = ENTITY, A_count, T_count, C_count, G_count, everything()) %>%
+         dplyr::mutate_each(funs(type.convert(., as.is=T)), everything())
+
+GC_content <- dplyr::filter(fastq, ATTR == "GC_count")
+
+```
+
