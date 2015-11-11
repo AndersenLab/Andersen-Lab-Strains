@@ -19,6 +19,27 @@ library(ggplot2)
 library(scales)
 library(gdata)
 library(waffle)
+library(DT)
+
+
+
+load_eav <- function(file) {
+  readr::read_tsv(file, c("ENTITY", "SUB", "VALUE", "DATE")) %>%
+    eav_attr("ATTR") %>%
+    dplyr::select(ENTITY, ATTR, SUB, VALUE, DATE)
+}
+
+eav_attr <- function(.data, ..., spread = FALSE) {
+  columns <- pryr::named_dots(...)
+  for(col in columns) {
+  .data <- .data %>% tidyr::extract_("SUB", into = c(col), regex = paste0(col, "=","([^;]+)"), remove = FALSE, convert = TRUE)
+  }
+  if (spread == TRUE) {
+    .data <- .data %>% dplyr::select(-DATE, -SUB) %>%
+    tidyr::spread(ATTR, VALUE)
+  }
+  .data
+}
 
 seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A"))
 
@@ -117,6 +138,34 @@ leaflet(data = strain_info) %>%
 <img src="grey.png" height="20x" width="20x" /> - In collection (not sequenced)
 
 
+### Depth of Coverage
+
+```{r, fig.width = 24, fig.height = 10, echo = F}
+
+doc_global <- load_eav("raw/eav.doc.tsv") %>%
+dplyr::filter(ATTR == "depth_of_coverage") %>%
+eav_attr("chrom") %>%
+dplyr::filter(ATTR == "depth_of_coverage") %>%
+dplyr::filter(chrom == "genome")
+
+ggplot(doc_global) +
+  geom_bar(aes(x = reorder(ENTITY, VALUE), y = VALUE), stat="identity") +
+  geom_hline(aes(yintercept = 30), color = "red") +
+  theme_bw() +
+  scale_y_continuous(expand = c(0,0), breaks = seq(0, 600, 100), limits = c(0,600)) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "Isotype", y = "Depth of Coverage") 
+
+doc_display <- dplyr::select(doc_global, isotype = ENTITY, depth_of_coverage = VALUE) 
+
+write_tsv(doc_display, path = "processed/depth_of_coverage.tsv")
+
+```
+
+<font style="color:red">---</font> depth of coverage = 30
+
+`r datatable(doc_display)`
+
 ### Runs
 
 `r kable(run_count)`
@@ -168,5 +217,3 @@ sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dp
 readr::write_tsv(sample_file, "processed/sample_file.tsv")
 
 ```
-
-
