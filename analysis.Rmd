@@ -187,12 +187,13 @@ n = `r sum(runs)`
 
 `r kable(lib_count)`
 
-```{r generate isotype file, echo = F}
+```{r generate isotype file, echo = F, warning = F, message = F}
 
 # Output clean seqs file
 analysis_seqs <- dplyr::filter(seqs, use_in_analysis == T) %>%
                  dplyr::arrange(run, lib, isotype, strain)
-readr::write_tsv(analysis_seqs, "processed/seqs.tsv")
+
+readr::write_tsv(analysis_seqs, path = "processed/seqs.tsv")
 
 isotypes <- seqs %>% 
   dplyr::select(isotype) %>%
@@ -217,19 +218,33 @@ sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dp
 
 readr::write_tsv(sample_file, "processed/sample_file.tsv")
 
-```
-
-# Fastq Stats
-
-```{r}
-
+# Fastq stats
 fastq <- load_eav("raw/fastq.tsv.gz") %>%
          dplyr::select(-SUB, -DATE) %>%
          tidyr::spread(ATTR, VALUE, convert = TRUE) %>%
          dplyr::select(fastq = ENTITY, A_count, T_count, C_count, G_count, everything()) %>%
-         dplyr::mutate_each(funs(type.convert(., as.is=T)), everything())
+         dplyr::mutate_each(funs(type.convert(., as.is=T)), everything()) %>%
+         tidyr::separate(fastq, sep = "-", into = c("run", "lib", "strain"), extra = "drop") %>%
+         dplyr::group_by(run, lib, strain) %>%
+         dplyr::mutate(GC_count_mean = mean(GC_count)) %>%
+         dplyr::left_join(analysis_seqs, .)
 
-GC_content <- dplyr::filter(fastq, ATTR == "GC_count")
+readr::write_tsv(fastq, path = "processed/fastq_info.tsv")
+
+
+readr::write_tsv(fastq, "processed/fastq.tsv")
+
+telseq <- readr::read_tsv("raw/telseq.txt") %>%
+         dplyr::mutate(LENGTH_ESTIMATE = (as.double(LENGTH_ESTIMATE) / (332720800/46000)) * (5808700/12000)) %>%
+         dplyr::filter(TEL15 > 0) %>%
+         dplyr::select(-Library, -Duplicates) %>%
+         tidyr::separate(ReadGroup, sep = "-", into = c("run", "lib", "strain"), extra = "drop") %>%
+         dplyr::group_by(isotype) %>%
+         dplyr::mutate(telomere_length = weighted.mean(LENGTH_ESTIMATE, Total))  %>%
+         dplyr::select(isotype, run, lib, strain, Total, Mapped, telomere_length, everything(), -Sample)
+
+readr::write_tsv(telseq, "processed/telseq.tsv")
+
+
 
 ```
-
