@@ -37,3 +37,4 @@ Tracking and Information for Andersen Lab Strains
 * Concordance
 * Fastq statistics
 * Bam Depth of Coverage
+* Kmer analysis
