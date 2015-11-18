@@ -37,8 +37,3 @@ Tracking and Information for Andersen Lab Strains
 * Concordance
 * Fastq statistics
 * Bam Depth of Coverage
-
-### To Do
-
-* [ ] Add comment regarding source of non-CGC/UK strains (e.g. CB4851, CB4855, CB4851, etc.) came from original princeton sequencing; original strain not known.
-* [ ] Add depth of coverage data.
