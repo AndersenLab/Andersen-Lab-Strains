@@ -215,7 +215,7 @@ strain_isotype <- strain_isotype %>%
   dplyr::select(strain_count, strain, isotype, prev_names)
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
-readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv")
+readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
 
 # Generate Sample File
 sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dplyr::select(fq1, fq2, readgroup, isotype) %>%                   tidyr::separate(readgroup, into = c("RUN", "LB", "STRAIN"), sep ="-",  extra = "drop", remove = F) %>%
