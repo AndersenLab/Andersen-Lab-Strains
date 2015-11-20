@@ -10,7 +10,7 @@ Tracking and Information for Andersen Lab Strains
 ### Files
 
 * __[Isotypes](/processed/isotypes.tsv)__ - List of isotypes.
-* __[Isotype-Strain](/processed/isotype_strain.tsv)__ - Isotype - Strain mapping
+* __[Strain-Isotype](/processed/strain_isotype.tsv)__ - Strain - Isotype mapping
 * __[Fastqs](/processed/seqs.tsv)__ - List of fastqs
 
 ### Conventions

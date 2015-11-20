@@ -23,7 +23,6 @@ library(DT)
 library(pryr)
 
 
-
 load_eav <- function(file) {
   readr::read_tsv(file, c("ENTITY", "SUB", "VALUE", "DATE")) %>%
     eav_attr("ATTR") %>%
@@ -199,16 +198,24 @@ isotypes <- seqs %>%
   dplyr::select(isotype) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct() %>%
-  dplyr::arrange(isotype)
+  dplyr::arrange(isotype) %>%
+  dplyr::mutate(isotype_count=row_number()) %>%
+  dplyr::select(isotype_count, isotype) 
 
-isotype_strain <- seqs %>% 
-  dplyr::select(isotype, strain) %>%
+strain_isotype <- seqs %>% 
+  dplyr::select(isotype, strain, prev_names) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct() %>%
-  dplyr::arrange(isotype)
+  dplyr::group_by(strain)
 
-readr::write_tsv(isotypes, "processed/isotypes.tsv")
-readr::write_tsv(isotype_strain, "processed/isotype_strain.tsv")
+strain_isotype$strain_count <- group_indices(strain_isotype)
+
+strain_isotype <- strain_isotype %>%
+  dplyr::arrange(isotype) %>%
+  dplyr::select(strain_count, strain, isotype, prev_names)
+
+readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
+readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
 
 # Generate Sample File
 sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dplyr::select(fq1, fq2, readgroup, isotype) %>%                   tidyr::separate(readgroup, into = c("RUN", "LB", "STRAIN"), sep ="-",  extra = "drop", remove = F) %>%
@@ -244,51 +251,6 @@ telseq <- readr::read_tsv("raw/telseq.txt") %>%
          dplyr::select(isotype, run, lib, strain, Total, Mapped, telomere_length, everything(), -Sample)
 
 readr::write_tsv(telseq, "processed/telseq.tsv")
-
-
-
-```
-
-### Concordance
-
-```{r Concordance}
-
-concordance <- readr::read_tsv(pipe("grep 'CN' raw/concordance.tsv | awk '{ gsub(\"(# |\\[[0-9]+\\])\",\"\", $0); gsub(\" \",\"_\", $0); print }' | cut -f 2-6 | sed 's/_IND//g'")) %>%
-      dplyr::mutate(Concordance = 1-(Discordance/Number_of_sites)) %>%
-      tidyr::separate(Sample_i, sep = "-", into = c("i_run", "i_lib", "i_strain"), extra = "drop", remove = F) %>%
-      tidyr::separate(Sample_j, sep = "-", into = c("j_run", "j_lib", "j_strain"), extra = "drop", remove = F) %>%
-      dplyr::filter(Number_of_sites > 10000) %>%
-      dplyr::filter(!grepl("lane", i_strain)) %>%
-      dplyr::filter(!grepl("lane", j_strain))
-
-iso_set <- dplyr::filter(concordance, Concordance > 0.99) 
-
-attach(concordance)
-
-strain_list = unique(c(i_strain, j_strain))
-
-stack_list <- function(x) {
-  if (is.null(names(x)) == T) {
-    names(x) <- as.character(1:length(x))
-  }
-  stack(x)
-}
-
-iso_groups <- stack_list(unique(lapply(strain_list, function(x) {
-  grouped_strains <- dplyr::filter(iso_set, (i_strain == x | j_strain == x)) %>%
-  dplyr::select(i_strain, j_strain)
-  sort(unique(unlist(grouped_strains)))
-}))) 
-
-seq_list <- unique(c(iso_set$Sample_i, iso_set$Sample_j))
-
-iso_group_files <- stack_list(unique(lapply(seq_list, function(x) {
-  grouped_strains <- dplyr::filter(iso_set, (Sample_i == x | Sample_j == x)) %>%
-  dplyr::select(Sample_i, Sample_j)
-  sort(unique(unlist(grouped_strains)))
-}))) %>%
-  dplyr::rename(iso_group = ind, seq_run = values) %>%
-  tidyr::separate(seq_run, sep = "-", into = c("run", "lib", "strain"), extra = "drop", remove = F) 
 
 
 
