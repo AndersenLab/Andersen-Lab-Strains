@@ -2,7 +2,7 @@
 # import sys
 # import ftfy
 
-# THIS IS NOT A WORKING SCRIPT YET
+# # THIS IS NOT A WORKING SCRIPT YET
 
 # def main():
 #   text_file = sys.argv[1]
@@ -23,8 +23,7 @@
 #             # print fixed_row
 #             # tsvot.writerows([fixed_row])
 #         count += 1
-#     print "Val daE TMOise".decode('utf-8')
-#     print 'aEjardin partageaE'.decode('UTF-8')
+#     # print "Val daE TMOise".decode('utf-8')
 
 
 # if __name__ == "__main__":
