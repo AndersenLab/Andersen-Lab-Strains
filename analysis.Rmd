@@ -23,7 +23,6 @@ library(DT)
 library(pryr)
 
 
-
 load_eav <- function(file) {
   readr::read_tsv(file, c("ENTITY", "SUB", "VALUE", "DATE")) %>%
     eav_attr("ATTR") %>%
@@ -252,20 +251,25 @@ readr::write_tsv(telseq, "processed/telseq.tsv")
 ### Concordance
 
 ```{r Concordance}
-
-concordance <- readr::read_tsv(pipe("grep 'CN' raw/concordance.tsv | awk '{ gsub(\"(# |\\[[0-9]+\\])\",\"\", $0); gsub(\" \",\"_\", $0); print }' | cut -f 2-6 | sed 's/_IND//g'")) %>%
+con <- readr::read_tsv(pipe("grep 'CN' raw/concordance.tsv | awk '{ gsub(\"(# |\\[[0-9]+\\])\",\"\", $0); gsub(\" \",\"_\", $0); print }' | cut -f 2-6 | sed 's/_IND//g'")) %>%
       dplyr::mutate(Concordance = 1-(Discordance/Number_of_sites)) %>%
+      dplyr::rename(concordance =Concordance, discordance = Discordance, number_of_sites = Number_of_sites) %>%
       tidyr::separate(Sample_i, sep = "-", into = c("i_run", "i_lib", "i_strain"), extra = "drop", remove = F) %>%
       tidyr::separate(Sample_j, sep = "-", into = c("j_run", "j_lib", "j_strain"), extra = "drop", remove = F) %>%
-      dplyr::filter(Number_of_sites > 10000) %>%
+      #dplyr::filter(Number_of_sites > 10000) %>%
       dplyr::filter(!grepl("lane", i_strain)) %>%
       dplyr::filter(!grepl("lane", j_strain))
 
-iso_set <- dplyr::filter(concordance, Concordance > 0.99) 
 
-attach(concordance)
 
-strain_list = unique(c(i_strain, j_strain))
+con <- readr::read_tsv("raw/concordance.tsv", skip = 1, col_names = c("sample_i", "sample_j", "discordance", "number_of_sites")) %>%
+      dplyr::mutate(concordance = 1-(discordance/number_of_sites)) %>%
+      tidyr::separate(sample_i, sep = "-", into = c("i_run", "i_lib", "i_strain"), extra = "drop", remove = F) %>%
+      tidyr::separate(sample_j, sep = "-", into = c("j_run", "j_lib", "j_strain"), extra = "drop", remove = F) 
+
+iso_set <- dplyr::filter(con, concordance > 0.9997) 
+
+strain_list = unique(c(con$i_strain, con$j_strain))
 
 stack_list <- function(x) {
   if (is.null(names(x)) == T) {
@@ -280,11 +284,11 @@ iso_groups <- stack_list(unique(lapply(strain_list, function(x) {
   sort(unique(unlist(grouped_strains)))
 }))) 
 
-seq_list <- unique(c(iso_set$Sample_i, iso_set$Sample_j))
+seq_list <- unique(c(iso_set$sample_i, iso_set$sample_j))
 
 iso_group_files <- stack_list(unique(lapply(seq_list, function(x) {
-  grouped_strains <- dplyr::filter(iso_set, (Sample_i == x | Sample_j == x)) %>%
-  dplyr::select(Sample_i, Sample_j)
+  grouped_strains <- dplyr::filter(iso_set, (sample_i == x | sample_j == x)) %>%
+  dplyr::select(sample_i, sample_j)
   sort(unique(unlist(grouped_strains)))
 }))) %>%
   dplyr::rename(iso_group = ind, seq_run = values) %>%
@@ -292,4 +296,31 @@ iso_group_files <- stack_list(unique(lapply(seq_list, function(x) {
 
 
 
+```
+
+```{r}
+
+ggplot(concordance) +
+  geom_histogram(aes(x=Concordance), color = "#191919", binwidth = 0.0002) +
+  labs(x = "Concordance", y = "Number of Comparisons") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(limits = c(0.99,1.00))
+
+```
+
+
+```{r}
+
+df$isotype <- factor(df$isotype, labels = c("Diverged","Isotype"))
+
+ggplot(df) +
+  geom_bar(aes(x=Concordance, fill = isotype), binwidth = 0.0002) +
+  geom_histogram(aes(x=Concordance - 0.000001, fill = isotype), binwidth = 0.0002) + # Fix to create full density
+  labs("Number of comparisons") + 
+  scale_fill_manual(values = c("black", "#0080FF")) +
+  presentation + 
+  facet_grid(isotype~.) + 
+  scale_x_continuous(limits = c(0.90,1)) +
+  labs(x = "Concordance Among Genotypes", y = "Number of Comparisons") +
+  pub_theme
 ```
