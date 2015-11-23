@@ -13,6 +13,7 @@ Imports:
 	gdata,
 	waffle,
 	leaflet,
-	DT
+	DT,
+	pryr
 License: GPL
 LazyData: true

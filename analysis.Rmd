@@ -19,6 +19,27 @@ library(ggplot2)
 library(scales)
 library(gdata)
 library(waffle)
+library(DT)
+library(pryr)
+
+
+load_eav <- function(file) {
+  readr::read_tsv(file, c("ENTITY", "SUB", "VALUE", "DATE")) %>%
+    eav_attr("ATTR") %>%
+    dplyr::select(ENTITY, ATTR, SUB, VALUE, DATE)
+}
+
+eav_attr <- function(.data, ..., spread = FALSE) {
+  columns <- pryr::named_dots(...)
+  for(col in columns) {
+  .data <- .data %>% tidyr::extract_("SUB", into = c(col), regex = paste0(col, "=","([^;]+)"), remove = FALSE, convert = TRUE)
+  }
+  if (spread == TRUE) {
+    .data <- .data %>% dplyr::select(-DATE, -SUB) %>%
+    tidyr::spread(ATTR, VALUE)
+  }
+  .data
+}
 
 seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A"))
 
@@ -117,6 +138,34 @@ leaflet(data = strain_info) %>%
 <img src="grey.png" height="20x" width="20x" /> - In collection (not sequenced)
 
 
+### Depth of Coverage
+
+```{r, fig.width = 24, fig.height = 10, echo = F}
+
+doc_global <- load_eav("raw/eav.doc.tsv") %>%
+dplyr::filter(ATTR == "depth_of_coverage") %>%
+eav_attr("chrom") %>%
+dplyr::filter(ATTR == "depth_of_coverage") %>%
+dplyr::filter(chrom == "genome")
+
+ggplot(doc_global) +
+  geom_bar(aes(x = reorder(ENTITY, VALUE), y = VALUE), stat="identity") +
+  geom_hline(aes(yintercept = 30), color = "red") +
+  theme_bw() +
+  scale_y_continuous(expand = c(0,0), breaks = seq(0, 600, 100), limits = c(0,600)) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "Isotype", y = "Depth of Coverage") 
+
+doc_display <- dplyr::select(doc_global, isotype = ENTITY, depth_of_coverage = VALUE) 
+
+write_tsv(doc_display, path = "processed/depth_of_coverage.tsv")
+
+```
+
+<font style="color:red">---</font> depth of coverage = 30
+
+`r datatable(doc_display)`
+
 ### Runs
 
 `r kable(run_count)`
@@ -137,27 +186,36 @@ n = `r sum(runs)`
 
 `r kable(lib_count)`
 
-```{r generate isotype file, echo = F}
+```{r generate isotype file, echo = F, warning = F, message = F}
 
 # Output clean seqs file
 analysis_seqs <- dplyr::filter(seqs, use_in_analysis == T) %>%
                  dplyr::arrange(run, lib, isotype, strain)
-readr::write_tsv(analysis_seqs, "processed/seqs.tsv")
+
+readr::write_tsv(analysis_seqs, path = "processed/seqs.tsv")
 
 isotypes <- seqs %>% 
   dplyr::select(isotype) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct() %>%
-  dplyr::arrange(isotype)
+  dplyr::arrange(isotype) %>%
+  dplyr::mutate(isotype_count=row_number()) %>%
+  dplyr::select(isotype_count, isotype) 
 
-isotype_strain <- seqs %>% 
-  dplyr::select(isotype, strain) %>%
+strain_isotype <- seqs %>% 
+  dplyr::select(isotype, strain, prev_names) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct() %>%
-  dplyr::arrange(isotype)
+  dplyr::group_by(strain)
 
-readr::write_tsv(isotypes, "processed/isotypes.tsv")
-readr::write_tsv(isotype_strain, "processed/isotype_strain.tsv")
+strain_isotype$strain_count <- group_indices(strain_isotype)
+
+strain_isotype <- strain_isotype %>%
+  dplyr::arrange(isotype) %>%
+  dplyr::select(strain_count, strain, isotype, prev_names)
+
+readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
+readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
 
 # Generate Sample File
 sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dplyr::select(fq1, fq2, readgroup, isotype) %>%                   tidyr::separate(readgroup, into = c("RUN", "LB", "STRAIN"), sep ="-",  extra = "drop", remove = F) %>%
@@ -167,6 +225,33 @@ sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dp
 
 readr::write_tsv(sample_file, "processed/sample_file.tsv")
 
+# Fastq stats
+fastq <- load_eav("raw/fastq.tsv.gz") %>%
+         dplyr::select(-SUB, -DATE) %>%
+         tidyr::spread(ATTR, VALUE, convert = TRUE) %>%
+         dplyr::select(fastq = ENTITY, A_count, T_count, C_count, G_count, everything()) %>%
+         dplyr::mutate_each(funs(type.convert(., as.is=T)), everything()) %>%
+         tidyr::separate(fastq, sep = "-", into = c("run", "lib", "strain"), extra = "drop") %>%
+         dplyr::group_by(run, lib, strain) %>%
+         dplyr::mutate(GC_count_mean = mean(GC_count)) %>%
+         dplyr::left_join(analysis_seqs, .)
+
+readr::write_tsv(fastq, path = "processed/fastq_info.tsv")
+
+
+readr::write_tsv(fastq, "processed/fastq.tsv")
+
+telseq <- readr::read_tsv("raw/telseq.txt") %>%
+         dplyr::mutate(LENGTH_ESTIMATE = (as.double(LENGTH_ESTIMATE) / (332720800/46000)) * (5808700/12000)) %>%
+         dplyr::filter(TEL15 > 0) %>%
+         dplyr::select(-Library, -Duplicates) %>%
+         tidyr::separate(ReadGroup, sep = "-", into = c("run", "lib", "strain"), extra = "drop") %>%
+         dplyr::group_by(isotype) %>%
+         dplyr::mutate(telomere_length = weighted.mean(LENGTH_ESTIMATE, Total))  %>%
+         dplyr::select(isotype, run, lib, strain, Total, Mapped, telomere_length, everything(), -Sample)
+
+readr::write_tsv(telseq, "processed/telseq.tsv")
+
+
+
 ```
-
-

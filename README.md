@@ -10,7 +10,7 @@ Tracking and Information for Andersen Lab Strains
 ### Files
 
 * __[Isotypes](/processed/isotypes.tsv)__ - List of isotypes.
-* __[Isotype-Strain](/processed/isotype_strain.tsv)__ - Isotype - Strain mapping
+* __[Strain-Isotype](/processed/strain_isotype.tsv)__ - Strain - Isotype mapping
 * __[Fastqs](/processed/seqs.tsv)__ - List of fastqs
 
 ### Conventions
@@ -37,8 +37,4 @@ Tracking and Information for Andersen Lab Strains
 * Concordance
 * Fastq statistics
 * Bam Depth of Coverage
-
-### To Do
-
-* [ ] Add comment regarding source of non-CGC/UK strains (e.g. CB4851, CB4855, CB4851, etc.) came from original princeton sequencing; original strain not known.
-* [ ] Add depth of coverage data.
+* Kmer analysis
