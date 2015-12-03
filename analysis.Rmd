@@ -203,6 +203,7 @@ isotypes <- seqs %>%
   dplyr::select(isotype_count, isotype) 
 
 strain_isotype <- seqs %>% 
+  dplyr::filter(use_in_analysis == T) %>%
   dplyr::select(isotype, strain, prev_names) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct() %>%
@@ -253,89 +254,5 @@ telseq <- readr::read_tsv("raw/telseq.txt") %>%
 readr::write_tsv(telseq, "processed/telseq.tsv")
 
 
-
-```
-
-
-```{r}
-
-
-stack_list <- function(x) {
-  if (is.null(names(x)) == T) {
-    names(x) <- as.character(1:length(x))
-  }
-  stack(x)
-}
-
-
-plot_concordance <- function(filename, threshold) {
-
-con <- readr::read_tsv(filename, skip = 1, col_names = c("sample_i", "sample_j", "discordance", "number_of_sites")) %>%
-      dplyr::mutate(concordance = 1-(discordance/number_of_sites)) %>%
-      tidyr::separate(sample_i, sep = "-", into = c("i_run", "i_lib", "i_strain"), extra = "drop", remove = F) %>%
-      tidyr::separate(sample_j, sep = "-", into = c("j_run", "j_lib", "j_strain"), extra = "drop", remove = F) %>%
-      dplyr::left_join(strain_isotype, by = c("i_strain" = "strain")) %>%
-      dplyr::rename(i_isotype = isotype) %>%
-      dplyr::left_join(strain_isotype, by = c("j_strain" = "strain")) %>%
-      dplyr::rename(j_isotype = isotype) %>%
-      dplyr::mutate(isotype = ifelse(i_isotype == j_isotype, TRUE, FALSE)) %>%
-      dplyr::mutate(threshold = threshold) %>%
-      dplyr::filter(!is.na(isotype))
-
-iso_set <- dplyr::filter(con, concordance > 0.9995) 
-
-strain_list = unique(c(con$i_strain, con$j_strain))
-
-
-iso_groups <- tbl_df(stack_list(unique(lapply(strain_list, function(x) {
-  grouped_strains <- dplyr::filter(iso_set, (i_strain == x | j_strain == x)) %>%
-  dplyr::select(i_strain, j_strain)
-  sort(unique(unlist(grouped_strains)))
-})))) %>%
-  dplyr::left_join(isotypes, by = c("values" = "strain")) %>%
-  dplyr::group_by(ind) %>%
-  dplyr::mutate(isotype_count = length(unique(isotype))) 
-
-seq_list <- unique(c(iso_set$sample_i, iso_set$sample_j))
-
-iso_group_files <- stack_list(unique(lapply(seq_list, function(x) {
-  grouped_strains <- dplyr::filter(iso_set, (sample_i == x | sample_j == x)) %>%
-  dplyr::select(sample_i, sample_j)
-  sort(unique(unlist(grouped_strains)))
-}))) %>%
-  dplyr::rename(iso_group = ind, seq_run = values) %>%
-  tidyr::separate(seq_run, sep = "-", into = c("run", "lib", "strain"), extra = "drop", remove = F) 
-
-
-a <- ggplot(con) +
-  geom_histogram(aes(x=concordance), binwidth = 0.0002) +
-  labs(x = "Concordance", y = "Number of Comparisons") +
-  scale_y_continuous(expand = c(0,0)) +
-  scale_fill_manual(values = c("black", "#0080FF")) +
-  theme_bw()
-
-b <- ggplot(con) +
-  geom_histogram(aes(x=concordance, fill = isotype), binwidth = 0.0002) +
-  labs(x = "Concordance", y = "Number of Comparisons") +
-  scale_y_continuous(expand = c(0,0)) +
-  scale_fill_manual(values = c("black", "#0080FF")) +
-  facet_grid(isotype~., scales = "free_y") +
-  geom_vline(aes(xintercept = threshold), color = "red") +
-  theme_bw()
-
-z <- ggplot(con) +
-  geom_histogram(aes(x=concordance, fill = isotype), binwidth = 0.00002) +
-  labs(x = "Concordance", y = "Number of Comparisons") +
-  scale_y_continuous(expand = c(0,0)) +
-  scale_x_continuous(limits = c(0.97, 1.00) ) +
-  scale_fill_manual(values = c("black", "#0080FF")) +
-  facet_grid(isotype~., scales = "free_y") +
-  geom_vline(aes(xintercept = threshold), color = "red") +
-  theme_bw()
-
-list(a,b,z)
-}
-
-plot_concordance("raw/concordance.tsv", 0.9995)
 
 ```
