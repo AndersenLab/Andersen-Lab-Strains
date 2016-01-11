@@ -85,7 +85,7 @@ total_file_size <- dplyr::filter(seqs, use_in_analysis == TRUE) %>%
                     dplyr::summarize(humanReadable(sum(as.numeric(filesize))))
         
 
-libraries <- dplyr::group_by(seqs, lib) %>% summarize(sum = n())
+libraries <- dplyr::group_by(seqs, lib) %>% dplyr::summarize(sum = n())
 
 ```
 
@@ -213,7 +213,9 @@ strain_isotype$strain_count <- group_indices(strain_isotype)
 
 strain_isotype <- strain_isotype %>%
   dplyr::arrange(isotype) %>%
-  dplyr::select(strain_count, strain, isotype, prev_names)
+  dplyr::select(strain_count, strain, isotype, prev_names) %>%
+  dplyr::mutate(prev_names = ifelse(!is.na(prev_names) & prev_names == strain, NA, prev_names)) %>%
+  dplyr::distinct()
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
 readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
