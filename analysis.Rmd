@@ -207,15 +207,20 @@ strain_isotype <- seqs %>%
   dplyr::select(isotype, strain, prev_names) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct() %>%
+  dplyr::mutate(sequenced = T)
+
+strain_isotype <- readr::read_tsv("processed/additional_isotypes.tsv") %>%
+  dplyr::bind_rows(strain_isotype) %>%
   dplyr::group_by(strain)
 
 strain_isotype$strain_count <- group_indices(strain_isotype)
 
 strain_isotype <- strain_isotype %>%
   dplyr::arrange(isotype) %>%
-  dplyr::select(strain_count, strain, isotype, prev_names) %>%
+  dplyr::select(strain_count, strain, isotype, prev_names, warning_msg, sequenced) %>%
   dplyr::mutate(prev_names = ifelse(!is.na(prev_names) & prev_names == strain, NA, prev_names)) %>%
-  dplyr::distinct()
+  dplyr::mutate(sequenced = ifelse(is.na(sequenced), F, sequenced))
+  
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
 readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
