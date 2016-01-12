@@ -119,10 +119,10 @@ grey = makeIcon(
 ))
 
 
-strain_info <- readr::read_tsv("processed/strain_info.tsv") %>%               dplyr::filter(!is.na(latitude)) %>%
+strain_info <- readr::read_tsv("processed/strain_info.tsv") %>%
+               dplyr::filter(!is.na(latitude)) %>%
                dplyr::left_join(seqs) %>%
                dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey"))
-               
 
 
 attach(strain_info)
@@ -222,6 +222,15 @@ strain_isotype <- strain_isotype %>%
   dplyr::mutate(sequenced = ifelse(is.na(sequenced), F, sequenced)) %>%
   dplyr::distinct()
   
+               
+# Write joined strain info table.
+readr::read_tsv("processed/strain_info.tsv") %>%
+                        dplyr::full_join(strain_isotype) %>%
+                        dplyr::mutate(sequenced = ifelse(is.na(sequenced), F, sequenced)) %>%
+                        dplyr::select(strain, isotype, everything(), -strain_count) %>%
+                        dplyr::group_by(isotype) %>%
+                        dplyr::arrange(strain, isotype) %>%
+                        readr::write_tsv("processed/strain_info_join.tsv")
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
 readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
