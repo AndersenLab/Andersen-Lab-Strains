@@ -134,7 +134,7 @@ grey = makeIcon(
 ))
 
 
-strain_info <- readr::read_tsv("processed/strain_info.tsv") %>%
+strain_info <- readr::read_tsv("processed/strain_isotype.tsv") %>%
                dplyr::filter(!is.na(latitude)) %>%
                dplyr::left_join(seqs) %>%
                dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey"))
@@ -143,7 +143,7 @@ strain_info <- readr::read_tsv("processed/strain_info.tsv") %>%
 attach(strain_info)
 leaflet(data = strain_info) %>% 
   addTiles() %>%
-  addMarkers(~longitude, ~latitude, popup = paste0(strain, " - ", location, " - ", isolation), 
+  addMarkers(~longitude, ~latitude, popup = paste0(strain, " - ", country), 
              icon = ~icons[type] )
 
 
