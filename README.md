@@ -32,6 +32,12 @@ Tracking and Information for Andersen Lab Strains
 * `ADDITIONAL_VARIABLES` - An optional listing of additional variables. For example, indices.
 * `READ` - The Read pair (1 or 2); Use 0 for unpaired. 
 
+### /Scripts
+
+The scripts folder contains scripts for a variety of tasks.
+
+* __rev\_geocode.R - Reverse geocode lat/lon values to retrieve City, State, Country
+
 ### New Sequencing Checklist
 
 * Concordance

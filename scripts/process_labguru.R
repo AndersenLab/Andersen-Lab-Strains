@@ -46,7 +46,10 @@ lat_lon_locations <- dplyr::bind_rows(lapply(1:nrow(lat_lons), function(row) {
 lat_lon_locations <- lat_lon_locations %>%
   dplyr::select(latitude, longitude, address, city = locality, state = administrative_area_level_1, country  )
 
-dplyr::left_join(lg, lat_lon_locations) %>%
+lg <- dplyr::left_join(lg, lat_lon_locations) 
+
+# Fix N2 Date...
+lg[year(lg$isolation_date) == 2051 & !is.na(lg$isolation_date),"isolation_date"] <- parse_date("1951-01-01")
   
   
 
