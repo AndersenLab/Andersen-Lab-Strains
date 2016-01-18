@@ -61,19 +61,6 @@ summarize_column <- function(colnames) {
        dplyr::mutate(use_rate = YES / (NO + YES))
 }
 
-# Load Strain Information from labguru 
-
-lg <- readr::read_csv("raw/labguru_export.csv", na = c("", "-")) %>%
-  dplyr::select(strain = Name,
-                Genotype,
-                isolation_location = `Isolation location`,
-                isolation_date = `Isolation date`,
-                latitude = `Gps latitude`,
-                longitude = `Gps longitude`,
-                location = `Isolation location`,
-                isolated_by = `Constructed by`) %>%
-  dplyr::filter(!is.na(strain), Genotype == "wild type")
-
 run_count <- summarize_column("run")
 lib_count <- summarize_column(c("run","lib"))
 strain_count <- summarize_column(c("run","lib","strain","isotype"))
@@ -224,28 +211,19 @@ strain_isotype <- seqs %>%
   dplyr::distinct() %>%
   dplyr::mutate(sequenced = T)
 
-lat_lon_locations <- readr::read_tsv("raw/lat_lon_locations.csv") %>%
-                     dplyr::select(latitude, longitude, address, city = locality, state = administrative_area_level_1, country  )
+strain_isolation_information <- readr::read_tsv("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv")
 
 strain_isotype <- readr::read_tsv("processed/additional_isotypes.tsv") %>%
   dplyr::bind_rows(strain_isotype) %>%
   dplyr::group_by(strain) %>%
-  dplyr::left_join(lg) %>%
-  dplyr::mutate(isolation_date_comment = ifelse(grepl("^pre", isolation_date), isolation_date, ""),
-                isolation_date = parse_date_time(isolation_date, c("mdy", "dmy","my", "%Y-%m.%d","%Y")),
-                latitude = as.numeric(latitude),
-                longitude = as.numeric(longitude)) %>%
-  dplyr::left_join(lat_lon_locations) %>%
-  dplyr::arrange(isotype) %>%
-  dplyr::select(strain, isotype, prev_names, warning_msg, sequenced, everything(), -Genotype, -location) %>%
   dplyr::mutate(prev_names = ifelse(!is.na(prev_names) & prev_names == strain, NA, prev_names)) %>%
   dplyr::mutate(sequenced = ifelse(is.na(sequenced), F, sequenced)) %>%
+  dplyr::left_join(strain_isolation_information) %>%
+  dplyr::select(strain, isotype, prev_names, warning_msg, sequenced, everything(),  -location)  %>%
   dplyr::distinct()
 
 strain_isotype$strain_count <- group_indices(strain_isotype) 
 
-# Fix N2 Date...
-strain_isotype[year(strain_isotype$isolation_date) == 2051 & !is.na(strain_isotype$isolation_date),"isolation_date"] <- parse_date("1951-01-01")
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
 readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")

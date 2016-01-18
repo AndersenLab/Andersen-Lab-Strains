@@ -1,261 +1,261 @@
-strain	isotype	prev_names	warning_msg	sequenced	isolation_date	latitude	longitude	isolated_by	isolation_date_comment	address	city	state	country	strain_count
-AB1	AB1	NA	NA	TRUE	1983-01-01T00:00:00Z	-34.93	138.59	D. Riddle and A. Bird		252-260 Gouger St, Adelaide SA 5000, Australia	Adelaide	South Australia	Australia	1
-AB2	AB4	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	2
-AB3	AB4	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	3
-AB4	AB4	NA	NA	TRUE	1983-01-01T00:00:00Z	-34.93	138.59	D. Riddle and A. Bird		252-260 Gouger St, Adelaide SA 5000, Australia	Adelaide	South Australia	Australia	4
-AF16_CGC	AF16	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	5
-BRC20067	BRC20067	NA	NA	TRUE	2012-01-13T00:00:00Z	24.072954	121.169736	Chia-Yi Kao		546, Taiwan, Nantou County, Ren’ai Township, 產業道路	NA	Taiwan Province	Taiwan	6
-CB3191	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	7
-CB3192	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	8
-CB3193	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	9
-CB3194	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	10
-CB3195	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	11
-CB4507	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	12
-CB4555	NA	NA	N2xCB4851 recombinant	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	13
-CB4851	CB4851	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	14
-CB4851_CGC	CB4851	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	15
-CB4852	CB4852	NA	NA	TRUE	1966-01-01T00:00:00Z	NA	NA	NA	pre-1966	NA	NA	NA	NA	16
-CB4853	CB4853	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	17
-CB4853_CGC	CB4853	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	18
-CB4853_UK	CB4853	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	19
-CB4854	CB4854	NA	NA	TRUE	1974-05-01T00:00:00Z	34.189	-118.131	C.D. Johnson		2500 N Lake Ave, Altadena, CA 91001, USA	Altadena	California	United States	20
-CB4855	CB4855	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	21
-CB4855_CGC	CB4855	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	22
-CB4855_UK	CB4855	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	23
-CB4856	CB4856	NA	NA	TRUE	1972-08-01T00:00:00Z	21.33	-157.86	L. Hollen		951 Hala Dr, Honolulu, HI 96817, USA	Honolulu	Hawaii	United States	24
-CB4856_CGC_3	CB4856	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	25
-CB4856_CGC3	CB4856	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	26
-CB4857	CB4857	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	27
-CB4857_CGC	CB4857	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	28
-CB4857_UK	CB4857	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	29
-CB4858	CB4858	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	30
-CB4858_UK	CB4858	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	31
-CB4932	CB4932	NA	NA	TRUE	1991-01-01T00:00:00Z	51.02	-3.1	P.S. Grewal	pre-1991	94 Priory Bridge Rd, Taunton, Somerset TA1 1QA, UK	Taunton	NA	United Kingdom	32
-CX11254	CX11254	NA	NA	TRUE	2003-09-01T00:00:00Z	34.13531	-118.30582	A. Sivasundar		Mulholland Hwy, Los Angeles, CA 90027, USA	Los Angeles	California	United States	33
-CX11262	CX11262	NA	NA	TRUE	2003-09-01T00:00:00Z	34.12946	-118.10987	A. Sivasundar		897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	34
-CX11264	CX11264	NA	NA	TRUE	2003-09-01T00:00:00Z	34.12946	-118.10987	A. Sivasundar		897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	35
-CX11271	CX11271	NA	NA	TRUE	2003-09-01T00:00:00Z	34.13712	-118.12532	A. Sivasundar		Olive Walk, Pasadena, CA 91125, USA	Pasadena	California	United States	36
-CX11276	CX11276	NA	NA	TRUE	2013-09-03T00:00:00Z	34.20111	-118.21198	A. Sivasundar		Decanso Mtwy, La Cañada Flintridge, CA 91011, USA	La Cañada Flintridge	California	United States	37
-CX11285	CX11285	NA	NA	TRUE	2003-09-01T00:00:00Z	34.14331	-118.05496	A. Sivasundar		314 N Old Ranch Rd, Arcadia, CA 91007, USA	Arcadia	California	United States	38
-CX11292	CX11292	NA	NA	TRUE	2004-02-01T00:00:00Z	34.13531	-118.30582	A. Sivasundar		Mulholland Hwy, Los Angeles, CA 90027, USA	Los Angeles	California	United States	39
-CX11307	CX11307	NA	NA	TRUE	2013-09-03T00:00:00Z	34.12946	-118.10987	A. Sivasundar		897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	40
-CX11314	CX11314	NA	NA	TRUE	2003-09-01T00:00:00Z	34.12946	-118.10987	A. Sivasundar		897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	41
-CX11315	CX11315	NA	NA	TRUE	2013-09-03T00:00:00Z	34.12946	-118.10987	A. Sivasundar		897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	42
-DH424	NA	NA	N2xCB4851 recombinant	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	43
-DL200	DL200	NA	NA	TRUE	2007-12-01T00:00:00Z	9.03	38.74	D. Denver		Kenya St, Addis Ababa, Ethiopia	Addis Ababa	Oromia	Ethiopia	44
-DL226	DL226	NA	NA	TRUE	2007-01-01T00:00:00Z	44.5633	-123.2821	C. Hilburn		SW Intramural Ln, Corvallis, OR 97331, USA	Corvallis	Oregon	United States	45
-DL238	DL238	NA	NA	TRUE	2008-07-15T00:00:00Z	19.22	-155.82	J. Knapp		Unnamed Road, Captain Cook, HI 96704, USA	Captain Cook	Hawaii	United States	46
-DR1349	NA	NA	N2xCB4851 recombinant	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	47
-DR1350	CB4853	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	48
-ECA243	CB4851	CB4851_CGC	NA	TRUE	1949-01-01T00:00:00Z	44.85	0.48	V. Nigon	pre-1949	Quai Salvette, 24100 Bergerac, France	Bergerac	Aquitaine	France	49
-ECA244	CB4851	NA	NA	FALSE	1949-01-01T00:00:00Z	44.85	0.48	V. Nigon	pre-1949	Quai Salvette, 24100 Bergerac, France	Bergerac	Aquitaine	France	50
-ECA245	CB4853	CB4853_CGC	NA	TRUE	1974-05-01T00:00:00Z	34.189	-118.131	C.D. Johnson		2500 N Lake Ave, Altadena, CA 91001, USA	Altadena	California	United States	51
-ECA246	CB4853	CB4853_UK	NA	TRUE	1974-01-01T00:00:00Z	34.189	-118.131	C.D. Johnson		2500 N Lake Ave, Altadena, CA 91001, USA	Altadena	California	United States	52
-ECA247	CB4855	NA	NA	FALSE	1982-01-01T00:00:00Z	37.43	-122.13	T. Doniach		2817-2925 Cowper St, Palo Alto, CA 94306, USA	Palo Alto	California	United States	53
-ECA248	CB4855	CB4855_UK	NA	TRUE	1982-01-01T00:00:00Z	37.44	-122.14	T. Doniach		1870 Middlefield Rd, Palo Alto, CA 94301, USA	Palo Alto	California	United States	54
-ECA249	CB4857	CB4857_CGC	NA	TRUE	1972-11-01T00:00:00Z	34.096	-117.719	E.M. Hedgecock		224 N Indian Hill Blvd, Claremont, CA 91711, USA	Claremont	California	United States	55
-ECA250	CB4857	CB4857_UK	NA	TRUE	1972-11-01T00:00:00Z	34.096	-117.719	E.M. Hedgecock		224 N Indian Hill Blvd, Claremont, CA 91711, USA	Claremont	California	United States	56
-ECA251	CB4858	NA	NA	FALSE	1973-01-01T00:00:00Z	34.1	-118.1	E.M. Hedgecock		225 S Del Mar Ave, San Gabriel, CA 91776, USA	San Gabriel	California	United States	57
-ECA252	CB4858	CB4858_UK	NA	TRUE	1973-01-01T00:00:00Z	34.1	-118.1	E.M. Hedgecock		225 S Del Mar Ave, San Gabriel, CA 91776, USA	San Gabriel	California	United States	58
-ECA253	N2	N2_CGC	NA	TRUE	1951-01-01T00:00:00Z	51.45	-2.59	W. Nicholas		89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	59
-ECA254	N2	N2_Baer	NA	TRUE	1951-01-01T00:00:00Z	51.45	-2.59	W. Nicholas		89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	60
-ECA255	N2	NA	NA	FALSE	1951-01-01T00:00:00Z	51.45	-2.59	W. Nicholas		89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	61
-ECA257	N2	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	62
-ECA258	PB306	NA	NA	FALSE	NA	NA	NA	Baer Lab		NA	NA	NA	NA	63
-ECA259	PB306	NA	NA	FALSE	1998-11-28T00:00:00Z	NA	NA	S. Baird		NA	NA	NA	NA	64
-ECA260	CB4856	NA	NA	FALSE	1972-08-01T00:00:00Z	21.33	-157.86	L. Hollen		951 Hala Dr, Honolulu, HI 96817, USA	Honolulu	Hawaii	United States	65
-ECA261	PB800	NA	NA	FALSE	NA	39.7	-84.2	S. Baird		1574-1698 Big Hill Rd, Kettering, OH 45429, USA	Kettering	Ohio	United States	66
-ECA262	HK104	NA	NA	FALSE	NA	34.6	133.9	H. Kagawa		2017-7 Fujita, Minami-ku, Okayama-shi, Okayama-ken 701-0221, Japan	Okayama-shi	Okayama-ken	Japan	67
-ECA263	HK104	NA	NA	FALSE	NA	34.6	133.9	H. Kagawa		2017-7 Fujita, Minami-ku, Okayama-shi, Okayama-ken 701-0221, Japan	Okayama-shi	Okayama-ken	Japan	68
-ECA264	AF16	NA	NA	FALSE	NA	23.03	72.56	A. Fodor		21, Ellisbridge, Ahmedabad, Gujarat 380009, India	Ahmedabad	Gujarat	India	69
-ECA36	ECA36	NA	NA	TRUE	2013-07-27T00:00:00Z	-36.893333	174.745529	I Ly		842 Dominion Rd, Mount Eden, Auckland 1041, New Zealand	Auckland	Auckland	New Zealand	70
-ED3005	ED3005	NA	NA	TRUE	2004-10-25T00:00:00Z	55.94	-3.36	A. Cutter		35 Eastfield Rd, Ingliston, Newbridge, Edinburgh EH28 8LS, UK	Ingliston	NA	United Kingdom	71
-ED3011	ED3011	NA	NA	TRUE	2004-11-11T00:00:00Z	55.92	-3.19	A. Cutter		Hermitage of Braid, Edinburgh, Edinburgh EH10, UK	Edinburgh	NA	United Kingdom	72
-ED3012	ED3012	NA	NA	TRUE	2004-11-26T00:00:00Z	55.92	-3.19	A. Cutter		Hermitage of Braid, Edinburgh, Edinburgh EH10, UK	Edinburgh	NA	United Kingdom	73
-ED3017	ED3017	NA	NA	TRUE	2004-12-03T00:00:00Z	55.92	-3.19	A. Cutter		Hermitage of Braid, Edinburgh, Edinburgh EH10, UK	Edinburgh	NA	United Kingdom	74
-ED3021	ED3005	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	75
-ED3040	ED3040	NA	NA	TRUE	2006-03-01T00:00:00Z	-26.1	28.01	E. Dolgin		214 Blairgowrie Dr, Randburg, 2194, South Africa	Randburg	Gauteng	South Africa	76
-ED3042	ED3048	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	77
-ED3046	ED3046	NA	NA	TRUE	2006-03-01T00:00:00Z	-33.22	19.19	E. Dolgin		Unnamed Road, South Africa	NA	Western Cape	South Africa	78
-ED3048	ED3048	NA	NA	TRUE	2006-03-01T00:00:00Z	-33.22	19.19	E. Dolgin		Unnamed Road, South Africa	NA	Western Cape	South Africa	79
-ED3049	ED3049	NA	NA	TRUE	2006-03-01T00:00:00Z	-33.22	19.19	E. Dolgin		Unnamed Road, South Africa	NA	Western Cape	South Africa	80
-ED3052	ED3052	NA	NA	TRUE	2006-03-01T00:00:00Z	-33.22	19.19	E. Dolgin		Unnamed Road, South Africa	NA	Western Cape	South Africa	81
-ED3057	ED3073	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	82
-ED3072	ED3073	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	83
-ED3073	ED3073	NA	NA	TRUE	2006-03-01T00:00:00Z	-1.05	36.39	E. Dolgin		Unnamed Road, Kenya	NA	Nakuru	Kenya	84
-ED3077	ED3077	NA	NA	TRUE	2006-03-01T00:00:00Z	NA	NA	NA		NA	NA	NA	NA	85
-EG4347	EG4347	NA	NA	TRUE	2006-10-01T00:00:00Z	44.04789	-123.07108	M. Ailion		1405 Franklin Blvd, Eugene, OR 97403, USA	Eugene	Oregon	United States	86
-EG4348	EG4349	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	87
-EG4349	EG4349	NA	NA	TRUE	2006-10-01T00:00:00Z	40.771467	-111.87316	M. Ailion		89 H St, Salt Lake City, UT 84103, USA	Salt Lake City	Utah	United States	88
-EG4724	EG4724	NA	NA	TRUE	2007-03-01T00:00:00Z	41.628771	-8.347617	M. Ailion		Lot. da Bela Vista 19, 4720-792 Amares, Portugal	Amares	Braga	Portugal	89
-EG4725	EG4725	NA	NA	TRUE	2007-03-01T00:00:00Z	41.628771	-8.347617	M. Ailion		Lot. da Bela Vista 19, 4720-792 Amares, Portugal	Amares	Braga	Portugal	90
-EG4946	EG4946	NA	NA	TRUE	2007-09-27T00:00:00Z	40.72596	-111.82184	M. Ailion		2405 E 2100 S, Salt Lake City, UT 84109, USA	Salt Lake City	Utah	United States	91
-GXW1	GXW1	NA	NA	TRUE	2010-11-05T00:00:00Z	30.542889	114.419828	Unknown		11 Zhi Wu Yuan Lu, Hongshan Qu, Wuhan Shi, Hubei Sheng, China, 430074	Wuhan Shi	Hubei Sheng	China	92
-HK104_CGC	HK104	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	93
-JT11398	JT11398	NA	NA	TRUE	2003-12-01T00:00:00Z	47.763944	-122.275484	J. Kemner		18704 50th Ave NE, Lake Forest Park, WA 98155, USA	Lake Forest Park	Washington	United States	94
-JU1088	JU1088	NA	NA	TRUE	2007-03-14T00:00:00Z	34.7613	138.0149	M-A. F̩lix		1517 Minamisaigō, Kakegawa-shi, Shizuoka-ken 436-0024, Japan	Kakegawa-shi	Shizuoka-ken	Japan	95
-JU1172	JU1172	NA	NA	TRUE	2007-04-01T00:00:00Z	-36.87	-73.04	M-A. F̩lix		Tres Nte, Concepción, Concepción, Región del Bío Bío, Chile	Concepción	Región del Bío Bío	Chile	96
-JU1200	JU1200	NA	NA	TRUE	2007-08-01T00:00:00Z	55.577	-4.6	T. Page		Smugglers' Trail, Dundonald, Kilmarnock, South Ayrshire KA2 9DQ, UK	Dundonald	NA	United Kingdom	97
-JU1212	JU1212	NA	NA	TRUE	2007-09-24T00:00:00Z	48.71	-3.81	M-A. F̩lix		16 Rue de la Chapelle, 29630 Plougasnou, France	Plougasnou	Bretagne	France	98
-JU1213	JU1213	NA	NA	TRUE	2007-09-24T00:00:00Z	48.71	-3.81	M-A. F̩lix		16 Rue de la Chapelle, 29630 Plougasnou, France	Plougasnou	Bretagne	France	99
-JU1242	JU1242	NA	NA	TRUE	2007-10-14T00:00:00Z	49.1269	1.9595	M-A. F̩lix		8 Allée de la Plaine Henri, 95640 Santeuil, France	Santeuil	Île-de-France	France	100
-JU1246	JU1246	NA	NA	TRUE	2007-10-14T00:00:00Z	49.12618	1.96152	M-A. F̩lix		1 Le Vaugoussard, 95640 Santeuil, France	Santeuil	Île-de-France	France	101
-JU1395	JU1395	NA	NA	TRUE	2008-03-01T00:00:00Z	47.2199	0.04619	M-A. F̩lix		67-69 D947, 49730 Montsoreau, France	Montsoreau	Pays de la Loire	France	102
-JU1400	JU1400	NA	NA	TRUE	2008-03-01T00:00:00Z	37.3845	-5.988	M-A. F̩lix		Calle de Nicolás Antonio, 2, 41004 Sevilla, Sevilla, Spain	Sevilla	Andalucía	Spain	103
-JU1401	JU1409	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	104
-JU1409	JU1409	NA	NA	TRUE	2008-03-31T00:00:00Z	37.468	-5.637	M-A. F̩lix		Diseminado Diseminados 2, 129, 41410 Carmona, Sevilla, Spain	Carmona	Andalucía	Spain	105
-JU1440	JU1440	NA	NA	TRUE	2008-06-09T00:00:00Z	41.41307	2.15231	M-A. F̩lix		Carrer d'Olot, 4, 08024 Barcelona, Barcelona, Spain	Barcelona	Catalunya	Spain	106
-JU1491	JU1491	NA	NA	TRUE	2008-08-17T00:00:00Z	46.63	1.06	M-A. F̩lix		19 Quai André Liesse, 36300 Le Blanc, France	Le Blanc	Centre	France	107
-JU1516	JU1581	NA	NA	TRUE	2008-09-09T00:00:00Z	48.7015	2.1725	M-A. F̩lix		309 Domaine de l'Université de Paris S, 91400 Orsay, France	Orsay	Île-de-France	France	108
-JU1530	JU1530	NA	NA	TRUE	2008-09-09T00:00:00Z	48.7015	2.1725	M-A. F̩lix		309 Domaine de l'Université de Paris S, 91400 Orsay, France	Orsay	Île-de-France	France	109
-JU1568	JU1568	NA	NA	TRUE	2008-10-05T00:00:00Z	48.8092	2.3862	M-A. F̩lix		32 Rue Marat, 94200 Ivry-sur-Seine, France	Ivry-sur-Seine	Île-de-France	France	110
-JU1580	JU1580	NA	NA	TRUE	2008-10-06T00:00:00Z	48.7015	2.1725	M-A. F̩lix		309 Domaine de l'Université de Paris S, 91400 Orsay, France	Orsay	Île-de-France	France	111
-JU1581	JU1581	NA	NA	TRUE	2008-10-23T00:00:00Z	48.7015	2.1725	M-A. F̩lix		309 Domaine de l'Université de Paris S, 91400 Orsay, France	Orsay	Île-de-France	France	112
-JU1586	JU1586	NA	NA	TRUE	2008-11-03T00:00:00Z	46.63	1.06	M-A. F̩lix		19 Quai André Liesse, 36300 Le Blanc, France	Le Blanc	Centre	France	113
-JU1652	JU1652	NA	NA	TRUE	2009-01-01T00:00:00Z	-34.86	-56.19	NA		Dr Carlos Vaz Ferreira, Montevideo 11700, Uruguay	Montevideo	Departamento de Montevideo	Uruguay	114
-JU1896	JU1896	NA	NA	TRUE	2001-01-02T00:00:00Z	37.999722	23.749673	M. Barkoulas		Tzoumagias 71, Athina 113 63, Greece	Athina	NA	Greece	115
-JU2001	JU2001	NA	NA	TRUE	2010-09-01T00:00:00Z	-21.1	55.5	T. Belicard		GR R1, Reunion	NA	Saint Benoit	Reunion	116
-JU2007	JU2007	NA	NA	TRUE	2010-10-01T00:00:00Z	50.6	-1.3	M. Barkoulas		Unnamed Road, Niton, Ventnor, Isle of Wight PO38 2PJ, UK	Niton	NA	United Kingdom	117
-JU2316	JU2316	NA	NA	TRUE	2013-08-25T00:00:00Z	38.7175	-9.1486	M-A. F̩lix		Praça do Príncipe Real 23, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	118
-JU2464	JU2464	NA	NA	TRUE	2013-01-09T00:00:00Z	-13.155	-72.525	L. Frezal		Avenida Hermanos Ayar, Aguas Calientes, Peru	Aguas Calientes	Cuzco	Peru	119
-JU2466	JU2466	NA	NA	TRUE	2013-01-09T00:00:00Z	-13.257	-72.266	L. Frezal		Escaleras, Ollantaytambo, Peru	Ollantaytambo	Cuzco	Peru	120
-JU2467	JU2464	NA	NA	TRUE	2013-01-09T00:00:00Z	-13.155	-72.525	L. Frezal		Avenida Hermanos Ayar, Aguas Calientes, Peru	Aguas Calientes	Cuzco	Peru	121
-JU2468	JU2464	NA	NA	TRUE	2013-01-09T00:00:00Z	-13.155	-72.525	L. Frezal		Avenida Hermanos Ayar, Aguas Calientes, Peru	Aguas Calientes	Cuzco	Peru	122
-JU2513	JU2513	NA	NA	TRUE	2013-01-01T00:00:00Z	38.26016	22.0736	M.A. Felix		Menelaou, Egialia 251 00, Greece	NA	NA	Greece	123
-JU2519	JU2519	NA	NA	TRUE	2013-08-25T00:00:00Z	38.7175	-9.1486	M-A. F̩lix		Praça do Príncipe Real 23, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	124
-JU2522	JU2522	NA	NA	TRUE	2013-08-25T00:00:00Z	38.7175	-9.1486	M-A. F̩lix		Praça do Príncipe Real 23, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	125
-JU2526	JU2526	NA	NA	TRUE	2013-08-25T00:00:00Z	38.7175	-9.1486	M-A. F̩lix		Praça do Príncipe Real 23, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	126
-JU258	JU258	NA	NA	TRUE	2001-10-01T00:00:00Z	32.73	-16.89	M-A. F̩lix		ER103, 9225, Portugal	NA	Madeira	Portugal	127
-JU262	JU310	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	128
-JU263	JU310	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	129
-JU300	JU310	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	130
-JU310	JU310	NA	NA	TRUE	2002-08-25T00:00:00Z	46.63	1.06	M-A. F̩lix		19 Quai André Liesse, 36300 Le Blanc, France	Le Blanc	Centre	France	131
-JU311	JU311	NA	NA	TRUE	2002-09-08T00:00:00Z	44.42	4.4	M-A. F̩lix		989 Route Vieille de Lagorce, 07150 Vallon-Pont-d'Arc, France	Vallon-Pont-d'Arc	Rhône-Alpes	France	132
-JU312	JU311	NA	NA	TRUE	2002-09-08T00:00:00Z	44.421936	4.407923	MAF		Merlet, 07150 Lagorce, France	Lagorce	Rhône-Alpes	France	133
-JU315	JU311	NA	NA	TRUE	2002-09-08T00:00:00Z	44.2	4.4	M-A. F̩lix		Unnamed Road, 30630 Goudargues, France	Goudargues	Languedoc-Roussillon	France	134
-JU319	JU311	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	135
-JU322	JU323	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	136
-JU323	JU323	NA	NA	TRUE	2002-09-08T00:00:00Z	44.42	4.4	M-A. F̩lix		989 Route Vieille de Lagorce, 07150 Vallon-Pont-d'Arc, France	Vallon-Pont-d'Arc	Rhône-Alpes	France	137
-JU345	JU346	NA	NA	TRUE	2002-09-08T00:00:00Z	44.421936	4.407923	MAF		Merlet, 07150 Lagorce, France	Lagorce	Rhône-Alpes	France	138
-JU346	JU346	NA	NA	TRUE	2002-09-08T00:00:00Z	44.2	4.4	M-A. F̩lix		Unnamed Road, 30630 Goudargues, France	Goudargues	Languedoc-Roussillon	France	139
-JU360	JU360	NA	NA	TRUE	2002-09-02T00:00:00Z	48.98	2.23	M-A. F̩lix		5 Allée du Lavoir, 95130 Franconville, France	Franconville	Île-de-France	France	140
-JU361	JU367	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	141
-JU362	JU360	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	142
-JU363	JU360	NA	NA	TRUE	2002-09-16T00:00:00Z	48.98	2.23	M-A. F̩lix		5 Allée du Lavoir, 95130 Franconville, France	Franconville	Île-de-France	France	143
-JU367	JU367	NA	NA	TRUE	2002-09-16T00:00:00Z	48.98	2.23	M-A. F̩lix		5 Allée du Lavoir, 95130 Franconville, France	Franconville	Île-de-France	France	144
-JU393	JU393	NA	NA	TRUE	2002-09-01T00:00:00Z	49.28	-0.32	A. Barri̬re		416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	145
-JU394	JU394	NA	NA	TRUE	2002-09-01T00:00:00Z	49.28	-0.32	A. Barri̬re		416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	146
-JU395	JU792	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	147
-JU397	JU397	NA	NA	TRUE	2002-09-01T00:00:00Z	49.28	-0.32	A. Barri̬re		416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	148
-JU400	JU394	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	149
-JU406	JU406	NA	NA	TRUE	2002-09-01T00:00:00Z	49.28	-0.32	A. Barri̬re		416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	150
-JU440	JU440	NA	NA	TRUE	2003-09-12T00:00:00Z	48.715	1.56	M-A. F̩lix		9 Rue des Sablons, 28410 Boutigny-Prouais, France	Boutigny-Prouais	Centre	France	151
-JU533	JU1213	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	152
-JU561	JU561	NA	NA	TRUE	2004-10-03T00:00:00Z	48.71	-3.81	M-A. F̩lix		16 Rue de la Chapelle, 29630 Plougasnou, France	Plougasnou	Bretagne	France	153
-JU642	JU642	NA	NA	TRUE	2004-12-14T00:00:00Z	48.84	2.5	M-A. F̩lix		14 Avenue des Rochers, 94170 Le Perreux-sur-Marne, France	Le Perreux-sur-Marne	Île-de-France	France	154
-JU751	JU751	NA	NA	TRUE	2005-06-08T00:00:00Z	48.44	2.5	M-A. F̩lix		Unnamed Road, 91490 Courances, France	Courances	Île-de-France	France	155
-JU774	JU774	NA	NA	TRUE	2005-07-10T00:00:00Z	38.683	-9.34	M-A. F̩lix		R. Lourenço Marques 2A, 2775-561 Carcavelos, Portugal	Carcavelos	Lisboa	Portugal	156
-JU775	JU775	NA	NA	TRUE	2005-07-10T00:00:00Z	38.7175	-9.1486	M-A. F̩lix		Praça do Príncipe Real 23, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	157
-JU778	JU778	NA	NA	TRUE	2005-07-10T00:00:00Z	38.719	-9.1491	M-A. F̩lix		Rua do Salitre 123, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	158
-JU782	JU782	NA	NA	TRUE	2005-07-10T00:00:00Z	38.7191	-9.1503	M-A. F̩lix		Rua do Salitre 161, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	159
-JU792	JU792	NA	NA	TRUE	2005-08-31T00:00:00Z	43.06	0.24	M-A. F̩lix		D84, 65130 Fréchendets, France	Fréchendets	Midi-Pyrénées	France	160
-JU830	JU830	NA	NA	TRUE	2005-09-28T00:00:00Z	48.52	9.05	M-A. F̩lix		Vor dem Haagtor 1, 72070 Tübingen, Germany	Tübingen	Baden-Württemberg	Germany	161
-JU847	JU847	NA	NA	TRUE	2005-10-03T00:00:00Z	48.46	7.461	M-A. F̩lix		Chemin Muensterlingweg, 67210 Obernai, France	Obernai	Alsace	France	162
-KR314	KR314	NA	NA	TRUE	1984-05-01T00:00:00Z	49.28	-123.13	F. Dill		1047 Davie St, Vancouver, BC V6E 1M5, Canada	Vancouver	British Columbia	Canada	163
-LKC34	LKC34	NA	NA	TRUE	2005-06-17T00:00:00Z	-18	46	V. Stowell		Unnamed Road, Madagascar	NA	Antananarivo	Madagascar	164
-LSJ1	LSJ1	NA	NA	TRUE	1951-01-01T00:00:00Z	51.45	-2.59	W. Nicholas		89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	165
-MY1	MY1	NA	NA	TRUE	2002-07-01T00:00:00Z	52.54	7.31	H. Schulenburg		Schülerpfad 6, 49808 Lingen (Ems), Germany	Lingen (Ems)	Niedersachsen	Germany	166
-MY10	MY10	NA	NA	TRUE	2002-07-01T00:00:00Z	51.96	7.53	H. Schulenburg		Havixbecker Str. 76, 48161 Münster, Germany	Münster	Nordrhein-Westfalen	Germany	167
-MY14	MY23	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	168
-MY16	MY16	NA	NA	TRUE	2002-07-01T00:00:00Z	51.93	7.57	H. Schulenburg		Meckmannweg 83, 48163 Münster, Germany	Münster	Nordrhein-Westfalen	Germany	169
-MY18	MY18	NA	NA	TRUE	2002-07-01T00:00:00Z	51.96	7.53	H. Schulenburg		Havixbecker Str. 76, 48161 Münster, Germany	Münster	Nordrhein-Westfalen	Germany	170
-MY2	MY23	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	171
-MY23	MY23	NA	NA	TRUE	2002-07-01T00:00:00Z	51.96	7.53	H. Schulenburg		Havixbecker Str. 76, 48161 Münster, Germany	Münster	Nordrhein-Westfalen	Germany	172
-MY6	MY18	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	173
-N2	N2	N2_HRH	NA	TRUE	1951-01-01T00:00:00Z	51.45	-2.59	W. Nicholas		89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	174
-N2_CGC	N2	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	175
-N2_HRH	N2	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	176
-N2Baer	N2	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	177
-NIC1	NIC1	NA	NA	TRUE	2008-09-14T00:00:00Z	43.279	5.3543	C. Braendle		271 Corniche Président John Fitzgerald Kennedy, 13007 Marseille, France	Marseille	Provence-Alpes-Côte d'Azur	France	178
-NIC166	NIC166	NA	NA	TRUE	2007-07-27T00:00:00Z	46.72722	6.89775	C. Braendle		Le Bugnon 4, 1682 Valbroye, Switzerland	Valbroye	Vaud	Switzerland	179
-NIC195	NIC195	NA	NA	TRUE	2011-08-22T00:00:00Z	38.545874	-28.37322	D. Bourc�۪his and J. Dumont		ER1, 9940 Santana, Portugal	Santana	Açores	Portugal	180
-NIC196	NIC195	NA	NA	TRUE	2011-08-23T00:00:00Z	38.4716405	-28.20149	D. Bourc�۪his and J. Dumont		Unnamed Road, 9940 Prainha, Portugal	Prainha	Açores	Portugal	181
-NIC197	NIC195	NA	NA	TRUE	2011-08-23T00:00:00Z	38.39682	-28.25165	D. Bourc�۪his and J. Dumont		ER1, 9930 Lajes Do Pico, Portugal	Lajes Do Pico	Açores	Portugal	182
-NIC198	NIC195	NA	NA	TRUE	2011-08-29T00:00:00Z	39.4364016	-31.23849	D. Bourc�۪his and J. Dumont		ER1-2, 9960, Portugal	NA	Açores	Portugal	183
-NIC199	NIC199	NA	NA	TRUE	2011-03-09T00:00:00Z	37.745428	-25.19929	D. Bourc�۪his and J. Dumont		R. dos Moinhos, 9650 Faial da Terra, Portugal	Faial da Terra	Açores	Portugal	184
-NIC2	NIC2	NA	NA	TRUE	2008-09-14T00:00:00Z	43.279	5.3543	C. Braendle		271 Corniche Président John Fitzgerald Kennedy, 13007 Marseille, France	Marseille	Provence-Alpes-Côte d'Azur	France	185
-NIC200	NIC199	NA	NA	TRUE	2011-05-09T00:00:00Z	37.74942	-25.66489	D. Bourc�۪his and J. Dumont		R. do Brasil 11, 9500 Ponta Delgada, Portugal	Ponta Delgada	Açores	Portugal	186
-NIC207	NIC207	NA	NA	TRUE	2011-09-21T00:00:00Z	43.720505	7.24045	C. Braendle		65 Avenue de Pessicart, 06100 Nice, France	Nice	Provence-Alpes-Côte d'Azur	France	187
-NIC231	NIC231	NA	NA	TRUE	2011-11-14T00:00:00Z	43.720505	7.24045	C. Braendle		65 Avenue de Pessicart, 06100 Nice, France	Nice	Provence-Alpes-Côte d'Azur	France	188
-NIC232	NIC231	NA	NA	TRUE	2011-11-14T00:00:00Z	43.720505	7.24045	C. Braendle		65 Avenue de Pessicart, 06100 Nice, France	Nice	Provence-Alpes-Côte d'Azur	France	189
-NIC236	NIC236	NA	NA	TRUE	2011-11-26T00:00:00Z	39.242006	-9.313417	C. Braendle		R. João Luís de Moura 93, 2530-158 Lourinhã, Portugal	Lourinhã	Lisboa	Portugal	190
-NIC237	NIC236	NA	NA	TRUE	2011-11-26T00:00:00Z	39.242006	-9.313417	C. Braendle		R. João Luís de Moura 93, 2530-158 Lourinhã, Portugal	Lourinhã	Lisboa	Portugal	191
-NIC242	NIC242	NA	NA	TRUE	NA	38.691765	-9.31609	C. Braendle		Rua dos Lagares da Quinta 8, 2780 Oeiras, Portugal	Oeiras	Lisboa	Portugal	192
-NIC251	NIC251	NA	NA	TRUE	NA	38.66621	28.151364	S. Carvalho		Yağbasan Köyü İç Yolu, 45320 Yağbasan/Salihli/Manisa, Turkey	NA	Manisa	Turkey	193
-NIC252	NIC252	NA	NA	TRUE	NA	38.661313	-28.147949	S. Carvalho		Unnamed Road, 9800, Portugal	NA	Açores	Portugal	194
-NIC255	NIC255	NA	NA	TRUE	2012-11-18T00:00:00Z	43.714834	7.266779	C. Braendle		29 Avenue Caravadossi, 06100 Nice, France	Nice	Provence-Alpes-Côte d'Azur	France	195
-NIC256	NIC256	NA	NA	TRUE	2012-12-02T00:00:00Z	38.71829	-9.14875	C. Braendle		Rua da Alegria 104, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	196
-NIC258	NIC258	NA	NA	TRUE	2012-12-02T00:00:00Z	38.71829	-9.14875	C. Braendle		Rua da Alegria 104, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	197
-NIC259	NIC259	NA	NA	TRUE	2012-12-02T00:00:00Z	38.71829	-9.14875	C. Braendle		Rua da Alegria 104, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	198
-NIC260	NIC260	NA	NA	TRUE	2012-12-02T00:00:00Z	38.71829	-9.14875	C. Braendle		Rua da Alegria 104, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	199
-NIC261	NIC261	NA	NA	TRUE	2012-12-02T00:00:00Z	38.71829	-9.14875	C. Braendle		Rua da Alegria 104, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	200
-NIC262	NIC262	NA	NA	TRUE	2012-12-02T00:00:00Z	38.71829	-9.14875	C. Braendle		Rua da Alegria 104, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	201
-NIC263	NIC256	NA	NA	TRUE	2012-12-02T00:00:00Z	38.71829	-9.14875	C. Braendle		Rua da Alegria 104, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	202
-NIC265	NIC265	NA	NA	TRUE	2012-12-02T00:00:00Z	38.71829	-9.14875	C. Braendle		Rua da Alegria 104, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	203
-NIC266	NIC266	NA	NA	TRUE	2012-12-07T00:00:00Z	38.69237	-9.31592	C. Braendle		Rua dos Lagares da Quinta 8, 2780 Oeiras, Portugal	Oeiras	Lisboa	Portugal	204
-NIC267	NIC267	NA	NA	TRUE	2012-12-07T00:00:00Z	38.69237	-9.31592	C. Braendle		Rua dos Lagares da Quinta 8, 2780 Oeiras, Portugal	Oeiras	Lisboa	Portugal	205
-NIC268	NIC268	NA	NA	TRUE	2012-12-07T00:00:00Z	38.69237	-9.31592	C. Braendle		Rua dos Lagares da Quinta 8, 2780 Oeiras, Portugal	Oeiras	Lisboa	Portugal	206
-NIC269	NIC269	NA	NA	TRUE	2012-12-07T00:00:00Z	38.69237	-9.31592	C. Braendle		Rua dos Lagares da Quinta 8, 2780 Oeiras, Portugal	Oeiras	Lisboa	Portugal	207
-NIC270	NIC267	NA	NA	TRUE	2012-12-07T00:00:00Z	38.69237	-9.14875	C. Braendle		R. Ginjal, Portugal	NA	NA	Portugal	208
-NIC271	NIC271	NA	NA	TRUE	2012-12-07T00:00:00Z	38.69237	-9.31592	C. Braendle		Rua dos Lagares da Quinta 8, 2780 Oeiras, Portugal	Oeiras	Lisboa	Portugal	209
-NIC272	NIC272	NA	NA	TRUE	2012-12-09T00:00:00Z	39.769459	-8.756356	C. Braendle		R. do Casal 5, 2420-382 Boa Vista, Portugal	Boa Vista	Leiria	Portugal	210
-NIC273	NIC272	NA	NA	TRUE	2012-12-09T00:00:00Z	39.769459	-8.756356	C. Braendle		R. do Casal 5, 2420-382 Boa Vista, Portugal	Boa Vista	Leiria	Portugal	211
-NIC274	NIC274	NA	NA	TRUE	2012-12-09T00:00:00Z	39.769459	-8.756356	C. Braendle		R. do Casal 5, 2420-382 Boa Vista, Portugal	Boa Vista	Leiria	Portugal	212
-NIC275	NIC275	NA	NA	TRUE	2012-12-09T00:00:00Z	39.769459	-8.756356	C. Braendle		R. do Casal 5, 2420-382 Boa Vista, Portugal	Boa Vista	Leiria	Portugal	213
-NIC276	NIC276	NA	NA	TRUE	2012-12-09T00:00:00Z	39.769459	-8.756356	C. Braendle		R. do Casal 5, 2420-382 Boa Vista, Portugal	Boa Vista	Leiria	Portugal	214
-NIC277	NIC277	NA	NA	TRUE	2012-12-15T00:00:00Z	43.716441	7.266138	C. Braendle		53-57 Avenue Valrose, 06000 Nice, France	Nice	Provence-Alpes-Côte d'Azur	France	215
-NIC3	NIC3	NA	NA	TRUE	2008-09-28T00:00:00Z	43.3636	5.3215	C. Braendle		16 Avenue de Caronte, 13016 Marseille, France	Marseille	Provence-Alpes-Côte d'Azur	France	216
-NIC4	NIC3	NA	NA	TRUE	2008-09-28T00:00:00Z	43.3636	5.3215	C. Braendle		16 Avenue de Caronte, 13016 Marseille, France	Marseille	Provence-Alpes-Côte d'Azur	France	217
-PB303	PB303	NA	NA	TRUE	1998-11-14T00:00:00Z	NA	NA	S. Baird		NA	NA	NA	NA	218
-PB306	PB306	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	219
-PB800_CGC	PB800	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	220
-PS2025	PS2025	NA	NA	TRUE	NA	34.19	-118.13	J. Demodena		942-960 E Altadena Dr, Altadena, CA 91001, USA	Altadena	California	United States	221
-PX174	RC301	NA	NA	TRUE	NA	NA	NA	NA		NA	NA	NA	NA	222
-PX176	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	223
-PX178	PX179	NA	NA	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	224
-PX179	PX179	NA	NA	TRUE	2001-10-02T00:00:00Z	44.035	-123.058	B. White		2740 Fairmount Blvd, Eugene, OR 97403, USA	Eugene	Oregon	United States	225
-QG2075	QG2075	NA	NA	TRUE	2013-02-20T00:00:00Z	33.951	-83.376	M. Rockman		707 S Lumpkin St, Athens, GA 30605, USA	Athens	Georgia	United States	226
-QG536	QG536	NA	NA	TRUE	NA	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	227
-QG537	QG536	NA	NA	TRUE	2010-12-30T00:00:00Z	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	228
-QG538	QG536	NA	NA	TRUE	2010-12-30T00:00:00Z	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	229
-QG556	QG556	NA	NA	TRUE	2011-06-27T00:00:00Z	34.421629	-119.702021	A. Paaby		1000-1012 State St, Santa Barbara, CA 93101, USA	Santa Barbara	California	United States	230
-QG557	QG557	NA	NA	TRUE	2011-06-27T00:00:00Z	34.421629	-119.702021	A. Paaby		1000-1012 State St, Santa Barbara, CA 93101, USA	Santa Barbara	California	United States	231
-QG558	QG556	NA	NA	TRUE	2011-06-27T00:00:00Z	34.421629	-119.702021	A. Paaby		1000-1012 State St, Santa Barbara, CA 93101, USA	Santa Barbara	California	United States	232
-QW947	QW947	NA	NA	TRUE	2013-04-12T00:00:00Z	-33.4213	-70.6106	M. Alkema		Nueva de Lyon 72, Providencia, Providencia, Región Metropolitana, Chile	Providencia	Región Metropolitana	Chile	233
-QX1211	QX1211	NA	NA	TRUE	2007-11-26T00:00:00Z	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	234
-QX1212	QX1212	NA	NA	TRUE	2007-11-26T00:00:00Z	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	235
-QX1213	QX1212	NA	NA	TRUE	2007-11-26T00:00:00Z	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	236
-QX1214	QX1212	NA	NA	TRUE	2007-11-26T00:00:00Z	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	237
-QX1215	QX1211	NA	NA	TRUE	2007-11-26T00:00:00Z	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	238
-QX1216	QX1211	NA	NA	TRUE	2007-11-26T00:00:00Z	37.7502	-122.4331	M. Rockman		359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	239
-QX1233	QX1233	NA	NA	TRUE	2007-11-24T00:00:00Z	37.8804	-122.2838	M. Rockman		1468 Hopkins St, Berkeley, CA 94702, USA	Berkeley	California	United States	240
-QX1791	QX1791	NA	NA	TRUE	2011-01-27T00:00:00Z	20.6344	-156.3935	E. Andersen		15430 Piilani Hwy, Kula, HI 96790, USA	Kula	Hawaii	United States	241
-QX1792	QX1792	NA	NA	TRUE	2011-01-28T00:00:00Z	20.70554	-156.35475	E. Andersen		9177 Kula Hwy, Kula, HI 96790, USA	Kula	Hawaii	United States	242
-QX1793	QX1793	NA	NA	TRUE	2011-01-28T00:00:00Z	20.70559	-156.35678	E. Andersen		9250 Kula Hwy, Kula, HI 96790, USA	Kula	Hawaii	United States	243
-QX1794	QX1794	NA	NA	TRUE	2011-01-28T00:00:00Z	20.70559	-156.35678	E. Andersen		9250 Kula Hwy, Kula, HI 96790, USA	Kula	Hawaii	United States	244
-RC301	RC301	NA	NA	TRUE	1983-01-01T00:00:00Z	47.99	7.84	R. Cassada		Rehlingstraße 12B, 79100 Freiburg im Breisgau, Germany	Freiburg im Breisgau	Baden-Württemberg	Germany	245
-TR388	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	246
-TR389	N2	NA	N2	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	247
-TR403	NA	NA	N2xCB4851 recombinant	FALSE	NA	NA	NA	NA		NA	NA	NA	NA	248
-WN2001	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	249
-WN2002	WN2002	NA	NA	TRUE	2007-11-11T00:00:00Z	51.975285	5.694834	J. Riksen		Eerste Dorskampweg, 6704 Wageningen, Netherlands	Wageningen	Gelderland	Netherlands	250
-WN2010	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	251
-WN2011	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	252
-WN2013	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	253
-WN2014	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	254
-WN2016	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	255
-WN2017	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	256
-WN2018	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	257
-WN2019	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	258
-WN2020	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	259
-WN2021	WN2001	NA	NA	TRUE	2008-06-26T00:00:00Z	51.954422	6.303406	J. Riksen		Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	260
+strain	isotype	prev_names	warning_msg	sequenced	alternative_name	source_lab	latitude	longitude	substrate	isolated_by	isolation_date	isolation_date_comment	address	city	state	country	strain_count
+CB4555	NA	NA	N2xCB4851 recombinant	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13
+DH424	NA	NA	N2xCB4851 recombinant	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	43
+DR1349	NA	NA	N2xCB4851 recombinant	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	47
+TR403	NA	NA	N2xCB4851 recombinant	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	248
+CB3191	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7
+CB3192	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8
+CB3193	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9
+CB3194	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10
+CB3195	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11
+CB4507	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12
+PX176	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	223
+TR388	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	246
+TR389	N2	NA	N2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	247
+AF16_CGC	AF16	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5
+CB4851_CGC	CB4851	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	15
+CB4853_CGC	CB4853	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	18
+CB4853_UK	CB4853	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	19
+DR1350	CB4853	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	48
+CB4855_UK	CB4855	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	23
+CB4856_CGC_3	CB4856	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	25
+CB4856_CGC3	CB4856	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	26
+CB4857	CB4857	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	27
+CB4857_CGC	CB4857	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	28
+CB4857_UK	CB4857	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	29
+ECA251	CB4858	NA	NA	FALSE	CB4858 (CGC)	CGC	34.1	-118.1	NA	E.M. Hedgecock	1/1/1973	NA	225 S Del Mar Ave, San Gabriel, CA 91776, USA	San Gabriel	California	United States	57
+CB4858	CB4858	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	30
+CB4858_UK	CB4858	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	31
+ECA244	CB4851	NA	NA	FALSE	CB4851 (UK)	CB	44.85	0.48	NA	V. Nigon	1/1/1949	pre-1949	Quai Salvette, 24100 Bergerac, France	Bergerac	Aquitaine	France	50
+CB4855_CGC	CB4855	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	22
+ECA247	CB4855	NA	NA	FALSE	CB4855 (CGC)	CGC	37.43	-122.13	compost	T. Doniach	1/1/1982	NA	2817-2925 Cowper St, Palo Alto, CA 94306, USA	Palo Alto	California	United States	53
+N2_CGC	N2	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	175
+ECA255	N2	NA	NA	FALSE	N2 Baer duplicate #1	CFB	51.45	-2.59	mushroom compost	W. Nicholas	1/1/1951	NA	89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	61
+ECA257	N2	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	62
+ECA258	PB306	NA	NA	FALSE	PB306 Baer	CFB	NA	NA	from a snail from Connecticut Valley Biological Supply	Baer Lab	NA	NA	NA	NA	NA	NA	63
+ECA259	PB306	NA	NA	FALSE	PB306 CGC	CGC	NA	NA	from a snail from Connecticut Valley Biological Supply	S. Baird	11/28/1998	NA	NA	NA	NA	NA	64
+ECA260	CB4856	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	65
+ECA261	PB800	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	66
+ECA262	HK104	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	67
+ECA263	HK104	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	68
+ECA264	AF16	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	69
+HK104_CGC	HK104	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	93
+JU262	JU310	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	128
+JU362	JU360	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	142
+JU395	JU792	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	147
+MY14	MY23	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	168
+N2_HRH	N2	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	176
+N2Baer	N2	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	177
+PB800_CGC	PB800	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	220
+PX178	PX179	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	224
+CB4856	CB4856	NA	NA	TRUE	NA	CGC	21.33	-157.86	pineapple field	L. Hollen	8/1/1972	NA	951 Hala Dr, Honolulu, HI 96817, USA	Honolulu	Hawaii	United States	24
+ECA249	CB4857	CB4857_CGC	NA	TRUE	CB4857 (CGC)	CB	34.096	-117.719	NA	E.M. Hedgecock	11/1/1972	NA	224 N Indian Hill Blvd, Claremont, CA 91711, USA	Claremont	California	United States	55
+ECA36	ECA36	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	70
+ED3017	ED3017	NA	NA	TRUE	NA	VX	55.92	-3.19	NA	A. Cutter	12/3/2004	NA	Hermitage of Braid, Edinburgh, Edinburgh EH10, UK	Edinburgh	NA	United Kingdom	74
+EG4725	EG4725	NA	NA	TRUE	NA	EG	41.628771	-8.347617	NA	M. Ailion	3/1/2007	NA	Lot. da Bela Vista 19, 4720-792 Amares, Portugal	Amares	Braga	Portugal	90
+JU1440	JU1440	NA	NA	TRUE	NA	JU	41.41307	2.15231	rotting palm fruits	M-A. FÃ©lix	6/9/2008	NA	Carrer d'Olot, 4, 08024 Barcelona, Barcelona, Spain	Barcelona	Catalunya	Spain	106
+JU2316	JU2316	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	118
+JU2464	JU2464	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	119
+JU2466	JU2466	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	120
+JU782	JU782	NA	NA	TRUE	NA	JU	38.7191	-9.1503	botanical gardens	M-A. FÃ©lix	7/10/2005	NA	Rua do Salitre 161, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	159
+ECA254	N2	N2_Baer	NA	TRUE	N2 Baer	CFB	51.45	-2.59	mushroom compost	W. Nicholas	1/1/1951	NA	89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	60
+NIC242	NIC242	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	192
+NIC251	NIC251	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	193
+NIC258	NIC258	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	197
+NIC259	NIC259	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	198
+NIC261	NIC261	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	200
+NIC262	NIC262	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	201
+NIC269	NIC269	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	207
+NIC273	NIC272	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	211
+NIC274	NIC274	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	212
+NIC275	NIC275	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	213
+QG2075	QG2075	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	226
+QX1792	QX1792	NA	NA	TRUE	NA	QX	20.70554	-156.35475	rotting orange flowers	E. Andersen	1/28/2011	NA	9177 Kula Hwy, Kula, HI 96790, USA	Kula	Hawaii	United States	242
+BRC20067	BRC20067	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6
+JT11398	JT11398	NA	NA	TRUE	NA	JT	47.763944	-122.275484	Worm bin fed kitchen scraps and espresso grounds	J. Kemner	12/1/2003	NA	18704 50th Ave NE, Lake Forest Park, WA 98155, USA	Lake Forest Park	Washington	United States	94
+JU2467	JU2464	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	121
+JU2468	JU2464	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	122
+JU2513	JU2513	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	123
+JU2519	JU2519	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	124
+JU2522	JU2522	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	125
+JU2526	JU2526	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	126
+JU363	JU360	NA	NA	TRUE	NA	CGC	48.98	2.23	Compost heap in Claude Pieauâ€™s garden	M-A. FÃ©lix	9/16/2002	NA	5 AllÃ©e du Lavoir, 95130 Franconville, France	Franconville	ÃŽle-de-France	France	143
+NIC252	NIC252	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	194
+NIC255	NIC255	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	195
+NIC256	NIC256	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	196
+NIC260	NIC260	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	199
+NIC263	NIC256	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	202
+NIC265	NIC265	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	203
+NIC266	NIC266	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	204
+NIC267	NIC267	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	205
+NIC268	NIC268	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	206
+NIC270	NIC267	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	208
+NIC271	NIC271	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	209
+NIC272	NIC272	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	210
+NIC276	NIC276	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	214
+NIC277	NIC277	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	215
+QW947	QW947	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	233
+CB4852	CB4852	NA	NA	TRUE	NA	CGC	NA	NA	NA	NA	1/1/1966	pre-1966	NA	NA	NA	NA	16
+CX11315	CX11315	NA	NA	TRUE	NA	CX	34.12946	-118.10987	Huntington Gardens	A. Sivasundar	9/3/2013	NA	897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	42
+DL238	DL238	NA	NA	TRUE	NA	Estes	19.22	-155.82	NA	J. Knapp	7/15/2008	NA	Unnamed Road, Captain Cook, HI 96704, USA	Captain Cook	Hawaii	United States	46
+ECA253	N2	N2_CGC	NA	TRUE	N2 (CGC)	CGC	51.45	-2.59	mushroom compost	W. Nicholas	1/1/1951	NA	89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	59
+ED3049	ED3049	NA	NA	TRUE	NA	VX	-33.22	19.19	NA	E. Dolgin	3/1/2006	NA	Unnamed Road, South Africa	NA	Western Cape	South Africa	80
+JU1580	JU1580	NA	NA	TRUE	NA	JU	48.7015	2.1725	rotting apple	M-A. FÃ©lix	10/6/2008	NA	309 Domaine de l'UniversitÃ© de Paris S, 91400 Orsay, France	Orsay	ÃŽle-de-France	France	111
+JU258	JU258	NA	NA	TRUE	NA	CGC	32.73	-16.89	along a path through an orchard	M-A. FÃ©lix	10/1/2001	NA	ER103, 9225, Portugal	NA	Madeira	Portugal	127
+JU360	JU360	NA	NA	TRUE	NA	JU	48.98	2.23	Compost heap in Claude Pieauâ€™s garden	M-A. FÃ©lix	9/2/2002	NA	5 AllÃ©e du Lavoir, 95130 Franconville, France	Franconville	ÃŽle-de-France	France	140
+JU778	JU778	NA	NA	TRUE	NA	JU	38.719	-9.1491	botanical gardens	M-A. FÃ©lix	7/10/2005	NA	Rua do Salitre 123, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	158
+MY23	MY23	NA	NA	TRUE	NA	CGC	51.96	7.53	NA	H. Schulenburg	7/1/2002	NA	Havixbecker Str. 76, 48161 MÃ¼nster, Germany	MÃ¼nster	Nordrhein-Westfalen	Germany	172
+NIC232	NIC231	NA	NA	TRUE	NA	NIC	43.720505	7.24045	rotting oranges	C. Braendle	11/14/2011	NA	65 Avenue de Pessicart, 06100 Nice, France	Nice	Provence-Alpes-CÃ´te d'Azur	France	189
+QG557	QG557	NA	NA	TRUE	NA	QG	34.421629	-119.702021	rotting orange peel, with snails	A. Paaby	6/27/2011	NA	1000-1012 State St, Santa Barbara, CA 93101, USA	Santa Barbara	California	United States	231
+AB1	AB1	NA	NA	TRUE	NA	CGC	-34.93	138.59	NA	D. Riddle and A. Bird	1/1/1983	NA	252-260 Gouger St, Adelaide SA 5000, Australia	Adelaide	South Australia	Australia	1
+AB4	AB4	NA	NA	TRUE	NA	CGC	-34.93	138.59	NA	D. Riddle and A. Bird	1/1/1983	NA	252-260 Gouger St, Adelaide SA 5000, Australia	Adelaide	South Australia	Australia	4
+CX11276	CX11276	NA	NA	TRUE	NA	CX	34.20111	-118.21198	NA	A. Sivasundar	9/3/2013	NA	Decanso Mtwy, La CaÃ±ada Flintridge, CA 91011, USA	La CaÃ±ada Flintridge	California	United States	37
+CX11285	CX11285	NA	NA	TRUE	NA	CX	34.14331	-118.05496	compost	A. Sivasundar	9/1/2003	NA	314 N Old Ranch Rd, Arcadia, CA 91007, USA	Arcadia	California	United States	38
+DL226	DL226	NA	NA	TRUE	NA	Denver	44.5633	-123.2821	NA	C. Hilburn	1/1/2007	NA	SW Intramural Ln, Corvallis, OR 97331, USA	Corvallis	Oregon	United States	45
+ED3046	ED3046	NA	NA	TRUE	NA	VX	-33.22	19.19	NA	E. Dolgin	3/1/2006	NA	Unnamed Road, South Africa	NA	Western Cape	South Africa	78
+JU1200	JU1200	NA	NA	TRUE	NA	JU	55.577	-4.6	compost	T. Page	8/1/2007	NA	Smugglers' Trail, Dundonald, Kilmarnock, South Ayrshire KA2 9DQ, UK	Dundonald	NA	United Kingdom	97
+JU346	JU346	NA	NA	TRUE	NA	JU	44.2	4.4	From a Glomeris myriapod in the compost pile	M-A. FÃ©lix	9/8/2002	NA	Unnamed Road, 30630 Goudargues, France	Goudargues	Languedoc-Roussillon	France	139
+JU775	JU775	NA	NA	TRUE	NA	JU	38.7175	-9.1486	botanical gardens	M-A. FÃ©lix	7/10/2005	NA	PraÃ§a do PrÃ­ncipe Real 23, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	157
+MY1	MY1	NA	NA	TRUE	NA	MY	52.54	7.31	NA	H. Schulenburg	7/1/2002	NA	SchÃ¼lerpfad 6, 49808 Lingen (Ems), Germany	Lingen (Ems)	Niedersachsen	Germany	166
+MY16	MY16	NA	NA	TRUE	NA	CGC	51.93	7.57	NA	H. Schulenburg	7/1/2002	NA	Meckmannweg 83, 48163 MÃ¼nster, Germany	MÃ¼nster	Nordrhein-Westfalen	Germany	169
+NIC196	NIC195	NA	NA	TRUE	NA	NIC	38.4716405	-28.20149	grapes	D. Bourcâ€™his and J. Dumont	8/23/2011	NA	Unnamed Road, 9940 Prainha, Portugal	Prainha	AÃ§ores	Portugal	181
+NIC2	NIC2	NA	NA	TRUE	NA	NIC	43.279	5.3543	rotting plant	C. Braendle	9/14/2008	NA	271 Corniche PrÃ©sident John Fitzgerald Kennedy, 13007 Marseille, France	Marseille	Provence-Alpes-CÃ´te d'Azur	France	185
+PB306	PB306	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	219
+QG556	QG556	NA	NA	TRUE	NA	QG	34.421629	-119.702021	rotting orange peel, with snails	A. Paaby	6/27/2011	NA	1000-1012 State St, Santa Barbara, CA 93101, USA	Santa Barbara	California	United States	230
+QX1791	QX1791	NA	NA	TRUE	NA	QX	20.6344	-156.3935	rotting bark, base of eucalyptus tree	E. Andersen	1/27/2011	NA	15430 Piilani Hwy, Kula, HI 96790, USA	Kula	Hawaii	United States	241
+QX1793	QX1793	NA	NA	TRUE	NA	QX	20.70559	-156.35678	Wilma's vermiculate compost bin	E. Andersen	1/28/2011	NA	9250 Kula Hwy, Kula, HI 96790, USA	Kula	Hawaii	United States	243
+QX1794	QX1794	NA	NA	TRUE	NA	QX	20.70559	-156.35678	Wilma's vermiculate compost bin	E. Andersen	1/28/2011	NA	9250 Kula Hwy, Kula, HI 96790, USA	Kula	Hawaii	United States	244
+CX11254	CX11254	NA	NA	TRUE	NA	CX	34.13531	-118.30582	NA	A. Sivasundar	9/1/2003	NA	Mulholland Hwy, Los Angeles, CA 90027, USA	Los Angeles	California	United States	33
+CX11314	CX11314	NA	NA	TRUE	NA	CX	34.12946	-118.10987	NA	A. Sivasundar	9/1/2003	NA	897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	41
+ECA243	CB4851	CB4851_CGC	NA	TRUE	CB4851 (CGC)	CGC	44.85	0.48	NA	V. Nigon	1/1/1949	pre-1949	Quai Salvette, 24100 Bergerac, France	Bergerac	Aquitaine	France	49
+ECA246	CB4853	CB4853_UK	NA	TRUE	CB4853 (UK)	CB	34.189	-118.131	organic garden	C.D. Johnson	1/1/1974	NA	2500 N Lake Ave, Altadena, CA 91001, USA	Altadena	California	United States	52
+ECA252	CB4858	CB4858_UK	NA	TRUE	CB4858 (UK)	CB	34.1	-118.1	flowerbed	E.M. Hedgecock	1/1/1973	NA	225 S Del Mar Ave, San Gabriel, CA 91776, USA	San Gabriel	California	United States	58
+ED3011	ED3011	NA	NA	TRUE	NA	VX	55.92	-3.19	NA	A. Cutter	11/11/2004	NA	Hermitage of Braid, Edinburgh, Edinburgh EH10, UK	Edinburgh	NA	United Kingdom	72
+EG4347	EG4347	NA	NA	TRUE	NA	EG	44.04789	-123.07108	NA	M. Ailion	10/1/2006	NA	1405 Franklin Blvd, Eugene, OR 97403, USA	Eugene	Oregon	United States	86
+JU1088	JU1088	NA	NA	TRUE	NA	JU	34.7613	138.0149	soil in the Kacho-en aviary	M-A. FÃ©lix	3/14/2007	NA	1517 MinamisaigÅ, Kakegawa-shi, Shizuoka-ken 436-0024, Japan	Kakegawa-shi	Shizuoka-ken	Japan	95
+JU1246	JU1246	NA	NA	TRUE	NA	JU	49.12618	1.96152	rotting apple	M-A. FÃ©lix	10/14/2007	NA	1 Le Vaugoussard, 95640 Santeuil, France	Santeuil	ÃŽle-de-France	France	101
+JU1491	JU1491	NA	NA	TRUE	NA	JU	46.63	1.06	rotting arum stem	M-A. FÃ©lix	8/17/2008	NA	19 Quai AndrÃ© Liesse, 36300 Le Blanc, France	Le Blanc	Centre	France	107
+JU1586	JU1586	NA	NA	TRUE	NA	JU	46.63	1.06	rotting grape puree	M-A. FÃ©lix	11/3/2008	NA	19 Quai AndrÃ© Liesse, 36300 Le Blanc, France	Le Blanc	Centre	France	113
+JU2007	JU2007	NA	NA	TRUE	NA	JU	50.6	-1.3	rotting apple	M. Barkoulas	10/1/2010	NA	Unnamed Road, Niton, Ventnor, Isle of Wight PO38 2PJ, UK	Niton	NA	United Kingdom	117
+JU315	JU311	NA	NA	TRUE	NA	JU	44.2	4.4	pomatias elegans (?) snails	M-A. FÃ©lix	9/8/2002	NA	Unnamed Road, 30630 Goudargues, France	Goudargues	Languedoc-Roussillon	France	134
+JU440	JU440	NA	NA	TRUE	NA	JU	48.715	1.56	compost	M-A. FÃ©lix	9/12/2003	NA	9 Rue des Sablons, 28410 Boutigny-Prouais, France	Boutigny-Prouais	Centre	France	151
+JU830	JU830	NA	NA	TRUE	NA	JU	48.52	9.05	compost	M-A. FÃ©lix	9/28/2005	NA	Vor dem Haagtor 1, 72070 TÃ¼bingen, Germany	TÃ¼bingen	Baden-WÃ¼rttemberg	Germany	161
+LKC34	LKC34	NA	NA	TRUE	NA	CGC	-18	46	NA	V. Stowell	6/17/2005	NA	Unnamed Road, Madagascar	NA	Antananarivo	Madagascar	164
+MY10	MY10	NA	NA	TRUE	NA	CGC	51.96	7.53	NA	H. Schulenburg	7/1/2002	NA	Havixbecker Str. 76, 48161 MÃ¼nster, Germany	MÃ¼nster	Nordrhein-Westfalen	Germany	167
+NIC1	NIC1	NA	NA	TRUE	NA	NIC	43.279	5.3543	rotting fruit	C. Braendle	9/14/2008	NA	271 Corniche PrÃ©sident John Fitzgerald Kennedy, 13007 Marseille, France	Marseille	Provence-Alpes-CÃ´te d'Azur	France	178
+NIC197	NIC195	NA	NA	TRUE	NA	NIC	38.39682	-28.25165	apple	D. Bourcâ€™his and J. Dumont	8/23/2011	NA	ER1, 9930 Lajes Do Pico, Portugal	Lajes Do Pico	AÃ§ores	Portugal	182
+NIC207	NIC207	NA	NA	TRUE	NA	NIC	43.720505	7.24045	rotting oranges	C. Braendle	9/21/2011	NA	65 Avenue de Pessicart, 06100 Nice, France	Nice	Provence-Alpes-CÃ´te d'Azur	France	187
+NIC3	NIC3	NA	NA	TRUE	NA	NIC	43.3636	5.3215	rotting figs	C. Braendle	9/28/2008	NA	16 Avenue de Caronte, 13016 Marseille, France	Marseille	Provence-Alpes-CÃ´te d'Azur	France	216
+QX1211	QX1211	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	234
+QX1215	QX1211	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	238
+CX11292	CX11292	NA	NA	TRUE	NA	CX	34.13531	-118.30582	NA	A. Sivasundar	2/1/2004	NA	Mulholland Hwy, Los Angeles, CA 90027, USA	Los Angeles	California	United States	39
+DL200	DL200	NA	NA	TRUE	NA	Denver	9.03	38.74	NA	D. Denver	12/1/2007	NA	Kenya St, Addis Ababa, Ethiopia	Addis Ababa	Oromia	Ethiopia	44
+ECA248	CB4855	CB4855_UK	NA	TRUE	CB4855 (UK)	CB	37.44	-122.14	compost	T. Doniach	1/1/1982	NA	1870 Middlefield Rd, Palo Alto, CA 94301, USA	Palo Alto	California	United States	54
+ED3048	ED3048	NA	NA	TRUE	NA	VX	-33.22	19.19	NA	E. Dolgin	3/1/2006	NA	Unnamed Road, South Africa	NA	Western Cape	South Africa	79
+ED3073	ED3073	NA	NA	TRUE	NA	VX	-1.05	36.39	NA	E. Dolgin	3/1/2006	NA	Unnamed Road, Kenya	NA	Nakuru	Kenya	84
+JU1172	JU1172	NA	NA	TRUE	NA	JU	-36.87	-73.04	compost with rotting tomatoes	M-A. FÃ©lix	4/1/2007	NA	Tres Nte, ConcepciÃ³n, ConcepciÃ³n, RegiÃ³n del BÃ­o BÃ­o, Chile	ConcepciÃ³n	RegiÃ³n del BÃ­o BÃ­o	Chile	96
+JU1242	JU1242	NA	NA	TRUE	NA	JU	49.1269	1.9595	black slug	M-A. FÃ©lix	10/14/2007	NA	8 AllÃ©e de la Plaine Henri, 95640 Santeuil, France	Santeuil	ÃŽle-de-France	France	100
+JU1400	JU1400	NA	NA	TRUE	NA	JU	37.3845	-5.988	rotting oranges	M-A. FÃ©lix	3/1/2008	NA	Calle de NicolÃ¡s Antonio, 2, 41004 Sevilla, Sevilla, Spain	Sevilla	AndalucÃ­a	Spain	103
+JU1516	JU1581	NA	NA	TRUE	NA	JU	48.7015	2.1725	rotting apple	M-A. FÃ©lix	9/9/2008	NA	309 Domaine de l'UniversitÃ© de Paris S, 91400 Orsay, France	Orsay	ÃŽle-de-France	France	108
+JU1896	JU1896	NA	NA	TRUE	NA	JU	37.999722	23.749673	rotten olives	M. Barkoulas	1/2/2001	NA	Tzoumagias 71, Athina 113 63, Greece	Athina	NA	Greece	115
+JU310	JU310	NA	NA	TRUE	NA	JU	46.63	1.06	vegetable garden	M-A. FÃ©lix	8/25/2002	NA	19 Quai AndrÃ© Liesse, 36300 Le Blanc, France	Le Blanc	Centre	France	131
+JU394	JU394	NA	NA	TRUE	NA	JU	49.28	-0.32	compost	A. BarriÃ¨re	9/1/2002	NA	416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	146
+JU642	JU642	NA	NA	TRUE	NA	JU	48.84	2.5	Isolated from the compost heap in Jean-Antoine Lepesantâ€™s garden	M-A. FÃ©lix	12/14/2004	NA	14 Avenue des Rochers, 94170 Le Perreux-sur-Marne, France	Le Perreux-sur-Marne	ÃŽle-de-France	France	154
+LSJ1	LSJ1	NA	NA	TRUE	NA	CGC	51.45	-2.59	mushroom compost	W. Nicholas	1/1/1951	NA	89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	165
+NIC198	NIC195	NA	NA	TRUE	NA	NIC	39.4364016	-31.23849	humus	D. Bourcâ€™his and J. Dumont	8/29/2011	NA	ER1-2, 9960, Portugal	NA	AÃ§ores	Portugal	183
+NIC231	NIC231	NA	NA	TRUE	NA	NIC	43.720505	7.24045	rotting oranges	C. Braendle	11/14/2011	NA	65 Avenue de Pessicart, 06100 Nice, France	Nice	Provence-Alpes-CÃ´te d'Azur	France	188
+NIC4	NIC3	NA	NA	TRUE	NA	NIC	43.3636	5.3215	rotting figs	C. Braendle	9/28/2008	NA	16 Avenue de Caronte, 13016 Marseille, France	Marseille	Provence-Alpes-CÃ´te d'Azur	France	217
+QX1212	QX1212	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	235
+QX1233	QX1233	NA	NA	TRUE	NA	QX	37.8804	-122.2838	isolated from Jason Stajich	M. Rockman	11/24/2007	NA	1468 Hopkins St, Berkeley, CA 94702, USA	Berkeley	California	United States	240
+WN2014	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	254
+CX11264	CX11264	NA	NA	TRUE	NA	CX	34.12946	-118.10987	NA	A. Sivasundar	9/1/2003	NA	897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	35
+CX11307	CX11307	NA	NA	TRUE	NA	CX	34.12946	-118.10987	Huntington Gardens	A. Sivasundar	9/3/2013	NA	897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	40
+ED3005	ED3005	NA	NA	TRUE	NA	VX	55.94	-3.36	NA	A. Cutter	10/25/2004	NA	35 Eastfield Rd, Ingliston, Newbridge, Edinburgh EH28 8LS, UK	Ingliston	NA	United Kingdom	71
+ED3052	ED3052	NA	NA	TRUE	NA	VX	-33.22	19.19	NA	E. Dolgin	3/1/2006	NA	Unnamed Road, South Africa	NA	Western Cape	South Africa	81
+EG4724	EG4724	NA	NA	TRUE	NA	EG	41.628771	-8.347617	NA	M. Ailion	3/1/2007	NA	Lot. da Bela Vista 19, 4720-792 Amares, Portugal	Amares	Braga	Portugal	89
+JU1213	JU1213	NA	NA	TRUE	NA	JU	48.71	-3.81	rotting apple	M-A. FÃ©lix	9/24/2007	NA	16 Rue de la Chapelle, 29630 Plougasnou, France	Plougasnou	Bretagne	France	99
+JU1409	JU1409	NA	NA	TRUE	NA	JU	37.468	-5.637	rotting cactus fruit	M-A. FÃ©lix	3/31/2008	NA	Diseminado Diseminados 2, 129, 41410 Carmona, Sevilla, Spain	Carmona	AndalucÃ­a	Spain	105
+JU1568	JU1568	NA	NA	TRUE	NA	JU	48.8092	2.3862	rotting Petasites stem	M-A. FÃ©lix	10/5/2008	NA	32 Rue Marat, 94200 Ivry-sur-Seine, France	Ivry-sur-Seine	ÃŽle-de-France	France	110
+JU311	JU311	NA	NA	TRUE	NA	JU	44.42	4.4	wash from snails from under a tree of ivy	M-A. FÃ©lix	9/8/2002	NA	989 Route Vieille de Lagorce, 07150 Vallon-Pont-d'Arc, France	Vallon-Pont-d'Arc	RhÃ´ne-Alpes	France	132
+JU397	JU397	NA	NA	TRUE	NA	JU	49.28	-0.32	compost	A. BarriÃ¨re	9/1/2002	NA	416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	148
+JU751	JU751	NA	NA	TRUE	NA	JU	48.44	2.5	Isolated from the compost heap in Jean-Antoine Lepesantâ€™s garden	M-A. FÃ©lix	6/8/2005	NA	Unnamed Road, 91490 Courances, France	Courances	ÃŽle-de-France	France	155
+KR314	KR314	NA	NA	TRUE	NA	CGC	49.28	-123.13	NA	F. Dill	5/1/1984	NA	1047 Davie St, Vancouver, BC V6E 1M5, Canada	Vancouver	British Columbia	Canada	163
+NIC166	NIC166	NA	NA	TRUE	NA	NIC	46.72722	6.89775	immature prunes	C. Braendle	7/27/2007	NA	Le Bugnon 4, 1682 Valbroye, Switzerland	Valbroye	Vaud	Switzerland	179
+NIC195	NIC195	NA	NA	TRUE	NA	NIC	38.545874	-28.37322	apple	D. Bourcâ€™his and J. Dumont	8/22/2011	NA	ER1, 9940 Santana, Portugal	Santana	AÃ§ores	Portugal	180
+NIC237	NIC236	NA	NA	TRUE	NA	NIC	39.242006	-9.313417	rotting fruit	C. Braendle	11/26/2011	NA	R. JoÃ£o LuÃ­s de Moura 93, 2530-158 LourinhÃ£, Portugal	LourinhÃ£	Lisboa	Portugal	191
+QG536	QG536	NA	NA	TRUE	NA	QG	37.7502	-122.4331	NA	M. Rockman	NA	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	227
+QX1213	QX1212	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	236
+RC301	RC301	NA	NA	TRUE	NA	CGC	47.99	7.84	NA	R. Cassada	1/1/1983	NA	RehlingstraÃŸe 12B, 79100 Freiburg im Breisgau, Germany	Freiburg im Breisgau	Baden-WÃ¼rttemberg	Germany	245
+WN2002	WN2002	NA	NA	TRUE	NA	WN	51.975285	5.694834	NA	J. Riksen	11/11/2007	NA	Eerste Dorskampweg, 6704 Wageningen, Netherlands	Wageningen	Gelderland	Netherlands	250
+WN2011	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	252
+WN2018	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	257
+ECA250	CB4857	CB4857_UK	NA	TRUE	CB4857 (UK)	CB	34.096	-117.719	rotting mushroom	E.M. Hedgecock	11/1/1972	NA	224 N Indian Hill Blvd, Claremont, CA 91711, USA	Claremont	California	United States	56
+ED3012	ED3012	NA	NA	TRUE	NA	VX	55.92	-3.19	NA	A. Cutter	11/26/2004	NA	Hermitage of Braid, Edinburgh, Edinburgh EH10, UK	Edinburgh	NA	United Kingdom	73
+GXW1	GXW1	NA	NA	TRUE	NA	VX	30.542889	114.419828	soil under kiwi fruit in botanical garden	Unknown	11/5/2010	NA	11 Zhi Wu Yuan Lu, Hongshan Qu, Wuhan Shi, Hubei Sheng, China, 430074	Wuhan Shi	Hubei Sheng	China	92
+JU1212	JU1212	NA	NA	TRUE	NA	JU	48.71	-3.81	rotting arum stem	M-A. FÃ©lix	9/24/2007	NA	16 Rue de la Chapelle, 29630 Plougasnou, France	Plougasnou	Bretagne	France	98
+JU1581	JU1581	NA	NA	TRUE	NA	JU	48.7015	2.1725	rotting apple	M-A. FÃ©lix	10/23/2008	NA	309 Domaine de l'UniversitÃ© de Paris S, 91400 Orsay, France	Orsay	ÃŽle-de-France	France	112
+JU393	JU393	NA	NA	TRUE	NA	JU	49.28	-0.32	compost	A. BarriÃ¨re	9/1/2002	NA	416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	145
+JU406	JU406	NA	NA	TRUE	NA	JU	49.28	-0.32	compost	A. BarriÃ¨re	9/1/2002	NA	416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	150
+N2	N2	N2_HRH	NA	TRUE	N2 HRH	MT	51.45	-2.59	mushroom compost	W. Nicholas	1/1/1951	NA	89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	174
+NIC199	NIC199	NA	NA	TRUE	NA	NIC	37.745428	-25.19929	humus	D. Bourcâ€™his and J. Dumont	3/9/2011	NA	R. dos Moinhos, 9650 Faial da Terra, Portugal	Faial da Terra	AÃ§ores	Portugal	184
+NIC236	NIC236	NA	NA	TRUE	NA	NIC	39.242006	-9.313417	rotting fruit	C. Braendle	11/26/2011	NA	R. JoÃ£o LuÃ­s de Moura 93, 2530-158 LourinhÃ£, Portugal	LourinhÃ£	Lisboa	Portugal	190
+PB303	PB303	NA	NA	TRUE	NA	CGC	NA	NA	came from a snail from Wardâ€™s Biological Supply	S. Baird	11/14/1998	NA	NA	NA	NA	NA	218
+PX179	PX179	NA	NA	TRUE	NA	CGC	44.035	-123.058	snail from under a rock in the rhododendron garden	B. White	10/2/2001	NA	2740 Fairmount Blvd, Eugene, OR 97403, USA	Eugene	Oregon	United States	225
+QG538	QG536	NA	NA	TRUE	NA	QG	37.7502	-122.4331	rotten solanaceous fruit, Buena Vista Park	M. Rockman	12/30/2010	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	229
+QX1214	QX1212	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	237
+WN2001	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	249
+WN2017	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	256
+CB4854	CB4854	NA	NA	TRUE	NA	CGC	34.189	-118.131	vegetable garden	C.D. Johnson	5/1/1974	NA	2500 N Lake Ave, Altadena, CA 91001, USA	Altadena	California	United States	20
+CB4932	CB4932	NA	NA	TRUE	NA	CGC	51.02	-3.1	mushroom farm	P.S. Grewal	1/1/1991	pre-1991	94 Priory Bridge Rd, Taunton, Somerset TA1 1QA, UK	Taunton	NA	United Kingdom	32
+CX11271	CX11271	NA	NA	TRUE	NA	CX	34.13712	-118.12532	compost	A. Sivasundar	9/1/2003	NA	Olive Walk, Pasadena, CA 91125, USA	Pasadena	California	United States	36
+ED3040	ED3040	NA	NA	TRUE	NA	VX	-26.1	28.01	NA	E. Dolgin	3/1/2006	NA	214 Blairgowrie Dr, Randburg, 2194, South Africa	Randburg	Gauteng	South Africa	76
+ED3077	ED3077	NA	NA	TRUE	NA	VX	NA	NA	NA	NA	3/1/2006	NA	NA	NA	NA	NA	85
+EG4946	EG4946	NA	NA	TRUE	NA	EG	40.72596	-111.82184	NA	M. Ailion	9/27/2007	NA	2405 E 2100 S, Salt Lake City, UT 84109, USA	Salt Lake City	Utah	United States	91
+JU1530	JU1530	NA	NA	TRUE	NA	JU	48.7015	2.1725	rotting apple	M-A. FÃ©lix	9/9/2008	NA	309 Domaine de l'UniversitÃ© de Paris S, 91400 Orsay, France	Orsay	ÃŽle-de-France	France	109
+JU1652	JU1652	NA	NA	TRUE	NA	JU	-34.86	-56.19	compost	NA	1/1/2009	NA	Dr Carlos Vaz Ferreira, Montevideo 11700, Uruguay	Montevideo	Departamento de Montevideo	Uruguay	114
+JU323	JU323	NA	NA	TRUE	NA	JU	44.42	4.4	From a helix snail #3 on the trunk of a mulberry tree	M-A. FÃ©lix	9/8/2002	NA	989 Route Vieille de Lagorce, 07150 Vallon-Pont-d'Arc, France	Vallon-Pont-d'Arc	RhÃ´ne-Alpes	France	137
+JU367	JU367	NA	NA	TRUE	NA	JU	48.98	2.23	Compost heap in Claude Pieauâ€™s garden	M-A. FÃ©lix	9/16/2002	NA	5 AllÃ©e du Lavoir, 95130 Franconville, France	Franconville	ÃŽle-de-France	France	144
+JU561	JU561	NA	NA	TRUE	NA	JU	48.71	-3.81	Isolated from a sowbug found in the tub of compost from Hent ar Rhun, FinistÃ¨re, France	M-A. FÃ©lix	10/3/2004	NA	16 Rue de la Chapelle, 29630 Plougasnou, France	Plougasnou	Bretagne	France	153
+JU774	JU774	NA	NA	TRUE	NA	JU	38.683	-9.34	garden garbage	M-A. FÃ©lix	7/10/2005	NA	R. LourenÃ§o Marques 2A, 2775-561 Carcavelos, Portugal	Carcavelos	Lisboa	Portugal	156
+JU847	JU847	NA	NA	TRUE	NA	JU	48.46	7.461	compost from vegetable garden/vineyards	M-A. FÃ©lix	10/3/2005	NA	Chemin Muensterlingweg, 67210 Obernai, France	Obernai	Alsace	France	162
+MY18	MY18	NA	NA	TRUE	NA	CGC	51.96	7.53	NA	H. Schulenburg	7/1/2002	NA	Havixbecker Str. 76, 48161 MÃ¼nster, Germany	MÃ¼nster	Nordrhein-Westfalen	Germany	170
+NIC200	NIC199	NA	NA	TRUE	NA	NIC	37.74942	-25.66489	unknown fruit	D. Bourcâ€™his and J. Dumont	5/9/2011	NA	R. do Brasil 11, 9500 Ponta Delgada, Portugal	Ponta Delgada	AÃ§ores	Portugal	186
+PS2025	PS2025	NA	NA	TRUE	NA	CGC	34.19	-118.13	garden	J. Demodena	NA	NA	942-960 E Altadena Dr, Altadena, CA 91001, USA	Altadena	California	United States	221
+QG537	QG536	NA	NA	TRUE	NA	QG	37.7502	-122.4331	rotten solanaceous fruit, Buena Vista Park	M. Rockman	12/30/2010	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	228
+QG558	QG556	NA	NA	TRUE	NA	QG	34.421629	-119.702021	rotting orange peel, with snails	A. Paaby	6/27/2011	NA	1000-1012 State St, Santa Barbara, CA 93101, USA	Santa Barbara	California	United States	232
+QX1216	QX1211	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	239
+WN2010	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	251
+WN2013	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	253
+WN2016	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	255
+WN2019	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	258
+WN2020	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	259
+CX11262	CX11262	NA	NA	TRUE	NA	CX	34.12946	-118.10987	NA	A. Sivasundar	9/1/2003	NA	897-1151 Oxford Rd, San Marino, CA 91108, USA	San Marino	California	United States	34
+ECA245	CB4853	CB4853_CGC	NA	TRUE	CB4853 (CGC)	CGC	34.189	-118.131	vegetable garden	C.D. Johnson	5/1/1974	NA	2500 N Lake Ave, Altadena, CA 91001, USA	Altadena	California	United States	51
+EG4349	EG4349	NA	NA	TRUE	NA	EG	40.771467	-111.87316	NA	M. Ailion	10/1/2006	NA	89 H St, Salt Lake City, UT 84103, USA	Salt Lake City	Utah	United States	88
+JU1395	JU1395	NA	NA	TRUE	NA	JU	47.2199	0.04619	compost with shiitake mushrooms	M-A. FÃ©lix	3/1/2008	NA	67-69 D947, 49730 Montsoreau, France	Montsoreau	Pays de la Loire	France	102
+JU2001	JU2001	NA	NA	TRUE	NA	JU	-21.1	55.5	NA	T. Belicard	9/1/2010	NA	GR R1, Reunion	NA	Saint Benoit	Reunion	116
+JU792	JU792	NA	NA	TRUE	NA	JU	43.06	0.24	compost	M-A. FÃ©lix	8/31/2005	NA	D84, 65130 FrÃ©chendets, France	FrÃ©chendets	Midi-PyrÃ©nÃ©es	France	160
+WN2021	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	260
+AB3	AB4	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3
+CB4853	CB4853	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	17
+ED3021	ED3005	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	75
+ED3042	ED3048	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	77
+ED3057	ED3073	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	82
+ED3072	ED3073	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	83
+JU1401	JU1409	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	104
+JU263	JU310	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	129
+JU300	JU310	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	130
+JU312	JU311	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	133
+JU322	JU323	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	136
+JU361	JU367	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	141
+JU533	JU1213	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	152
+MY2	MY23	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	171
+MY6	MY18	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	173
+PX174	RC301	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	222
+JU400	JU394	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	149
+JU319	JU311	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	135
+JU345	JU346	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	138
+EG4348	EG4349	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	87
+AB2	AB4	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2
+CB4851	CB4851	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14
+CB4855	CB4855	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	21
