@@ -25,6 +25,21 @@ library(pryr)
 library(lubridate)
 
 
+pub_theme <- ggplot2::theme_bw() +
+  ggplot2::theme(axis.text.x = ggplot2::element_text(size=14, face="bold", color="black"),
+                 axis.text.y = ggplot2::element_text(size=14, face="bold", color="black"),
+                 axis.title.x = ggplot2::element_text(size=14, face="bold", color="black", vjust=-.3),
+                 axis.title.y = ggplot2::element_text(size=14, face="bold", color="black", vjust=2),
+                 strip.text.x = ggplot2::element_text(size=16, face="bold", color="black"),
+                 strip.text.y = ggplot2::element_text(size=16, face="bold", color="black"),
+                 axis.ticks= element_line( color = "black", size = 0.25), 
+                 legend.position="none",
+                 plot.margin = unit(c(1.0,0.5,0.5,1.0),"cm"),
+                 plot.title = ggplot2::element_text(size=24, face="bold", vjust = 1),
+                 legend.position="none",
+                 panel.background = ggplot2::element_rect(color = "black",size=0.75),
+                 strip.background = ggplot2::element_rect(color = "black", size = 0.75)) 
+
 load_eav <- function(file) {
   readr::read_tsv(file, c("ENTITY", "SUB", "VALUE", "DATE")) %>%
     eav_attr("ATTR") %>%
@@ -264,5 +279,56 @@ telseq <- readr::read_tsv("raw/telseq.txt") %>%
 readr::write_tsv(telseq, "processed/telseq.tsv")
 
 
+
+```
+
+### Concordance
+
+Calculate Concordance among strains to determine isotypes.
+
+```{r, echo = F}
+
+df <- readr::read_tsv("raw/concordance_strain.tsv") %>%
+      dplyr::mutate(isotype = (concordance > 0.9993))
+
+strain_list <- sort(unique(c(df$sample_i, df$sample_j)))
+
+iso_set <- dplyr::filter(df, isotype == T, sample_i != "LSJ1", sample_j != "LSJ1")
+
+single_strains <- strain_list[!(strain_list %in% unique(c(iso_set$sample_i, iso_set$sample_j)))]
+single_strains <- as.data.frame(list(sample_i = single_strains, sample_j = single_strains, discordance = 0, number_of_sites = 100, concordance = 1))
+
+iso_set <- dplyr::bind_rows(iso_set, single_strains) %>%
+           dplyr::arrange(sample_i, sample_j)
+
+stack_list <- function(x) {
+  if (is.null(names(x)) == T) {
+    names(x) <- as.character(1:length(x))
+  }
+  stack(x)
+}
+
+iso_groups <- stack_list(unique(lapply(strain_list, function(x) {
+  grouped_strains <- dplyr::filter(iso_set, (sample_i == x | sample_j == x)) %>%
+  dplyr::select(sample_i, sample_j)
+  sort(unique(unlist(grouped_strains)))
+}))) %>%
+  dplyr::rename(iso_group = ind, strain = values)  
+ 
+```
+
+`r datatable(iso_groups)`
+
+```{r, echo = F, fig.width = 12, fig.height = 6}
+
+
+ggplot(df) +
+  geom_histogram(aes(x=concordance, fill = isotype), binwidth = 0.0007) +
+  scale_fill_manual(values = c("#808080", "#0080FF")) +
+  labs(x = "Concordance", y = "Number of Comparisons") +
+  geom_vline(aes(xintercept = 0.997), color = "red") +
+  scale_y_continuous(expand = c(0,0), limits = c(0,250)) +
+  theme(axis.title = ggplot2::element_text(size=14, face="bold", color="black", vjust=5)) +
+  pub_theme
 
 ```

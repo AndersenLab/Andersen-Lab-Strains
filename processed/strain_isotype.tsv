@@ -32,7 +32,7 @@ ECA247	CB4855	NA	NA	FALSE	CB4855 (CGC)	CGC	37.43	-122.13	compost	T. Doniach	1/1/
 N2_CGC	N2	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	175
 ECA255	N2	NA	NA	FALSE	N2 Baer duplicate #1	CFB	51.45	-2.59	mushroom compost	W. Nicholas	1/1/1951	NA	89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	61
 ECA257	N2	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	62
-ECA258	PB306	NA	NA	FALSE	PB306 Baer	CFB	NA	NA	from a snail from Connecticut Valley Biological Supply	Baer Lab	NA	NA	NA	NA	NA	NA	63
+ECA258	PB306	NA	NA	FALSE	PB306 Baer	CFB	NA	NA	from a snail from Connecticut Valley Biological Supply	Baer Lab	11/28/1998	NA	NA	NA	NA	NA	63
 ECA259	PB306	NA	NA	FALSE	PB306 CGC	CGC	NA	NA	from a snail from Connecticut Valley Biological Supply	S. Baird	11/28/1998	NA	NA	NA	NA	NA	64
 ECA260	CB4856	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	65
 ECA261	PB800	NA	NA	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	66
@@ -118,7 +118,7 @@ JU346	JU346	NA	NA	TRUE	NA	JU	44.2	4.4	From a Glomeris myriapod in the compost pi
 JU775	JU775	NA	NA	TRUE	NA	JU	38.7175	-9.1486	botanical gardens	M-A. Félix	7/10/2005	NA	Praça do Príncipe Real 23, 1250-096 Lisboa, Portugal	Lisboa	Lisboa	Portugal	157
 MY1	MY1	NA	NA	TRUE	NA	MY	52.54	7.31	NA	H. Schulenburg	7/1/2002	NA	Schülerpfad 6, 49808 Lingen (Ems), Germany	Lingen (Ems)	Niedersachsen	Germany	166
 MY16	MY16	NA	NA	TRUE	NA	CGC	51.93	7.57	NA	H. Schulenburg	7/1/2002	NA	Meckmannweg 83, 48163 Münster, Germany	Münster	Nordrhein-Westfalen	Germany	169
-NIC196	NIC195	NA	NA	TRUE	NA	NIC	38.4716405	-28.20149	grapes	D. Bourcââ¬â¢his and J. Dumont	8/23/2011	NA	Unnamed Road, 9940 Prainha, Portugal	Prainha	Açores	Portugal	181
+NIC196	NIC195	NA	NA	TRUE	NA	NIC	38.4716405	-28.20149	grapes	D. Bourc’his and J. Dumont	8/23/2011	NA	Unnamed Road, 9940 Prainha, Portugal	Prainha	Açores	Portugal	181
 NIC2	NIC2	NA	NA	TRUE	NA	NIC	43.279	5.3543	rotting plant	C. Braendle	9/14/2008	NA	271 Corniche Président John Fitzgerald Kennedy, 13007 Marseille, France	Marseille	Provence-Alpes-Côte d'Azur	France	185
 PB306	PB306	NA	NA	TRUE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	219
 QG556	QG556	NA	NA	TRUE	NA	QG	34.421629	-119.702021	rotting orange peel, with snails	A. Paaby	6/27/2011	NA	1000-1012 State St, Santa Barbara, CA 93101, USA	Santa Barbara	California	United States	230
@@ -143,7 +143,7 @@ JU830	JU830	NA	NA	TRUE	NA	JU	48.52	9.05	compost	M-A. Félix	9/28/2005	NA	Vor dem
 LKC34	LKC34	NA	NA	TRUE	NA	CGC	-18	46	NA	V. Stowell	6/17/2005	NA	Unnamed Road, Madagascar	NA	Antananarivo	Madagascar	164
 MY10	MY10	NA	NA	TRUE	NA	CGC	51.96	7.53	NA	H. Schulenburg	7/1/2002	NA	Havixbecker Str. 76, 48161 Münster, Germany	Münster	Nordrhein-Westfalen	Germany	167
 NIC1	NIC1	NA	NA	TRUE	NA	NIC	43.279	5.3543	rotting fruit	C. Braendle	9/14/2008	NA	271 Corniche Président John Fitzgerald Kennedy, 13007 Marseille, France	Marseille	Provence-Alpes-Côte d'Azur	France	178
-NIC197	NIC195	NA	NA	TRUE	NA	NIC	38.39682	-28.25165	apple	D. Bourcââ¬â¢his and J. Dumont	8/23/2011	NA	ER1, 9930 Lajes Do Pico, Portugal	Lajes Do Pico	Açores	Portugal	182
+NIC197	NIC195	NA	NA	TRUE	NA	NIC	38.39682	-28.25165	apple	D. Bourc’his and J. Dumont	8/23/2011	NA	ER1, 9930 Lajes Do Pico, Portugal	Lajes Do Pico	Açores	Portugal	182
 NIC207	NIC207	NA	NA	TRUE	NA	NIC	43.720505	7.24045	rotting oranges	C. Braendle	9/21/2011	NA	65 Avenue de Pessicart, 06100 Nice, France	Nice	Provence-Alpes-Côte d'Azur	France	187
 NIC3	NIC3	NA	NA	TRUE	NA	NIC	43.3636	5.3215	rotting figs	C. Braendle	9/28/2008	NA	16 Avenue de Caronte, 13016 Marseille, France	Marseille	Provence-Alpes-Côte d'Azur	France	216
 QX1211	QX1211	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	234
@@ -162,7 +162,7 @@ JU310	JU310	NA	NA	TRUE	NA	JU	46.63	1.06	vegetable garden	M-A. Félix	8/25/2002	N
 JU394	JU394	NA	NA	TRUE	NA	JU	49.28	-0.32	compost	A. Barrière	9/1/2002	NA	416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	146
 JU642	JU642	NA	NA	TRUE	NA	JU	48.84	2.5	Isolated from the compost heap in Jean-Antoine Lepesantââ¬â¢s garden	M-A. Félix	12/14/2004	NA	14 Avenue des Rochers, 94170 Le Perreux-sur-Marne, France	Le Perreux-sur-Marne	ÃÅ½le-de-France	France	154
 LSJ1	LSJ1	NA	NA	TRUE	NA	CGC	51.45	-2.59	mushroom compost	W. Nicholas	1/1/1951	NA	89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	165
-NIC198	NIC195	NA	NA	TRUE	NA	NIC	39.4364016	-31.23849	humus	D. Bourcââ¬â¢his and J. Dumont	8/29/2011	NA	ER1-2, 9960, Portugal	NA	Açores	Portugal	183
+NIC198	NIC195	NA	NA	TRUE	NA	NIC	39.4364016	-31.23849	humus	D. Bourc’his and J. Dumont	8/29/2011	NA	ER1-2, 9960, Portugal	NA	Açores	Portugal	183
 NIC231	NIC231	NA	NA	TRUE	NA	NIC	43.720505	7.24045	rotting oranges	C. Braendle	11/14/2011	NA	65 Avenue de Pessicart, 06100 Nice, France	Nice	Provence-Alpes-Côte d'Azur	France	188
 NIC4	NIC3	NA	NA	TRUE	NA	NIC	43.3636	5.3215	rotting figs	C. Braendle	9/28/2008	NA	16 Avenue de Caronte, 13016 Marseille, France	Marseille	Provence-Alpes-Côte d'Azur	France	217
 QX1212	QX1212	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	235
@@ -181,12 +181,12 @@ JU397	JU397	NA	NA	TRUE	NA	JU	49.28	-0.32	compost	A. Barrière	9/1/2002	NA	416-60
 JU751	JU751	NA	NA	TRUE	NA	JU	48.44	2.5	Isolated from the compost heap in Jean-Antoine Lepesantââ¬â¢s garden	M-A. Félix	6/8/2005	NA	Unnamed Road, 91490 Courances, France	Courances	ÃÅ½le-de-France	France	155
 KR314	KR314	NA	NA	TRUE	NA	CGC	49.28	-123.13	NA	F. Dill	5/1/1984	NA	1047 Davie St, Vancouver, BC V6E 1M5, Canada	Vancouver	British Columbia	Canada	163
 NIC166	NIC166	NA	NA	TRUE	NA	NIC	46.72722	6.89775	immature prunes	C. Braendle	7/27/2007	NA	Le Bugnon 4, 1682 Valbroye, Switzerland	Valbroye	Vaud	Switzerland	179
-NIC195	NIC195	NA	NA	TRUE	NA	NIC	38.545874	-28.37322	apple	D. Bourcââ¬â¢his and J. Dumont	8/22/2011	NA	ER1, 9940 Santana, Portugal	Santana	Açores	Portugal	180
+NIC195	NIC195	NA	NA	TRUE	NA	NIC	38.545874	-28.37322	apple	D. Bourc’his and J. Dumont	8/22/2011	NA	ER1, 9940 Santana, Portugal	Santana	Açores	Portugal	180
 NIC237	NIC236	NA	NA	TRUE	NA	NIC	39.242006	-9.313417	rotting fruit	C. Braendle	11/26/2011	NA	R. João Luís de Moura 93, 2530-158 Lourinhã, Portugal	Lourinhã	Lisboa	Portugal	191
 QG536	QG536	NA	NA	TRUE	NA	QG	37.7502	-122.4331	NA	M. Rockman	NA	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	227
 QX1213	QX1212	NA	NA	TRUE	NA	QX	37.7502	-122.4331	rotting orange	M. Rockman	11/26/2007	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	236
 RC301	RC301	NA	NA	TRUE	NA	CGC	47.99	7.84	NA	R. Cassada	1/1/1983	NA	RehlingstraÃÅ¸e 12B, 79100 Freiburg im Breisgau, Germany	Freiburg im Breisgau	Baden-Württemberg	Germany	245
-WN2002	WN2002	NA	NA	TRUE	NA	WN	51.975285	5.694834	NA	J. Riksen	11/11/2007	NA	Eerste Dorskampweg, 6704 Wageningen, Netherlands	Wageningen	Gelderland	Netherlands	250
+WN2002	WN2002	NA	NA	TRUE	NA	WN	51.975285	5.694834	NA	J. Riksen	11/20/2007	NA	Eerste Dorskampweg, 6704 Wageningen, Netherlands	Wageningen	Gelderland	Netherlands	250
 WN2011	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	252
 WN2018	WN2001	NA	NA	TRUE	NA	WN	51.954422	6.303406	snail from organic waste bin	J. Riksen	6/26/2008	NA	Terborgseweg 153, 7004 DN Doetinchem, Netherlands	Doetinchem	Gelderland	Netherlands	257
 ECA250	CB4857	CB4857_UK	NA	TRUE	CB4857 (UK)	CB	34.096	-117.719	rotting mushroom	E.M. Hedgecock	11/1/1972	NA	224 N Indian Hill Blvd, Claremont, CA 91711, USA	Claremont	California	United States	56
@@ -197,7 +197,7 @@ JU1581	JU1581	NA	NA	TRUE	NA	JU	48.7015	2.1725	rotting apple	M-A. Félix	10/23/20
 JU393	JU393	NA	NA	TRUE	NA	JU	49.28	-0.32	compost	A. Barrière	9/1/2002	NA	416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	145
 JU406	JU406	NA	NA	TRUE	NA	JU	49.28	-0.32	compost	A. Barrière	9/1/2002	NA	416-600 D35, 14880 Hermanville-sur-Mer, France	Hermanville-sur-Mer	Basse-Normandie	France	150
 N2	N2	N2_HRH	NA	TRUE	N2 HRH	MT	51.45	-2.59	mushroom compost	W. Nicholas	1/1/1951	NA	89 Redcliff St, Bristol, City of Bristol BS1, UK	Bristol	NA	United Kingdom	174
-NIC199	NIC199	NA	NA	TRUE	NA	NIC	37.745428	-25.19929	humus	D. Bourcââ¬â¢his and J. Dumont	3/9/2011	NA	R. dos Moinhos, 9650 Faial da Terra, Portugal	Faial da Terra	Açores	Portugal	184
+NIC199	NIC199	NA	NA	TRUE	NA	NIC	37.745428	-25.19929	humus	D. Bourc’his and J. Dumont	3/9/2011	NA	R. dos Moinhos, 9650 Faial da Terra, Portugal	Faial da Terra	Açores	Portugal	184
 NIC236	NIC236	NA	NA	TRUE	NA	NIC	39.242006	-9.313417	rotting fruit	C. Braendle	11/26/2011	NA	R. João Luís de Moura 93, 2530-158 Lourinhã, Portugal	Lourinhã	Lisboa	Portugal	190
 PB303	PB303	NA	NA	TRUE	NA	CGC	NA	NA	came from a snail from Wardââ¬â¢s Biological Supply	S. Baird	11/14/1998	NA	NA	NA	NA	NA	218
 PX179	PX179	NA	NA	TRUE	NA	CGC	44.035	-123.058	snail from under a rock in the rhododendron garden	B. White	10/2/2001	NA	2740 Fairmount Blvd, Eugene, OR 97403, USA	Eugene	Oregon	United States	225
@@ -209,7 +209,7 @@ CB4854	CB4854	NA	NA	TRUE	NA	CGC	34.189	-118.131	vegetable garden	C.D. Johnson	5/
 CB4932	CB4932	NA	NA	TRUE	NA	CGC	51.02	-3.1	mushroom farm	P.S. Grewal	1/1/1991	pre-1991	94 Priory Bridge Rd, Taunton, Somerset TA1 1QA, UK	Taunton	NA	United Kingdom	32
 CX11271	CX11271	NA	NA	TRUE	NA	CX	34.13712	-118.12532	compost	A. Sivasundar	9/1/2003	NA	Olive Walk, Pasadena, CA 91125, USA	Pasadena	California	United States	36
 ED3040	ED3040	NA	NA	TRUE	NA	VX	-26.1	28.01	NA	E. Dolgin	3/1/2006	NA	214 Blairgowrie Dr, Randburg, 2194, South Africa	Randburg	Gauteng	South Africa	76
-ED3077	ED3077	NA	NA	TRUE	NA	VX	NA	NA	NA	NA	3/1/2006	NA	NA	NA	NA	NA	85
+ED3077	ED3077	NA	NA	TRUE	NA	VX	-1.19	36.48	NA	E. Dolgin	3/1/2006	NA	NA	NA	NA	NA	85
 EG4946	EG4946	NA	NA	TRUE	NA	EG	40.72596	-111.82184	NA	M. Ailion	9/27/2007	NA	2405 E 2100 S, Salt Lake City, UT 84109, USA	Salt Lake City	Utah	United States	91
 JU1530	JU1530	NA	NA	TRUE	NA	JU	48.7015	2.1725	rotting apple	M-A. Félix	9/9/2008	NA	309 Domaine de l'Université de Paris S, 91400 Orsay, France	Orsay	ÃÅ½le-de-France	France	109
 JU1652	JU1652	NA	NA	TRUE	NA	JU	-34.86	-56.19	compost	NA	1/1/2009	NA	Dr Carlos Vaz Ferreira, Montevideo 11700, Uruguay	Montevideo	Departamento de Montevideo	Uruguay	114
@@ -219,7 +219,7 @@ JU561	JU561	NA	NA	TRUE	NA	JU	48.71	-3.81	Isolated from a sowbug found in the tub
 JU774	JU774	NA	NA	TRUE	NA	JU	38.683	-9.34	garden garbage	M-A. Félix	7/10/2005	NA	R. Lourenço Marques 2A, 2775-561 Carcavelos, Portugal	Carcavelos	Lisboa	Portugal	156
 JU847	JU847	NA	NA	TRUE	NA	JU	48.46	7.461	compost from vegetable garden/vineyards	M-A. Félix	10/3/2005	NA	Chemin Muensterlingweg, 67210 Obernai, France	Obernai	Alsace	France	162
 MY18	MY18	NA	NA	TRUE	NA	CGC	51.96	7.53	NA	H. Schulenburg	7/1/2002	NA	Havixbecker Str. 76, 48161 Münster, Germany	Münster	Nordrhein-Westfalen	Germany	170
-NIC200	NIC199	NA	NA	TRUE	NA	NIC	37.74942	-25.66489	unknown fruit	D. Bourcââ¬â¢his and J. Dumont	5/9/2011	NA	R. do Brasil 11, 9500 Ponta Delgada, Portugal	Ponta Delgada	Açores	Portugal	186
+NIC200	NIC199	NA	NA	TRUE	NA	NIC	37.74942	-25.66489	unknown fruit	D. Bourc’his and J. Dumont	5/9/2011	NA	R. do Brasil 11, 9500 Ponta Delgada, Portugal	Ponta Delgada	Açores	Portugal	186
 PS2025	PS2025	NA	NA	TRUE	NA	CGC	34.19	-118.13	garden	J. Demodena	NA	NA	942-960 E Altadena Dr, Altadena, CA 91001, USA	Altadena	California	United States	221
 QG537	QG536	NA	NA	TRUE	NA	QG	37.7502	-122.4331	rotten solanaceous fruit, Buena Vista Park	M. Rockman	12/30/2010	NA	359 Jersey St, San Francisco, CA 94114, USA	San Francisco	California	United States	228
 QG558	QG556	NA	NA	TRUE	NA	QG	34.421629	-119.702021	rotting orange peel, with snails	A. Paaby	6/27/2011	NA	1000-1012 State St, Santa Barbara, CA 93101, USA	Santa Barbara	California	United States	232
