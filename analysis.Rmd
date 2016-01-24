@@ -139,7 +139,7 @@ grey = makeIcon(
 strain_info <- readr::read_tsv("processed/strain_isotype.tsv") %>%
                dplyr::filter(!is.na(latitude)) %>%
                dplyr::left_join(seqs) %>%
-               dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey"))
+               dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey")) 
 
 
 attach(strain_info)
@@ -221,7 +221,7 @@ isotypes <- seqs %>%
 
 strain_isotype <- seqs %>% 
   dplyr::filter(use_in_analysis == T) %>%
-  dplyr::select(isotype, strain, prev_names) %>%
+  dplyr::select(isotype, strain, previous_names) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct() %>%
   dplyr::mutate(sequenced = T)
@@ -231,10 +231,10 @@ strain_isolation_information <- readr::read_tsv("https://docs.google.com/spreads
 strain_isotype <- readr::read_tsv("processed/additional_isotypes.tsv") %>%
   dplyr::bind_rows(strain_isotype) %>%
   dplyr::group_by(strain) %>%
-  dplyr::mutate(prev_names = ifelse(!is.na(prev_names) & prev_names == strain, NA, prev_names)) %>%
+  dplyr::mutate(previous_names = ifelse(!is.na(previous_names) & previous_names == strain, NA, previous_names)) %>%
   dplyr::mutate(sequenced = ifelse(is.na(sequenced), F, sequenced)) %>%
   dplyr::left_join(strain_isolation_information) %>%
-  dplyr::select(strain, isotype, prev_names, warning_msg, sequenced, everything(),  -location)  %>%
+  dplyr::select(strain, isotype, previous_names, warning_msg, sequenced, everything(),  -location)  %>%
   dplyr::distinct()
 
 strain_isotype$strain_count <- group_indices(strain_isotype) 
@@ -256,7 +256,7 @@ fastq <- load_eav("raw/fastq.tsv.gz") %>%
          dplyr::select(-SUB, -DATE) %>%
          tidyr::spread(ATTR, VALUE, convert = TRUE) %>%
          dplyr::select(fastq = ENTITY, A_count, T_count, C_count, G_count, everything()) %>%
-         dplyr::mutate_each(funs(type.convert(., as.is=T)), everything()) %>%
+         #dplyr::mutate_each(funs(type.convert(., as.is=T)), everything()) %>%
          tidyr::separate(fastq, sep = "-", into = c("run", "lib", "strain"), extra = "drop") %>%
          dplyr::group_by(run, lib, strain) %>%
          dplyr::mutate(GC_count_mean = mean(GC_count)) %>%
