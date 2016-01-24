@@ -58,6 +58,9 @@ eav_attr <- function(.data, ..., spread = FALSE) {
   .data
 }
 
+strain_isotype <- readr::read_tsv("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv")
+
+
 seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A"))
 
 na_to_0 <- function(x) {
@@ -116,7 +119,7 @@ libraries <- dplyr::group_by(seqs, lib) %>% dplyr::summarize(sum = n())
 
 ### Strain Locations
 
-```{r, echo = F, fig.width = 9.5, fig.height = 5, warning=FALSE, message=FALSE}
+```{r, echo = F, fig.width = 9.5, fig.height = 5, warning=FALSE, message=FALSE, cache = F}
 library(leaflet)
 
 width <- 50
@@ -136,14 +139,13 @@ grey = makeIcon(
 ))
 
 
-strain_info <- readr::read_tsv("processed/strain_isotype.tsv") %>%
-               dplyr::filter(!is.na(latitude)) %>%
+leaflet_data <- strain_isotype %>% 
+                dplyr::filter(!is.na(latitude)) %>%
                dplyr::left_join(seqs) %>%
                dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey")) 
 
-
-attach(strain_info)
-leaflet(data = strain_info) %>% 
+attach(leaflet_data)
+leaflet(data = leaflet_data) %>% 
   addTiles() %>%
   addMarkers(~longitude, ~latitude, popup = paste0(strain, " - ", country), 
              icon = ~icons[type] )
@@ -211,32 +213,13 @@ analysis_seqs <- dplyr::filter(seqs, use_in_analysis == T) %>%
 
 readr::write_tsv(analysis_seqs, path = "processed/seqs.tsv")
 
-isotypes <- seqs %>% 
-  dplyr::select(isotype) %>%
-  dplyr::filter(!is.na(isotype)) %>%
-  dplyr::distinct() %>%
-  dplyr::arrange(isotype) %>%
-  dplyr::mutate(isotype_count=row_number()) %>%
-  dplyr::select(isotype_count, isotype) 
+strain_isotype <- dplyr::filter(strain_isotype, use == TRUE)
 
-strain_isotype <- seqs %>% 
-  dplyr::filter(use_in_analysis == T) %>%
-  dplyr::select(isotype, strain, previous_names) %>%
-  dplyr::filter(!is.na(isotype)) %>%
-  dplyr::distinct() %>%
-  dplyr::mutate(sequenced = T)
-
-strain_isolation_information <- readr::read_tsv("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv")
-
-strain_isotype <- readr::read_tsv("processed/additional_isotypes.tsv") %>%
-  dplyr::bind_rows(strain_isotype) %>%
-  dplyr::group_by(strain) %>%
-  dplyr::mutate(previous_names = ifelse(!is.na(previous_names) & previous_names == strain, NA, previous_names)) %>%
-  dplyr::mutate(sequenced = ifelse(is.na(sequenced), F, sequenced)) %>%
-  dplyr::left_join(strain_isolation_information) %>%
-  dplyr::select(strain, isotype, previous_names, warning_msg, sequenced, everything(),  -location)  %>%
-  dplyr::distinct()
-
+isotypes <- strain_isotype %>% 
+            dplyr::select(isotype) %>% 
+            dplyr::filter(!is.na(isotype)) %>%
+            dplyr::arrange(isotype) %>%
+            distinct()
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
 readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
