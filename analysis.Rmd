@@ -237,8 +237,6 @@ strain_isotype <- readr::read_tsv("processed/additional_isotypes.tsv") %>%
   dplyr::select(strain, isotype, previous_names, warning_msg, sequenced, everything(),  -location)  %>%
   dplyr::distinct()
 
-strain_isotype$strain_count <- group_indices(strain_isotype) 
-
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
 readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
