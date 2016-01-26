@@ -22,8 +22,8 @@ library(waffle)
 library(DT)
 library(ggmap)
 library(pryr)
-library(lubridate)
-
+library(grid)
+library(scales)
 
 pub_theme <- ggplot2::theme_bw() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(size=14, face="bold", color="black"),
@@ -146,10 +146,20 @@ leaflet_data <- strain_isotype %>%
 
 attach(leaflet_data)
 leaflet(data = leaflet_data) %>% 
-  addTiles() %>%
+  addProviderTiles("Thunderforest.OpenCycleMap") %>%
   addMarkers(~longitude, ~latitude, popup = paste0(strain, " - ", country), 
              icon = ~icons[type] )
 
+```
+
+# Sequenced Strains Only
+```{r}
+# Plot sequenced only
+leaflet_data <- leaflet_data %>% dplyr::filter(!is.na(isotype))
+leaflet(leaflet_data) %>%
+  addProviderTiles("Thunderforest.OpenCycleMap") %>%
+  addMarkers(~longitude, ~latitude, popup = paste0(strain, " - ", country), 
+             icon = ~icons[type] )
 
 ```
 

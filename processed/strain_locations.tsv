@@ -1,0 +1,412 @@
+strain	latitude	longitude	isolation	date_isolated	comment	isolated_by	city	state_province	country	location_raw
+AB1	-34.93	138.59	NA	1983-01-01	NA	Donald L Riddle	#ERROR!	#ERROR!	#ERROR!	Adelaide, Australia
+AB4	-34.93	138.59	NA	1983-01-01	NA	Donald L Riddle	#ERROR!	#ERROR!	#ERROR!	Adelaide, Australia
+BRC20067	24.072954	121.169736	unknown orangish-yellowish colored fruit	2012-01-13	NA	NA	#ERROR!	#ERROR!	#ERROR!	near Hehuanshan and W LIng in China
+BRC20113	24.124167	121.283056	fruit	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nantou, Taiwan
+BRC20231	23.541517	120.908112	flower (on tree, rotting)	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nantou, Taiwan
+BRC20263	-33.86748611	151.2069889	NA	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Sydney, Australia
+CB4852	NA	NA	NA	NA	isolated pre-1966	NA	#ERROR!	#ERROR!	#ERROR!	Unknown
+CB4854	34.189	-118.131	vegetable garden	1974-05-01	NA	Charles D. Johnson	#ERROR!	#ERROR!	#ERROR!	Altadena, USA
+CB4856	21.33	-157.86	pineapple field	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oahu, Hawaii
+CB4856 (CGC #2)	21.33	-157.86	pineapple field	1972-08-01	Do not Use	NA	#ERROR!	#ERROR!	#ERROR!	NA
+CB4856 (CGC #3)	21.33	-157.86	pineapple field	1972-08-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oahu, Hawaii
+CB4932	51.02	-3.1	mushroom farm	NA	isolated pre-1991	Parwinder Grewal	#ERROR!	#ERROR!	#ERROR!	Taunton, United Kingdom
+CX11254	34.13531	-118.30582	NA	2003-09-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11262	34.12946	-118.10987	NA	2003-09-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11264	34.12946	-118.10987	NA	2003-09-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11271	34.13712	-118.12532	compost	2003-09-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11276	34.20111	-118.21198	NA	2013-09-03	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11285	34.14331	-118.05496	compost	2003-09-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11292	34.13531	-118.30582	NA	2004-02-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11307	34.12946	-118.10987	Huntington Gardens	2013-09-03	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11314	34.12946	-118.10987	NA	2003-09-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+CX11315	34.12946	-118.10987	Huntington Gardens	2013-09-03	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, USA
+DL200	9.03	38.74	NA	2007-12-01	NA	Dee R. Denver	#ERROR!	#ERROR!	#ERROR!	Addis Ababa, Ethiopia
+DL226	44.5633	-123.2821	NA	2007-01-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Corvalis, USA
+DL238	19.22	-155.82	NA	2008-07-15	NA	NA	#ERROR!	#ERROR!	#ERROR!	Manuka, HI
+ECA189	19.423889	-155.2225	next to a yacon plant	2014-07-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Near Volcano National Park
+ECA190	19.423889	-155.2225	next to a yacon plant	2014-07-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Near Volcano National Park
+ECA191	19.424167	-155.221944	rotting ginger heap	2014-07-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Near Volcano National Park
+ECA192	19.424444	-155.221944	garden trash pile by road	2014-07-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Near Volcano National Park
+ECA193	19.424444	-155.221944	garden trash pile by road	2014-07-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Near Volcano National Park
+ECA243	44.85	0.48	NA	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Bergerac, France
+ECA244	44.85	0.48	NA	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Bergerac, France
+ECA245	34.189	-118.131	vegetable garden	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Altadena, USA
+ECA246	34.189	-118.131	organic garden	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Altadena, USA
+ECA247	37.43	-122.13	compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Palo Alto, USA
+ECA248	37.44	-122.14	compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Palo Alto, USA
+ECA249	34.096	-117.719	NA	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Claremont, USA
+ECA250	34.096	-117.719	rotting mushroom	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Claremont, USA
+ECA251	34.1	-118.1	NA	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Pasadena, USA
+ECA252	34.1	-118.1	flowerbed	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Pasadena, USA
+ECA253	51.45	-2.59	mushroom compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Bristol, United Kingdom
+ECA254	51.45	-2.59	mushroom compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Bristol, United Kingdom
+ECA255	51.45	-2.59	mushroom compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Bristol, United Kingdom
+ECA257	NA	NA	NA	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	NA
+ECA258	NA	NA	from a snail from Connecticut Valley Biological Supply	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	NA
+ECA259	NA	NA	from a snail from Connecticut Valley Biological Supply	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	NA
+ECA260	21.33	-157.86	pineapple field	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	NA
+ECA274	51.45	-2.59	mushroom compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Bristol, United Kingdom
+ECA36	-36.893333	174.745529	garden grass	2013-07-27	NA	NA	#ERROR!	#ERROR!	#ERROR!	Auckland, New Zealand
+ED3005	55.94	-3.36	NA	2004-10-25	NA	Asher D Cutter	#ERROR!	#ERROR!	#ERROR!	Edinburgh, United Kingdom
+ED3011	55.92	-3.19	NA	2004-11-11	NA	Asher D Cutter	#ERROR!	#ERROR!	#ERROR!	Edinburgh, Scotland
+ED3012	55.92	-3.19	NA	2004-11-26	NA	Asher D Cutter	#ERROR!	#ERROR!	#ERROR!	Edinburgh, Scotland
+ED3017	55.92	-3.19	NA	2004-12-03	NA	Asher D Cutter	#ERROR!	#ERROR!	#ERROR!	Edinburgh, Scotland
+ED3040	-26.1	28.01	NA	2006-03-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Johannesburg, South Africa
+ED3046	-33.22	19.19	NA	2006-03-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ceres, South Africa
+ED3048	-33.22	19.19	NA	2006-03-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ceres, South Africa
+ED3049	-33.22	19.19	NA	2006-03-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ceres, South Africa
+ED3052	-33.22	19.19	NA	2006-03-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ceres, South Africa
+ED3073	-1.05	36.39	NA	2006-03-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Limuru, Kenya
+ED3077	NA	NA	NA	2006-03-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nairobi, Kenya
+EG4347	44.04789	-123.07108	NA	2006-10-01	NA	Michael Ailion	#ERROR!	#ERROR!	#ERROR!	Eugene, USA
+EG4349	40.771467	-111.87316	NA	2006-10-01	NA	Michael Ailion	#ERROR!	#ERROR!	#ERROR!	Salt Lake City, USA
+EG4724	41.628771	-8.347617	NA	2007-03-01	NA	Michael Ailion	#ERROR!	#ERROR!	#ERROR!	Amares, Portugal
+EG4725	41.628771	-8.347617	NA	2007-03-01	NA	Michael Ailion	#ERROR!	#ERROR!	#ERROR!	Amares, Portugal
+EG4946	40.72596	-111.82184	NA	2007-09-27	NA	Gunther Hollopeter	#ERROR!	#ERROR!	#ERROR!	Salt Lake City, USA
+GXW1	30.542889	114.419828	soil under kiwi fruit in botanical garden	2010-11-05	NA	NA	#ERROR!	#ERROR!	#ERROR!	Wuhan City, China
+JT11362	47.763944	-122.275484	Worm bin w kitchen scraps and espresso grounds	2003-05-01	NA	John M. Kemner	#ERROR!	#ERROR!	#ERROR!	Lake Forest Park, USA
+JT11398	47.763944	-122.275484	Worm bin fed kitchen scraps and espresso grounds	2003-12-01	NA	John M. Kemner	#ERROR!	#ERROR!	#ERROR!	Lake Forest Park, USA
+JU1088	34.7613	138.0149	soil in the Kacho-en aviary	2007-03-14	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Kakegawa, Japan
+JU1172	-36.87	-73.04	compost with rotting tomatoes	2007-04-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Concepcion, Chile
+JU1200	55.577	-4.6	compost	2007-08-01	NA	Antony Page	#ERROR!	#ERROR!	#ERROR!	Dundonald, United Kingdom
+JU1212	48.71	-3.81	rotting arum stem	2007-09-24	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Primel Tregastel, France
+JU1213	48.71	-3.81	rotting apple	2007-09-24	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Primel Tregastel, France
+JU1242	49.1269	1.9595	black slug	2007-10-14	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil, France
+JU1246	49.12618	1.96152	rotting apple	2007-10-14	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil, France
+JU1395	47.2199	0.04619	compost with shiitake mushrooms	2008-03-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Saut-aux-Loups, France
+JU1395	47.22032	0.045399	shiitake mushroom compost remains outside the mushroom farm Le Saut-aux-Loups,	2008-03-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Montsoreau, France
+JU1395	47.2199	0.04619	compost with shiitake mushrooms	2008-03-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Saut-aux-Loups, France
+JU1395	47.22032	0.045399	shiitake mushroom compost remains outside the mushroom farm Le Saut-aux-Loups,	2008-03-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Montsoreau, France
+JU1400	37.3845	-5.988	rotting oranges	2008-03-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Sevilla, Spain
+JU1409	37.468	-5.637	rotting cactus fruit	2008-03-31	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Carmona, Spain
+JU1440	41.41307	2.15231	rotting palm fruits	2008-06-09	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Barcelona, Spain
+JU1491	46.63	1.06	rotting arum stem	2008-08-17	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Le Blanc, France
+JU1516	48.7015	2.1725	rotting apple	2008-09-09	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Orsay, France
+JU1530	48.7015	2.1725	rotting apple	2008-09-09	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Orsay, France
+JU1530MAF	48.662134	2.2131	rotting apple O21 (tree Wealthy, like O20), sampled in the Orsay orchard	NA	NA	#N/A	#ERROR!	#ERROR!	#ERROR!	Orsay, France
+JU1568	48.8092	2.3862	rotting Petasites stem	2008-10-05	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Ivry-sur-Seine, France
+JU1580	48.7015	2.1725	rotting apple	2008-10-06	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Orsay, France
+JU1581	48.7015	2.1725	rotting apple	2008-10-23	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Orsay, France
+JU1586	46.63	1.06	rotting grape puree	2008-11-03	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Le Blanc, France
+JU1652	-34.86	-56.19	compost	2009-01-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Montevideo, Uruguay
+JU1656	48.725018	-3.972104	rotting fern stem (Pteridium aquilinum	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Sainte-Barbe (Finistere), France
+JU1666	48.725018	-3.972104	rotting sloe	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Sainte-Barbe (Finistere), France
+JU1762	48.695548	-3.790033	rotting Heracleum stem	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Plougasnou, Finistere, France
+JU1770	48.695548	-3.790033	rotting fern stem	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Plougasnou, Finistere, France
+JU1792	46.63278	1.064289	rotting Arum stem sampled in woods	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU1793	49.12604	1.95114	rotting Heracleum stem	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil (Val d'Oise), France
+JU1807	48.662134	2.2131	rotting apple O145 (Kidd's Orange)	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Orsay, France
+JU1808	48.81257	2.395372	Helix aspersa snail	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Ivry (Val-de-Marne), Franc
+JU1893	48.662134	2.2131	rotting apple	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Orsay, France
+JU1896	37.999722	23.749673	rotten olives	2001-01-02	NA	Lois Tang	#ERROR!	#ERROR!	#ERROR!	Athens, Greece
+JU1920	49.12604	1.95114	rotting Heracleum stem S60	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil (Val d'Oise), France
+JU1922	49.12604	1.95114	rotting Heracleum stem S68	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil (Val d'Oise), France
+JU1924	49.12604	1.95114	rotting Heracleum stem S73	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil (Val d'Oise), France
+JU1929	49.12604	1.95114	rotting Heracleum stem S86	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil (Val d'Oise), France
+JU1934	49.12604	1.95114	rotting Heracleum stem S106	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil (Val d'Oise), France
+JU1960	34.18973	-118.131319	compost in the same garden in Altadena as PS2025	NA	NA	John DeModena	#ERROR!	#ERROR!	#ERROR!	Altadena, CA
+JU2001	-21.1	55.5	NA	2010-09-01	NA	Tony Belicard	#ERROR!	#ERROR!	#ERROR!	La Reunion
+JU2007	50.6	-1.3	rotting apple	2010-10-01	NA	Michalis Barkoulas	#ERROR!	#ERROR!	#ERROR!	Cowes, Isle of Wight, UK
+JU2016	37.757593	-122.463177	rotten pumpkin	2010-11-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+JU2017	37.757593	-122.463177	rotten sweet potato	2010-11-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+JU2106	43.606266	0.239824	compost heap	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Frechendets (Hautes Pyrenees)
+JU2131	48.0497	-4.705	rotting Heracleum stem	2011-08-09	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Baie des Trepasses (Finistere), France
+JU2139	46.63278	1.064289	rotting acorns sampled in woods	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU2141	46.63278	1.064289	rotting walnuts (outer layer)	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU2151	49.12604	1.95114	rotting Heracleum stem S173	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Santeuil (Val d'Oise), France
+JU2234	47.227	-1.583	rotten plum	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nantes, France
+JU2250	48.285278	-1.891389	apple	2012-11-15	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cardroc (Ile et Vilaine, France)
+JU2257	46.63278	1.064289	compost (in container) sampled in the garden in le Blan	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU2287	46.63278	1.064289	compost (in container) sampled in the garden in le Blan	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU2316	38.7175	-9.1486	Isolated from rotten Ficus macrophylla fruits; botanical gardens	2013-08-25	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+JU2460	48.6934	-3.9251	rotting cabbage leaves	2002-12-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ile Callot (Finistere, France)
+JU2461	-12.801653	-69.289488	rotting carambola	2013-01-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Madre de Dios (Peru)
+JU2464	-13.155	-72.525	fleshy fruit; rotten berry?	2013-01-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Aguas Calientes, Peru
+JU2466	-13.257	-72.266	lemon	2013-01-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ollantaytambo, Peru
+JU2467	-13.155	-72.525	fleshy fruit; rotten berry?	2013-01-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Aguas Calientes, Peru
+JU2468	-13.155	-72.525	fleshy fruit; rotten berry?	2013-01-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Aguas Calientes, Peru
+JU2478	50.85	4.351	Denis Thieffry's compost heap	2013-02-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Brussels, Belgium
+JU2513	38.26016	22.0736	rotting orange	2009-07-06	NA	NA	#ERROR!	#ERROR!	#ERROR!	Aigio, Greece
+JU2519	38.7175	-9.1486	Isolated from rotten Ficus isophlebia fruits; botanical gardens	2013-08-25	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+JU2522	38.7175	-9.1486	Isolated from rotten fruits of Harpephyllum caffrum (Anacardiaceae); botanical gardens	2013-08-25	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+JU2526	38.7175	-9.1486	Isolated from rotten fruits of Chrysophyllum imperiale; botanical gardens	2013-08-25	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+JU2527	47.8797	-3.5999	rotten apples	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Mellac (Finistere), France
+JU2534	49.357921	0.097087	cherry	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	NA
+JU2565	44.958394	1.066213	rotting figs	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Perigord, France
+JU2566	48.83886	2.44599	rotting Gunnera stems in the Parc Floral	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Vincennes, France
+JU2570	46.2657	-0.2685	rotting walnuts	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Niort, Mougon, Deux Sevres, France
+JU2572	48.81257	2.395372	rotting Petasites stems	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ivry (Val-de-Marne), Franc
+JU2574	8.4	76.975	solated from rotting stems (banana stems?)	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Kovalam (Kerala, India)
+JU2575	49.0857	3.0707	rotting Heracleum stem	2013-10-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Crouy-sur-Ourcq (Seine-et-Marne), France
+JU2576	49.0861	3.072	rotting stem	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Crouy-sur-Ourcq (Seine-et-Marne), France
+JU2578	48.87613	2.4315	compost in the jardin partage in Bagnolet	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Bagnolet (Seine-Sainte-Denis), France
+JU258	32.73	-16.89	along a path through an orchard	2001-10-01	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Ribeiro Frio, Madeira
+JU2581	46.63278	1.064289	pears sampled in the garden in Le Blanc	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU2586	48.497005	2.159459	rotting pear	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Chatou (Yvelines, France)
+JU2587	45.026713	3.872016	compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Vals-pres-Le-Puy (Haute-Loire), France
+JU2592	48.628558	-2.403836	rotting peach	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Plurien (Cotes d'Armor, France)
+JU2593	48.822556	2.222334	compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Hauts de Seine, France
+JU2600	49.1242	1.9496	rotting apple across the river from the station	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Santeuil(Val d'Oise), France,
+JU2604	49.16477	1.86175	rotting walnut	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nucourt (Val d'Oise), France.
+JU2605	49.166	1.86	rotting apple	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nucourt (Val d'Oise), France.
+JU2610	49.1075	1.7915	rotting apple	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Arthies and Wy-di-tJoli-Village (Val d'Oise), France
+JU2611	43.8658	5.0628	rotting apple (same apple as JU2616)	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	South of Isle-sur-Sorgue (Vaucluse), France
+JU2619	NA	NA	compost	2014-01-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Arizona
+JU2771	47.410058	0.991728	rotting stems sampled in the park of Chateau du Clos Luce	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Amboise, Indre-et-Loire, France
+JU2800	NA	NA	rotting pear	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cachan, France
+JU2802	48.9067	2.14167	rotting rhubarb stems in a private garden of Montesson	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Yvelines, France
+JU2811	-33.8632	151.219453	rotting ficus fruit collected in the Royal Botanical Garden, Sydney	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Sydney, Australia
+JU2825	48.8092	2.3862	otting Petasites stem	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ivry-sur-Seine (Val de Marne)
+JU2828	46.63278	1.064289	rotting pears	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU2829	46.63278	1.064289	rotting pears	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU2830	46.63278	1.064289	rotting pears	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	le Blanc (Indre), France
+JU2838	20.205961	-97.98832	rotten orange	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Tenango, Puebla, Mexico
+JU2841	NA	NA	slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	New Zealand
+JU2853	41.19	-7.545	soil from a plant pot	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Pinhao, Portugal
+JU2860	52.19842	0.115365	rotting wood, fungus, rotting leaf sample	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Coe Fen meadow, Cambridge (UK)
+JU2862	52.1944	0.1264	rotting flowers of Napoleona vogelli in the heated greenhouse	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanic Garden, Cambridge (UK).
+JU2866	34.0751	-118.4409	unidentified rotting fruit, Murphy Sculpture Garden, UCLA Campus	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Los Angeles, CA, USA
+JU2878	19.29732	-99.098769	rotten berry sampled in a greenhouse	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cuemanco-Xochimilco, Mexico
+JU2879	19.29732	-99.098769	rotten apple sampled in a greenhouse	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cuemanco-Xochimilco, Mexico
+JU310	46.63	1.06	vegetable garden	2002-08-25	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Le Blanc, France
+JU311	44.42	4.4	wash from snails from under a tree of ivy	2002-09-08	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Merlet, France
+JU312	44.421936	4.407923	Wash from snail tube - snails coming from under a tree full of ivy	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Merlet, Lagorce (Ardeche), France
+JU315	44.2	4.4	pomatias elegans (?) snails	2002-09-08	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Merlet, France
+JU323	44.42	4.4	From a helix snail #3 on the trunk of a mulberry tree	2002-09-08	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Merlet, France
+JU345	44.421936	4.407923	Glomeris myriapod in the compost pile (same myriapod as JU343, JU344, JU346)	NA	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Merlet, Lagorce (Ardeche), France
+JU346	44.2	4.4	From a Glomeris myriapod in the compost pile	2002-09-08	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Merlet, France
+JU360	48.98	2.23	Compost heap in Claude Pieau's garden	2002-09-02	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Francoville, France
+JU363	48.98	2.23	Compost heap in Claude Pieau's garden	2002-09-16	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Francoville, France
+JU367	48.98	2.23	Compost heap in Claude Pieau's garden	2002-09-16	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Francoville, France
+JU393	49.28	-0.32	compost	2002-09-01	NA	Antoine Barriere	#ERROR!	#ERROR!	#ERROR!	Hermanville, France
+JU394	49.28	-0.32	compost	2002-09-01	NA	Antoine Barriere	#ERROR!	#ERROR!	#ERROR!	Hermanville, France
+JU397	49.28	-0.32	compost	2002-09-01	NA	Antoine Barriere	#ERROR!	#ERROR!	#ERROR!	Hermanville, France
+JU406	49.28	-0.32	compost	2002-09-01	NA	Antoine Barriere	#ERROR!	#ERROR!	#ERROR!	Hermanville, France
+JU440	48.715	1.56	compost	2003-09-12	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Beauchene, France
+JU561	48.71	-3.81	Isolated from a sowbug found in the tub of compost from Hent ar Rhun, Finistere, France	2004-10-03	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Sainte-Barbe, France
+JU642	48.84	2.5	Isolated from the compost heap in Jean-Antoine Lepesants garden	2004-12-14	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Le Perreux-sur-Marne, France
+JU751	48.44	2.5	Isolated from the compost heap in Jean-Antoine Lepesants garden	2005-06-08	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Le Perreux-sur-Marne, France
+JU774	38.683	-9.34	garden garbage	2005-07-10	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Carcavelos, Portugal
+JU775	38.7175	-9.1486	botanical gardens	2005-07-10	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+JU778	38.719	-9.1491	botanical gardens	2005-07-10	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+JU782	38.7191	-9.1503	botanical gardens	2005-07-10	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+JU792	43.06	0.24	compost	2005-08-31	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Frechendets, France
+JU830	48.52	9.05	compost	2005-09-28	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Tubingen, Germany
+JU847	48.46	7.461	compost from vegetable garden/vineyards	2005-10-03	NA	Marie-Anne Felix	#ERROR!	#ERROR!	#ERROR!	Obernai, France
+KR314	49.28	-123.13	NA	1984-05-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Vancouver, Canada
+LKC34	-18	46	NA	2005-06-17	NA	NA	#ERROR!	#ERROR!	#ERROR!	Unknown city, Madagascar
+LSJ1	51.45	-2.59	mushroom compost	1951-01-01	NA	Warwick L. Nicholas	#ERROR!	#ERROR!	#ERROR!	Bristol, United Kingdom
+LSJ2	51.45	-2.59	mushroom compost	2009-05-05	NA	NA	#ERROR!	#ERROR!	#ERROR!	Bristol, United Kingdom
+MY1	52.54	7.31	NA	2002-07-01	NA	Hinrich Schulenburg	#ERROR!	#ERROR!	#ERROR!	Lingen, Germany
+MY10	51.96	7.53	NA	2002-07-01	NA	Hinrich Schulenburg	#ERROR!	#ERROR!	#ERROR!	Roxel, Germany
+MY16	51.93	7.57	NA	2002-07-01	NA	Hinrich Schulenburg	#ERROR!	#ERROR!	#ERROR!	Mecklenbeck, Germany
+MY18	51.96	7.53	NA	2002-07-01	NA	Hinrich Schulenburg	#ERROR!	#ERROR!	#ERROR!	Roxel, Germany
+MY2001	51.950777	7.536628	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2004	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2011	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2014	51.950777	7.536628	brown slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2022	54.346355	10.117737	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2024	54.346355	10.117737	brown slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2042	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2050	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2051	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2054	51.950777	7.536628	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2078	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2097	54.346355	10.117737	brown slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2099	54.346355	10.117737	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2109	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2121	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2137	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2138	54.346355	10.117737	brown slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2142	51.950723	7.599099	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2143	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2144	51.950723	7.599099	rotting apple compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2147	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2198	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2199	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2208	54.346355	10.117737	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2212	54.346355	10.117737	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2224	54.346355	10.117737	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2239	54.346355	10.117737	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2282	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2288	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2291	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2294	51.950723	7.599099	rotting apple compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY23	51.96	7.53	NA	2002-07-01	NA	Hinrich Schulenburg	#ERROR!	#ERROR!	#ERROR!	Roxel, Germany
+MY2338	51.950723	7.599099	rotting apple compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2339	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2344	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2347	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2373	54.346355	10.117737	Isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2406	54.346355	10.117737	rotting apple compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2434	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2443	51.950723	7.599099	rotting apple compost	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2453	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2479	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2481	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2491	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2502	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2530	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2532	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2535	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2541	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2573	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY2579	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY2585	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY2622	54.3491	10.11505	myriapod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2623	54.3491	10.11505	slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2630	54.3491	10.11505	isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2635	54.3491	10.11505	isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2636	54.3491	10.11505	myriapod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2640	54.3491	10.11505	slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2649	54.3491	10.11505	myriapod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2679	54.3491	10.11505	isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2681	54.3491	10.11505	myriapod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2682	54.3491	10.11505	invertebrate	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2684	54.3491	10.11505	slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2685	54.3491	10.11505	isopod Oniscus asellus	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2688	54.3491	10.11505	slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2689	54.3491	10.11505	chilopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2691	54.3491	10.11505	isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2692	54.3491	10.11505	isopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2693	54.3491	10.11505	slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2713	54.3491	10.11505	isopod Oniscus asellus	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2719	54.3491	10.11505	chilopod	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY2741	54.3491	10.11505	slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Kiel, Germany
+MY508	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY518	51.964154	7.611719	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Muenster, Nordrhein-Westfalen, Germany
+MY524	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY538	54.346355	10.117737	brown slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY559	51.950723	7.599099	brown slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY561	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY564	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY570	51.950777	7.536628	brown slug	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY579	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY589	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY673	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY679	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY684	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY710	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY713	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY741	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY772	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY792	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY795	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY803	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY804	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY819	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY864	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY881	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY882	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY887	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY904	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY920	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY934	51.950723	7.599099	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Farming museum, Muenster, Nordrhein-Westfalen, Germany
+MY965	51.950777	7.536628	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Private garden, Roxel, Nordrhein-Westfalen, Germany
+MY990	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+MY991	54.346355	10.117737	compost heap	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical Garden, Kiel, Schleswig-Holstein, Germany
+N2	51.45	-2.59	mushroom compost	NA	NA	Warwick L. Nicholas	#ERROR!	#ERROR!	#ERROR!	Bristol, United Kingdom
+NIC1	43.279	5.3543	rotting fruit	2008-09-14	NA	NA	#ERROR!	#ERROR!	#ERROR!	Marseille, France
+NIC1049	43.593561	1.45032	Compost fresh	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Toulouse, France
+NIC1107	43.716278	7.266935	Gingko fruits	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Parc Valrose, Nice, France
+NIC166	46.72722	6.89775	immature prunes	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Canton of Vaud, Switzerland
+NIC195	38.545874	-28.37322	apple	2011-08-22	NA	NA	#ERROR!	#ERROR!	#ERROR!	Santa Aana, Azores
+NIC196	38.4716405	-28.20149	grapes	2011-08-23	NA	NA	#ERROR!	#ERROR!	#ERROR!	Pranhia, Azores
+NIC197	38.39682	-28.25165	apple	2011-08-23	NA	NA	#ERROR!	#ERROR!	#ERROR!	Poco dos Patas, Azores
+NIC198	39.4364016	-31.23849	humus	2011-08-29	NA	NA	#ERROR!	#ERROR!	#ERROR!	Poco dos Patas, Azores
+NIC199	37.745428	-25.19929	humus	2011-03-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Faial da Terra, Azores
+NIC2	43.279	5.3543	rotting plant	2008-09-14	NA	NA	#ERROR!	#ERROR!	#ERROR!	Marseille, France
+NIC200	37.74942	-25.66489	unknown fruit	2011-05-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ponta Delgada, Azores
+NIC207	43.720505	7.24045	rotting oranges	2011-09-21	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nice, France
+NIC231	43.720505	7.24045	rotting oranges	2011-11-14	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nice, France
+NIC232	43.720505	7.24045	rotting oranges	2011-11-14	NA	NA	#ERROR!	#ERROR!	#ERROR!	Nice, France
+NIC236	39.242006	-9.313417	rotting fruit	2011-11-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lourinha, Portugal
+NIC237	39.242006	-9.313417	rotting fruit	2011-11-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lourinha, Portugal
+NIC242	38.691765	-9.31609	Isolated at IGC	2004-01-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oeiras, Portugal
+NIC251	38.66621	28.151364	Rotting yellow berries from shrub.	2016-08-12	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ribeira do Nabo, Urzelina, S. Jorge, Azores
+NIC252	38.661313	-28.147949	Rotting fruit (?) from Camelia.	2016-08-12	NA	NA	#ERROR!	#ERROR!	#ERROR!	Ribeira do Nabo, Urzelina, S. Jorge, Azores
+NIC255	43.714834	7.266779	isolated from a rotting orange trap (trap set date: 10.27.2012)	2012-11-18	NA	NA	#ERROR!	#ERROR!	#ERROR!	Parc Valrose
+NIC256	38.71829	-9.14875	fruits palm tree (olive size) ;Botanical garden	2012-12-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+NIC258	38.71829	-9.14875	fruits palm tree (large) ;Botanical garden	2012-12-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+NIC259	38.71829	-9.14875	fruits, Opuntia-like plant ;Botanical garden	2012-12-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+NIC260	38.71829	-9.14875	fruits, osage orange (Maclura pomifera ;Botanical garden	2012-12-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+NIC261	38.71829	-9.14875	fruits, Silene sp.? ;Botanical garden,	2012-12-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+NIC262	38.71829	-9.14875	Strelitzia flower (inside) ;Botanical garden,	2012-12-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+NIC263	38.71829	-9.14875	fruits palm tree (olive size) ;Botanical garden	2012-12-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+NIC265	38.71829	-9.14875	flowers, fruits, humus sample ;Botanical garden	2012-12-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Lisbon, Portugal
+NIC266	38.69237	-9.31592	flowers (grapes) from tree ;Jardim do Palacio do Marques de Pombal	2012-12-07	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oeiras, Portugal
+NIC267	38.69237	-9.31592	Orange fruits ;Jardim do Palacio do Marques de Pombal	2012-12-07	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oeiras, Portugal
+NIC268	38.69237	-9.31592	Orange fruits ;Jardim do Palacio do Marques de Pombal	2012-12-07	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oeiras, Portugal
+NIC269	38.69237	-9.31592	Orange fruits ;Jardim do Palacio do Marques de Pombal	2012-12-07	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oeiras, Portugal
+NIC270	38.69237	-9.14875	Orange fruits, litter, humus ;Jardim do Palacio do Marques de Pombal	2012-12-07	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oeiras, Portugal
+NIC271	38.69237	-9.31592	Magnolia fruits (woody) ;Jardim do Palacio do Marques de Pombal	2012-12-07	NA	NA	#ERROR!	#ERROR!	#ERROR!	Oeiras, Portugal
+NIC272	39.769459	-8.756356	litter, walnuts, isopods ;Garden,old farmhouse	2012-12-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Alqueidao da Boavista, Portugal
+NIC273	39.769459	-8.756356	litter, walnuts, isopods ;Garden,old farmhouse	2012-12-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Alqueidao da Boavista, Portugal
+NIC274	39.769459	-8.756356	figs, litter ;Garden,old farmhouse	2012-12-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Alqueidao da Boavista, Portugal
+NIC275	39.769459	-8.756356	chestnuts, husks ;Garden,old farmhouse,	2012-12-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Alqueidao da Boavista, Portugal
+NIC276	39.769459	-8.756356	Kaki fruit remains, litter, (under Kaki tree) ;Garden,old farmhouse,	2012-12-09	NA	NA	#ERROR!	#ERROR!	#ERROR!	Alqueidao da Boavista, Portugal
+NIC277	43.716441	7.266138	Isolated from rotting orange (trap); trap set on 2012-11-27	2012-12-15	NA	NA	#ERROR!	#ERROR!	#ERROR!	Parc Valrose
+NIC3	43.3636	5.3215	rotting figs	2008-09-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Marseille, France
+NIC4	43.3636	5.3215	rotting figs	2008-09-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Marseille, France
+NIC501	48.77302	2.2675	Apples	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Parc de la Vallee aux Loups, Chatenay-Malabry, France
+NIC508	40.86183	14.261756	Magnolia flowers	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Naples, Italy
+NIC511	40.8625	14.2623855	Citrus fruits	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Naples, Italy
+NIC512	40.8625	14.2623855	Citrus fruits	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Botanical garden, Naples, Italy
+NIC513	38.776038	-9.167136	Olives	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Parque Botanico do Monteiro-Mor, Lisbon, Portugal
+NIC514	38.776038	-9.167136	Olives	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Parque Botanico do Monteiro-Mor, Lisbon, Portugal
+NIC515	38.776775	-9.165884	Apples	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Parque Botanico do Monteiro-Mor, Lisbon, Portugal
+NIC521	36.535679	-6.304441	Small woody fruits, humus	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cadiz, Spain
+NIC522	36.535679	-6.304441	Citrus fruit	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cadiz, Spain
+NIC523	36.535679	-6.29831	Ficus fruits woody, humus	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cadiz, Spain
+NIC526	36.535679	-6.304441	Fruit shells, woody	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cadiz, Spain
+NIC527	36.535679	-6.304441	Citrus fruit	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cadiz, Spain
+NIC528	36.535679	-6.29831	Orange	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cadiz, Spain
+NIC529	37.870754	-4.784967	Olives, litter, humus	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Cordoba, Spain
+PB303	NA	NA	came from a snail from Ward's Biological Supply	1998-11-14	NA	Scott Baird	#ERROR!	#ERROR!	#ERROR!	NA
+PS2025	34.19	-118.13	garden	Unknown	NA	John DeModena	#ERROR!	#ERROR!	#ERROR!	Altadena, USA
+PX179	44.035	-123.058	snail from under a rock in the rhododendron garden	2001-10-02	NA	NA	#ERROR!	#ERROR!	#ERROR!	Eugene, USA
+QG2075	33.951	-83.376	store-bought mushrooms in a mushroom-feeding Drosophila vial	2013-02-20	NA	NA	#ERROR!	#ERROR!	#ERROR!	Athens, Georgia, USA
+QG536	37.7502	-122.4331	NA	2004-01-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QG536 #2	NA	NA	NA	2004-01-01	NA	NA	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QG537	37.7502	-122.4331	rotten solanaceous fruit, Buena Vista Park	2010-12-30	NA	NA	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QG537 #2	NA	NA	NA	2004-01-01	NA	NA	NA	NA	NA	San Francisco, USA
+QG538	37.7502	-122.4331	rotten solanaceous fruit, Buena Vista Park	2010-12-30	NA	NA	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QG538 #2	NA	NA	NA	2004-01-01	NA	NA	NA	NA	NA	San Francisco, USA
+QG556	34.421629	-119.702021	rotting orange peel, with snails	2011-06-27	NA	NA	#ERROR!	#ERROR!	#ERROR!	Santa Barbara, CA
+QG557	34.421629	-119.702021	rotting orange peel, with snails	2011-06-27	NA	NA	#ERROR!	#ERROR!	#ERROR!	Santa Barbara, CA
+QG558	34.421629	-119.702021	rotting orange peel, with snails	2011-06-27	NA	NA	#ERROR!	#ERROR!	#ERROR!	Santa Barbara, CA
+QG558 #2	34.421629	-119.702021	rotting orange beneath a non-edible fig tree; orange had large snail and two slugs	2011-06-27	NA	NA	#ERROR!	#ERROR!	#ERROR!	Santa Barbara, USA
+QW947	-33.4213	-70.6106	compost heap with moist rotting grass (urban park) at Univerisdad Mayor, Camino la Piramide	2013-04-12	NA	NA	#ERROR!	#ERROR!	#ERROR!	Santiago, Chile
+QX1211	37.7502	-122.4331	rotting orange	2007-11-26	NA	Matthew Rockman	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QX1212	37.7502	-122.4331	rotting orange	2007-11-26	NA	Matthew Rockman	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QX1213	37.7502	-122.4331	rotting orange	2007-11-26	NA	Matthew Rockman	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QX1214	37.7502	-122.4331	rotting orange	2007-11-26	NA	Matthew Rockman	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QX1215	37.7502	-122.4331	rotting orange	2007-11-26	NA	Matthew Rockman	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QX1216	37.7502	-122.4331	rotting orange	2007-11-26	NA	Matthew Rockman	#ERROR!	#ERROR!	#ERROR!	San Francisco, USA
+QX1233	37.8804	-122.2838	isolated from Jason Stajich	2007-11-24	NA	Matthew Rockman	#ERROR!	#ERROR!	#ERROR!	Berkeley, USA
+QX1791	20.6344	-156.3935	rotting bark, base of eucalyptus tree	2011-01-27	NA	NA	#ERROR!	#ERROR!	#ERROR!	Maui, USA
+QX1791 #2	20.6344	-156.3935	rotting bark, base of eucalyptus tree	2011-01-27	NA	NA	#ERROR!	#ERROR!	#ERROR!	Maui, USA
+QX1792	20.70554	-156.35475	rotting orange flowers	2011-01-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Maui, USA
+QX1792 #2	20.70554	-156.35475	rotting orange flowers	2011-01-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Maui, USA
+QX1793	20.70559	-156.35678	Wilma's vermiculate compost bin	2011-01-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Maui, USA
+QX1793 #2	20.70559	-156.35678	Wilma's vermiculate compost bin	2011-01-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Maui, USA
+QX1794	20.70559	-156.35678	Wilma's vermiculate compost bin	2011-01-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Maui, USA
+QX1794 #2	20.70559	-156.35678	Wilma's vermiculate compost bin	2011-01-28	NA	NA	#ERROR!	#ERROR!	#ERROR!	Maui, USA
+RC301	47.99	7.84	NA	1983-01-01	NA	Randy Cassada	#ERROR!	#ERROR!	#ERROR!	Freiburg, Germany
+WN2001	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2002	51.975285	5.694834	NA	2007-11-11	NA	Joost Riksen	#ERROR!	#ERROR!	#ERROR!	Wageningen, Netherlands
+WN2010	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2011	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2013	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2014	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2016	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2017	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2018	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2019	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2020	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+WN2021	51.954422	6.303406	snail from organic waste bin	2008-06-26	NA	NA	#ERROR!	#ERROR!	#ERROR!	Doetichem, Netherlands
+XZ1513	22.1	-156.67	rotten small red berries	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Pu'u Hinahina lookout on Kauai
+XZ1514	22.1	-159.6	rotten small fruit (papaya or mango?)	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Awa'awapuhi trail on Kauai
+XZ1515	22.1	-159.6	rotten small berries	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Awa'awapuhi trail on Kauai
+XZ1516	22.1	-159.6	rotten small berries	NA	NA	NA	#ERROR!	#ERROR!	#ERROR!	Awa'awapuhi trail on Kauai
