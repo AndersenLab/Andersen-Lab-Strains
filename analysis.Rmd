@@ -313,7 +313,6 @@ iso_groups <- stack_list(unique(lapply(strain_list, function(x) {
 
 ```{r, echo = F, fig.width = 12, fig.height = 6}
 
-
 ggplot(df) +
   geom_histogram(aes(x=concordance, fill = isotype), binwidth = 0.0007) +
   scale_fill_manual(values = c("#808080", "#0080FF")) +
