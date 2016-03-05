@@ -223,8 +223,7 @@ analysis_seqs <- dplyr::filter(seqs, use_in_analysis == T) %>%
 
 readr::write_tsv(analysis_seqs, path = "processed/seqs.tsv")
 
-strain_isotype <- dplyr::filter(strain_isotype, use == TRUE) %>%
-                  dplyr::mutate(sequenced = ifelse(isotype %in% analysis_seqs$isotype, T, F))
+strain_isotype <- dplyr::mutate(strain_isotype, sequenced = ifelse(isotype %in% analysis_seqs$isotype, T, F))
 
 isotypes <- strain_isotype %>% 
             dplyr::select(isotype) %>% 
