@@ -58,10 +58,12 @@ eav_attr <- function(.data, ..., spread = FALSE) {
   .data
 }
 
-strain_isotype <- readr::read_tsv("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv")
+strain_isotype <- rio::import("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv") %>%
+                  dplyr::filter(isotype != "", !is.na(isotype))
 
 
-seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A"))
+seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A")) %>%
+        dplyr::left_join(strain_isotype, ., by = c("strain"))
 
 na_to_0 <- function(x) {
   ifelse(is.na(x), 0, x)
@@ -219,11 +221,11 @@ n = `r sum(runs)`
 
 # Output clean seqs file
 analysis_seqs <- dplyr::filter(seqs, use_in_analysis == T) %>%
-                 dplyr::arrange(run, lib, isotype, strain)
+                 dplyr::arrange(run, lib, isotype, strain) 
 
 readr::write_tsv(analysis_seqs, path = "processed/seqs.tsv")
 
-strain_isotype <- dplyr::mutate(strain_isotype, sequenced = ifelse(isotype %in% analysis_seqs$isotype, T, F))
+strain_isotype <- dplyr::mutate(strain_isotype, sequenced = ifelse(strain %in% analysis_seqs$strain, T, F))
 
 isotypes <- strain_isotype %>% 
             dplyr::select(isotype) %>% 

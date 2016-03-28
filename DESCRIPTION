@@ -16,6 +16,7 @@ Imports:
 	DT,
 	pryr,
 	ggmap,
-	lubridate
+	lubridate,
+	rio
 License: GPL
 LazyData: true
