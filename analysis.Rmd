@@ -61,7 +61,7 @@ eav_attr <- function(.data, ..., spread = FALSE) {
 strain_isotype <- readr::read_tsv("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv")
 
 
-seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A"))
+seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A")) 
 
 na_to_0 <- function(x) {
   ifelse(is.na(x), 0, x)
@@ -223,7 +223,7 @@ analysis_seqs <- dplyr::filter(seqs, use_in_analysis == T) %>%
 
 readr::write_tsv(analysis_seqs, path = "processed/seqs.tsv")
 
-strain_isotype <- dplyr::filter(strain_isotype, use == TRUE) %>%
+strain_isotype <- dplyr::filter(strain_isotype, !is.na(isotype)) %>%
                   dplyr::mutate(sequenced = ifelse(isotype %in% analysis_seqs$isotype, T, F))
 
 isotypes <- strain_isotype %>% 
