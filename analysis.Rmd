@@ -58,10 +58,12 @@ eav_attr <- function(.data, ..., spread = FALSE) {
   .data
 }
 
-strain_isotype <- readr::read_tsv("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv")
+strain_isotype <- data.table::fread("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv") %>%
+  dplyr::filter(!is.na(isotype))
 
 
-seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A")) 
+seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A")) %>%
+        dplyr::left_join(strain_isotype, by = c("strain"))
 
 na_to_0 <- function(x) {
   ifelse(is.na(x), 0, x)
@@ -141,7 +143,6 @@ grey = makeIcon(
 
 leaflet_data <- strain_isotype %>% 
                 dplyr::filter(!is.na(latitude)) %>%
-               dplyr::left_join(seqs) %>%
                dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey")) 
 
 attach(leaflet_data)
