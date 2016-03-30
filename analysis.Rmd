@@ -59,7 +59,7 @@ eav_attr <- function(.data, ..., spread = FALSE) {
 }
 
 strain_isotype <- data.table::fread("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv") %>%
-  dplyr::filter(!is.na(isotype))
+  dplyr::filter(!is.na(isotype), isotype != "")
 
 
 seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A")) %>%
