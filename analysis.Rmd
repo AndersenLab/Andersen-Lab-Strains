@@ -25,6 +25,8 @@ library(pryr)
 library(grid)
 library(scales)
 
+try(setwd("/Users/danielcook/Documents/git/Andersen-Lab-Strains/"))
+
 pub_theme <- ggplot2::theme_bw() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(size=14, face="bold", color="black"),
                  axis.text.y = ggplot2::element_text(size=14, face="bold", color="black"),
@@ -63,6 +65,10 @@ strain_isotype <- data.table::fread("https://docs.google.com/spreadsheets/d/1V6Y
 
 
 seqs <- readr::read_tsv("raw/seq.raw.tsv", na = c("","NA","#N/A")) %>%
+        # For seqs with unknown strains but known isotypes - rename
+        dplyr::mutate(strain = ifelse(strain == "CB4853", "ECA246", strain)) %>%
+        dplyr::mutate(strain = ifelse(strain == "CB4855", "ECA248", strain)) %>%
+        dplyr::mutate(strain = ifelse(strain == "PB306", "ECA259", strain)) %>%
         dplyr::left_join(strain_isotype, by = c("strain"))
 
 na_to_0 <- function(x) {
@@ -234,7 +240,7 @@ isotypes <- strain_isotype %>%
             distinct()
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
-readr::write_tsv(strain_isotype, "processed/strain_isotype.tsv",  na = "NA")
+readr::write_tsv(strain_isotype %>% dplyr::select(strain, isotype), "processed/strain_isotype.tsv",  na = "NA")
 
 # Generate Sample File
 sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dplyr::select(fq1, fq2, readgroup, isotype) %>%                   tidyr::separate(readgroup, into = c("RUN", "LB", "STRAIN"), sep ="-",  extra = "drop", remove = F) %>%
@@ -251,27 +257,17 @@ fastq <- load_eav("raw/fastq.tsv.gz") %>%
          dplyr::select(fastq = ENTITY, A_count, T_count, C_count, G_count, everything()) %>%
          #dplyr::mutate_each(funs(type.convert(., as.is=T)), everything()) %>%
          tidyr::separate(fastq, sep = "-", into = c("run", "lib", "strain"), extra = "drop") %>%
+         # For seqs with unknown strains but known isotypes - rename
+         dplyr::mutate(strain = ifelse(strain == "CB4851", "ECA243", strain)) %>%
+         dplyr::mutate(strain = ifelse(strain == "CB4853", "ECA246", strain)) %>%
+         dplyr::mutate(strain = ifelse(strain == "CB4855", "ECA248", strain)) %>%
+         dplyr::mutate(strain = ifelse(strain == "PB306", "ECA259", strain)) %>%
+         dplyr::mutate(strain = ifelse(strain == "N2Baer", "ECA254", strain)) %>%
          dplyr::group_by(run, lib, strain) %>%
          dplyr::mutate(GC_count_mean = mean(GC_count)) %>%
          dplyr::left_join(analysis_seqs, .)
 
 readr::write_tsv(fastq, path = "processed/fastq_info.tsv")
-
-
-readr::write_tsv(fastq, "processed/fastq.tsv")
-
-telseq <- readr::read_tsv("raw/telseq.txt") %>%
-         dplyr::mutate(LENGTH_ESTIMATE = (as.double(LENGTH_ESTIMATE) / (332720800/46000)) * (5808700/12000)) %>%
-         dplyr::filter(TEL15 > 0) %>%
-         dplyr::select(-Library, -Duplicates) %>%
-         tidyr::separate(ReadGroup, sep = "-", into = c("run", "lib", "strain"), extra = "drop") %>%
-         dplyr::group_by(isotype) %>%
-         dplyr::mutate(telomere_length = weighted.mean(LENGTH_ESTIMATE, Total))  %>%
-         dplyr::select(isotype, run, lib, strain, Total, Mapped, telomere_length, everything(), -Sample)
-
-readr::write_tsv(telseq, "processed/telseq.tsv")
-
-
 
 ```
 
