@@ -44,3 +44,9 @@ The scripts folder contains scripts for a variety of tasks.
 * Fastq statistics
 * Bam Depth of Coverage
 * Kmer analysis
+
+
+### To Do:
+
+* [ ] Generate sample_file.txt
+* [ ] Generate individual fastq sample_file
