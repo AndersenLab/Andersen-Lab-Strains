@@ -26,6 +26,7 @@ library(grid)
 library(scales)
 
 try(setwd("/Users/danielcook/Documents/git/Andersen-Lab-Strains/"))
+try(setwd("/Users/dancook/Documents/git/Andersen-Lab-Strains/"))
 
 pub_theme <- ggplot2::theme_bw() +
   ggplot2::theme(axis.text.x = ggplot2::element_text(size=14, face="bold", color="black"),
@@ -277,18 +278,30 @@ Calculate Concordance among strains to determine isotypes.
 
 ```{r, echo = F}
 
-df <- readr::read_tsv("raw/concordance_strain.tsv") %>%
-      dplyr::mutate(isotype = (concordance > 0.9993))
+strain_set <- readr::read_tsv("processed/strain_isotype.tsv")
 
+#
+# This is the concordance analysis to trust!
+#
+
+# Load file containing gt comparisons for individual bams.
+df <- readr::read_tsv("raw/concordance_strain.tsv") %>%
+      dplyr::mutate(sample_i = ifelse(sample_i == "PB306", "ECA259", sample_i)) %>%
+      dplyr::mutate(sample_j = ifelse(sample_j == "PB306", "ECA259", sample_j)) %>%
+      dplyr::mutate(abs_concordance = 1- (discordance / 1589559)) %>%
+      dplyr::mutate(isotype = (abs_concordance > 0.9993)) %>%
+      dplyr::filter(sample_i %in% strain_set$strain, sample_j %in% strain_set$strain)
+      
 strain_list <- sort(unique(c(df$sample_i, df$sample_j)))
 
 iso_set <- dplyr::filter(df, isotype == T, sample_i != "LSJ1", sample_j != "LSJ1")
 
-single_strains <- strain_list[!(strain_list %in% unique(c(iso_set$sample_i, iso_set$sample_j)))]
-single_strains <- as.data.frame(list(sample_i = single_strains, sample_j = single_strains, discordance = 0, number_of_sites = 100, concordance = 1))
+single_strains <- strain_list[!(strain_set %in% unique(c(iso_set$sample_i, iso_set$sample_j)))]
+single_strains <- as.data.frame(list(sample_i = single_strains, sample_j = single_strains, discordance = 0, number_of_sites = 100, abs_concordance = 1, isotype = TRUE))
 
 iso_set <- dplyr::bind_rows(iso_set, single_strains) %>%
-           dplyr::arrange(sample_i, sample_j)
+           dplyr::arrange(sample_i, sample_j) %>%
+           dplyr::filter(!is.na(abs_concordance))
 
 stack_list <- function(x) {
   if (is.null(names(x)) == T) {
@@ -304,6 +317,16 @@ iso_groups <- stack_list(unique(lapply(strain_list, function(x) {
 }))) %>%
   dplyr::rename(iso_group = ind, strain = values)  
  
+ggplot(df) +
+  geom_histogram(aes(x=abs_concordance, fill = isotype), binwidth = 0.00025) +
+  scale_fill_manual(values = c("#808080", "#0080FF")) +
+  labs(x = "Concordance", y = "Number of Comparisons") +
+  geom_vline(aes(xintercept = 0.9993), color = "red") +
+  scale_y_continuous(expand = c(0,0), limits = c(0,200)) +
+  theme(axis.title = ggplot2::element_text(size=14, face="bold", color="black", vjust=5)) +
+  pub_theme
+
+ 
 ```
 
 `r datatable(iso_groups)`
@@ -311,12 +334,151 @@ iso_groups <- stack_list(unique(lapply(strain_list, function(x) {
 ```{r, echo = F, fig.width = 12, fig.height = 6}
 
 ggplot(df) +
-  geom_histogram(aes(x=concordance, fill = isotype), binwidth = 0.0007) +
+  geom_histogram(aes(x=abs_concordance, fill = isotype), binwidth = 0.00025) +
   scale_fill_manual(values = c("#808080", "#0080FF")) +
   labs(x = "Concordance", y = "Number of Comparisons") +
-  geom_vline(aes(xintercept = 0.997), color = "red") +
-  scale_y_continuous(expand = c(0,0), limits = c(0,250)) +
+  geom_vline(aes(xintercept = 0.9993), color = "red") +
+  scale_y_continuous(expand = c(0,0), limits = c(0,200)) +
   theme(axis.title = ggplot2::element_text(size=14, face="bold", color="black", vjust=5)) +
   pub_theme
+
+
+```
+
+```{r sra_submission_data}
+
+# Sample File
+
+seqs <- seqs %>% dplyr::filter(use_in_analysis == T) %>%
+ dplyr::filter(!(run %in% c("Rockman", "MMP"))) %>%
+ dplyr::mutate(sampled_by = ifelse(sampled_by == "M-A. Félix", "M-A. Felix", sampled_by)) %>%
+  dplyr::mutate(sampled_by = ifelse(sampled_by == "D. Bourc’his and J. Dumont", "D. Bourc'his and J. Dumont", sampled_by)) %>%
+  dplyr::mutate(sampled_by = ifelse(sampled_by == "A. Barrière", "A. Barriere", sampled_by)) %>%
+ dplyr::mutate(isolated_by = ifelse(isolated_by == "M-A. Félix", "M-A. Felix", isolated_by)) %>%
+  dplyr::mutate(isolated_by = ifelse(isolated_by == "D. Bourc’his and J. Dumont", "D. Bourc'his and J. Dumont", isolated_by)) %>%
+  dplyr::mutate(isolated_by = ifelse(isolated_by == "A. Barrière", "A. Barriere", isolated_by)) %>%
+  dplyr::mutate(sampled_by = ifelse(sampled_by == "D. Baïlle", "D. Baille", sampled_by)) %>%
+  dplyr::mutate(isolated_by = ifelse(isolated_by == "D. Baïlle", "D. Baille", isolated_by))
+
+
+seqs %>%
+ dplyr::group_by(strain) %>%
+ dplyr::distinct() %>%
+ dplyr::select(collected_by = sampled_by,
+               collection_date = isolation_date,
+               description = notes, everything()) %>%
+ dplyr::mutate(sample_title = strain,
+ 			  sample_name = paste0("Andersen", "-", strain),
+			  bioproject_accession = "PRJNA318647",
+			  organism = "Caenorhabditis elegans",
+			  sex = "hermaphrodite",
+			  tissue = "whole organism",
+			  biomaterial_provider = NA,
+			  birth_date = NA,
+			  birth_location = NA,
+			  breeding_history = NA,
+			  breeding_method = NA,
+			  cell_line = NA,
+			  cell_subtype = NA,
+			  cell_type = NA,
+			  culture_collection = NA,
+			  death_date = NA,
+			  disease = NA,
+			  disease_stage = NA,
+			  growth_protocol = NA,
+			  health_state = NA,
+			  phenotype = NA,
+			  sample_type = NA,
+			  specimen_voucher = NA,
+			  store_cond = NA,
+			  stud_book_number = NA,
+			  treatment = NA,
+			  genotype = NA,
+			  isolate = NA,
+			  breed = NA,
+			  cultivar = NA,
+			  ecotype = NA,
+			  age = NA,
+			  dev_stage = "mixed",
+			  geo_loc_name = NA,
+			  isolation_source = NA,
+			  lat_lon = ifelse(!is.na(latitude), paste0(latitude, ",", longitude), "")) %>%
+  dplyr::select(sample_name,
+			    sample_title,
+			    bioproject_accession,
+			    organism,
+			    strain,
+			    isolate,
+			    breed,
+			    cultivar,
+			    ecotype,
+			    age,
+			    dev_stage,
+			    sex,
+			    tissue,
+			    biomaterial_provider,
+			    birth_date,
+			    birth_location,
+			    breeding_history,
+			    breeding_method,
+			    cell_line,
+			    cell_subtype,
+			    cell_type,
+			    collected_by,
+			    collection_date,
+			    culture_collection,
+			    death_date,
+			    disease,
+			    disease_stage,
+			    genotype,
+			    geo_loc_name,
+			    growth_protocol,
+			    health_state,
+			    isolation_source,
+			    lat_lon,
+			    phenotype,
+			    sample_type,
+			    specimen_voucher,
+			    store_cond,
+			    stud_book_number,
+			    treatment,
+			    description,
+			    isolated_by,
+			    city,
+			    state,
+			    country)  %>% readr::write_tsv("processed/sra_sample_file.tsv",  na = "")
+
+# Metadata File
+
+seqs %>% dplyr::mutate(bioproject_accession = "PRJNA318647",
+sample_name = paste0("Andersen", "-", strain),
+library_ID = readgroup,
+title = readgroup,
+library_strategy = "WGS",
+library_source = "GENOMIC",
+library_selection = "RANDOM",
+library_layout = "paired",
+platform = "ILLUMINA",
+instrument_model = "Illumina HiSeq 2500",
+design_description = "Nextera Tagmentation",
+filetype = "fastq",
+filename = fq1,
+filename2 = fq2) %>%
+dplyr::select(bioproject_accession,
+              sample_name,
+              library_ID,
+              title,
+              library_strategy,
+              library_source,
+              library_selection,
+              library_layout,
+              platform,
+              instrument_model,
+              design_description,
+              filetype,
+              filename,
+              filename2) %>%
+  dplyr::slice(1:500) %>%
+  readr::write_tsv("processed/sra_metadata_file1.tsv")
 
 ```
