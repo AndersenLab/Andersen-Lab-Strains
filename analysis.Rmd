@@ -241,6 +241,7 @@ isotypes <- strain_isotype %>%
             distinct()
 
 readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
+readr::write_tsv(strain_isotype %>% dplyr::select(strain, isotype), "processed/strain_isotype_full.tsv",  na = "NA")
 readr::write_tsv(strain_isotype %>% dplyr::select(strain, isotype), "processed/strain_isotype.tsv",  na = "NA")
 
 # Generate Sample File
