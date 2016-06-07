@@ -244,13 +244,32 @@ readr::write_tsv(isotypes, "processed/isotypes.tsv",  na = "NA")
 readr::write_tsv(strain_isotype, "processed/strain_isotype_full.tsv",  na = "NA")
 readr::write_tsv(strain_isotype %>% dplyr::select(strain, isotype), "processed/strain_isotype.tsv",  na = "NA")
 
-# Generate Sample File
-sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%                  dplyr::select(fq1, fq2, readgroup, isotype) %>%                   tidyr::separate(readgroup, into = c("RUN", "LB", "STRAIN"), sep ="-",  extra = "drop", remove = F) %>%
-  dplyr::mutate(PL = "") %>%
-  dplyr::select(FQ1 = fq1, FQ2 = fq2, ID = readgroup, LB, SM = isotype, PL) %>%
-  dplyr::arrange(SM)
+# Generate Strain File
+fq_file <- dplyr::filter(seqs, use_in_analysis == T) %>%
+               dplyr::select(fq1, fq2, ID, run, lib, strain, isotype) %>%
+               dplyr::mutate(PL = "") %>%
+               dplyr::select(FQ1 = fq1, FQ2 = fq2, ID = ID, LB = lib, SM = isotype, PL) %>%
+               dplyr::arrange(SM)
 
-readr::write_tsv(sample_file, "processed/sample_file.tsv")
+readr::write_tsv(strain_file, "processed/sample_fq.tsv")
+
+# Generate Strain File
+strain_file <- dplyr::filter(seqs, use_in_analysis == T) %>%
+               dplyr::select(fq1, fq2, ID, run, lib, strain) %>%
+               dplyr::mutate(PL = "") %>%
+               dplyr::select(FQ1 = fq1, FQ2 = fq2, ID = ID, LB = lib, SM = strain, PL) %>%
+               dplyr::arrange(SM)
+
+readr::write_tsv(strain_file, "processed/sample_strain.tsv")
+
+# Generate Sample File
+sample_file <- dplyr::filter(seqs, use_in_analysis == T) %>%
+               dplyr::select(fq1, fq2, ID, run, lib, strain, isotype) %>%
+               dplyr::mutate(PL = "") %>%
+               dplyr::select(FQ1 = fq1, FQ2 = fq2, ID = ID, LB = lib, SM = isotype, PL) %>%
+               dplyr::arrange(SM)
+
+readr::write_tsv(sample_file, "processed/sample_isotype.tsv")
 
 # Fastq stats
 fastq <- load_eav("raw/fastq.tsv.gz") %>%
@@ -453,8 +472,8 @@ seqs %>%
 
 seqs %>% dplyr::mutate(bioproject_accession = "PRJNA318647",
 sample_name = paste0("Andersen", "-", strain),
-library_ID = readgroup,
-title = readgroup,
+library_ID = ID,
+title = ID,
 library_strategy = "WGS",
 library_source = "GENOMIC",
 library_selection = "RANDOM",
