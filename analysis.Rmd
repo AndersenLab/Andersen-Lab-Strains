@@ -78,7 +78,6 @@ na_to_0 <- function(x) {
 
 summarize_column <- function(colnames) {
        seqs %>%
-       dplyr::filter(processed == TRUE) %>%
        dplyr::group_by_(.dots = colnames, "use_in_analysis") %>%
        dplyr::summarize(sum = n()) %>% 
        dplyr::ungroup() %>%
@@ -111,7 +110,7 @@ total_fastq_pairs <- nrow(dplyr::filter(seqs, use_in_analysis == TRUE))
 
 total_file_size <- dplyr::filter(seqs, use_in_analysis == TRUE) %>%
                     dplyr::mutate(filesize = fq1_size + fq2_size) %>% 
-                    dplyr::summarize(humanReadable(sum(as.numeric(filesize))))
+                    dplyr::summarize(humanReadable(sum(as.numeric(filesize), na.rm = T)))
         
 
 libraries <- dplyr::group_by(seqs, lib) %>% dplyr::summarize(sum = n())
@@ -251,7 +250,7 @@ fq_file <- dplyr::filter(seqs, use_in_analysis == T) %>%
                dplyr::select(FQ1 = fq1, FQ2 = fq2, ID = ID, LB = lib, SM = isotype, PL) %>%
                dplyr::arrange(SM)
 
-readr::write_tsv(strain_file, "processed/sample_fq.tsv")
+readr::write_tsv(fq_file, "processed/sample_fq.tsv")
 
 # Generate Strain File
 strain_file <- dplyr::filter(seqs, use_in_analysis == T) %>%
@@ -383,7 +382,7 @@ seqs <- seqs %>% dplyr::filter(use_in_analysis == T) %>%
 
 seqs %>%
  dplyr::group_by(strain) %>%
- dplyr::distinct() %>%
+ dplyr::distinct(.keep_all = T) %>%
  dplyr::select(collected_by = sampled_by,
                collection_date = isolation_date,
                description = notes, everything()) %>%
