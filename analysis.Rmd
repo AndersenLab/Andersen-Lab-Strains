@@ -97,11 +97,7 @@ total_strains <- (strain_count %>%
                  dplyr::ungroup() %>%
                  dplyr::summarize(n = n()))$n
 
-total_isotypes <- (strain_count %>%
-                 dplyr::filter(use_rate > 0) %>%
-                 dplyr::distinct(isotype) %>%
-                 dplyr::ungroup() %>%
-                 dplyr::summarize(n = n()))$n
+total_isotypes <- length(unique((strain_isotype %>% dplyr::select(isotype))$isotype))
 
 total_sequences <- (dplyr::filter(seqs, use_in_analysis == TRUE) %>%
                    dplyr::summarize(n_reads = comma(sum(as.numeric(reads), na.rm = TRUE))))$n_reads
