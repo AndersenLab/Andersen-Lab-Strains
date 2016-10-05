@@ -11,52 +11,11 @@ output:
 ---
 
 ```{r, echo = F, warning=FALSE, message=FALSE}
-library(tidyverse)
-library(knitr)
-library(scales)
-library(gdata)
-library(waffle)
-library(DT)
-library(ggmap)
-library(pryr)
-library(grid)
-library(scales)
-
 try(setwd("/Users/danielcook/Documents/git/Andersen-Lab-Strains/"))
 try(setwd("/Users/dancook/Documents/git/Andersen-Lab-Strains/"))
 
-pub_theme <- ggplot2::theme_bw() +
-  ggplot2::theme(axis.text.x = ggplot2::element_text(size=14, face="bold", color="black"),
-                 axis.text.y = ggplot2::element_text(size=14, face="bold", color="black"),
-                 axis.title.x = ggplot2::element_text(size=14, face="bold", color="black", vjust=-.3),
-                 axis.title.y = ggplot2::element_text(size=14, face="bold", color="black", vjust=2),
-                 strip.text.x = ggplot2::element_text(size=16, face="bold", color="black"),
-                 strip.text.y = ggplot2::element_text(size=16, face="bold", color="black"),
-                 axis.ticks= element_line( color = "black", size = 0.25), 
-                 legend.position="none",
-                 plot.margin = unit(c(1.0,0.5,0.5,1.0),"cm"),
-                 plot.title = ggplot2::element_text(size=24, face="bold", vjust = 1),
-                 legend.position="none",
-                 panel.background = ggplot2::element_rect(color = "black",size=0.75),
-                 strip.background = ggplot2::element_rect(color = "black", size = 0.75)) 
+source("scripts/functions.R")
 
-load_eav <- function(file) {
-  readr::read_tsv(file, c("ENTITY", "SUB", "VALUE", "DATE")) %>%
-    eav_attr("ATTR") %>%
-    dplyr::select(ENTITY, ATTR, SUB, VALUE, DATE)
-}
-
-eav_attr <- function(.data, ..., spread = FALSE) {
-  columns <- pryr::named_dots(...)
-  for(col in columns) {
-  .data <- .data %>% tidyr::extract_("SUB", into = c(col), regex = paste0(col, "=","([^;]+)"), remove = FALSE, convert = TRUE)
-  }
-  if (spread == TRUE) {
-    .data <- .data %>% dplyr::select(-DATE, -SUB) %>%
-    tidyr::spread(ATTR, VALUE)
-  }
-  .data
-}
 
 strain_isotype <- data.table::fread("https://docs.google.com/spreadsheets/d/1V6YHzblaDph01sFDI8YK_fP0H7sVebHQTXypGdiQIjI/pub?output=tsv") %>%
   dplyr::filter(!is.na(isotype), isotype != "")
@@ -121,28 +80,10 @@ libraries <- dplyr::group_by(seqs, lib) %>% dplyr::summarize(sum = n())
 ### Strain Locations
 
 ```{r, echo = F, fig.width = 9.5, fig.height = 5, warning=FALSE, message=FALSE, cache = F}
-library(leaflet)
-
-width <- 50
-height <- 50
-
-icons <- iconList(
-red = makeIcon(
-  iconUrl = "red.png",
-  iconWidth = width, iconHeight = height,
-  popupAnchorX = 0.00001, popupAnchorY = -height+13,
-  iconAnchorX = width/2, iconAnchorY = height), 
-grey = makeIcon(
-  iconUrl = "grey.png",
-  iconWidth  = width, iconHeight = height, 
-  popupAnchorX = 0.00001, popupAnchorY = -height+13,
-  iconAnchorX = width/2, iconAnchorY  = height
-))
-
 
 leaflet_data <- strain_isotype %>% 
                 dplyr::filter(!is.na(latitude)) %>%
-               dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey")) 
+                dplyr::mutate(type = ifelse(!is.na(isotype), "red","grey")) 
 
 attach(leaflet_data)
 leaflet(data = leaflet_data) %>% 
@@ -189,7 +130,7 @@ ggplot(doc_global) +
 
 doc_display <- dplyr::select(doc_global, isotype = ENTITY, depth_of_coverage = VALUE) 
 
-write_tsv(doc_display, path = "processed/depth_of_coverage.tsv")
+write_tsv(doc_display, path = "processed/depth_of_coverage.isotype.tsv")
 
 ```
 
@@ -201,7 +142,7 @@ write_tsv(doc_display, path = "processed/depth_of_coverage.tsv")
 
 ```{r, fig.width = 24, fig.height = 10, echo = F}
 
-doc_strain <- load_eav("raw/eav.strain.tsv") %>%
+doc_strain <- load_eav("raw/sets/20160901/coverage_strain.tsv") %>%
 dplyr::filter(ATTR == "depth_of_coverage") %>%
 eav_attr("chrom") %>%
 dplyr::filter(ATTR == "depth_of_coverage") %>%
@@ -217,7 +158,7 @@ ggplot(doc_strain) +
 
 doc_display <- dplyr::select(doc_strain, isotype = ENTITY, depth_of_coverage = VALUE) 
 
-write_tsv(doc_display, path = "processed/depth_of_coverage.strain.tsv")
+write_tsv(doc_display, path = "processed/sets/20160901/depth_of_coverage.strain.tsv")
 
 ```
 
@@ -327,40 +268,49 @@ strain_set <- readr::read_tsv("processed/strain_isotype.tsv")
 #
 
 # Load file containing gt comparisons for individual bams.
-df <- readr::read_tsv("raw/concordance_strain.tsv") %>%
+df <- readr::read_tsv("raw/sets/20160901/concordance_strain.tsv") %>%
       dplyr::mutate(sample_i = ifelse(sample_i == "PB306", "ECA259", sample_i)) %>%
       dplyr::mutate(sample_j = ifelse(sample_j == "PB306", "ECA259", sample_j)) %>%
-      dplyr::mutate(abs_concordance = 1- (discordance / 2848047)) %>%
+      dplyr::mutate(abs_concordance = 1- (discordance / 3067818)) %>%
       # Remove low coverage strains.
       dplyr::filter(number_of_sites > 1E6) %>%
-      dplyr::mutate(isotype = (abs_concordance > 0.9993)) # %>%
-      #dplyr::filter(sample_i %in% strain_set$strain, sample_j %in% strain_set$strain)
-      
-
+      dplyr::mutate(isotype = (abs_concordance > 0.9993))
 
 strain_list <- sort(unique(c(df$sample_i, df$sample_j)))
 
 iso_set <- dplyr::filter(df, isotype == T, sample_i != "LSJ1", sample_j != "LSJ1")
 
-single_strains <- strain_list[!(strain_set %in% unique(c(iso_set$sample_i, iso_set$sample_j)))]
-single_strains <- as.data.frame(list(sample_i = single_strains, sample_j = single_strains, discordance = 0, number_of_sites = 100, abs_concordance = 1, isotype = TRUE))
+single_strains <- df %>%
+  dplyr::select(sample_i, sample_j, isotype) %>%
+  tidyr::gather(col, strain, -isotype) %>%
+  dplyr::group_by(strain) %>%
+  dplyr::mutate(single_strain = sum(isotype) == 0) %>%
+  dplyr::distinct(.keep_all = T) %>%
+  dplyr::select(strain, single_strain) %>% dplyr::filter(single_strain)
+
+single_strains <- dplyr::bind_rows(list(strain = "LSJ1", single_strain = T), single_strains)
+
+single_strains <- as.data.frame(list(sample_i = single_strains$strain,
+                                     sample_j = single_strains$strain,
+                                     discordance = 0,
+                                     number_of_sites = 100,
+                                     abs_concordance = 1,
+                                     isotype = TRUE))
 
 iso_set <- dplyr::bind_rows(iso_set, single_strains) %>%
            dplyr::arrange(sample_i, sample_j) %>%
            dplyr::filter(!is.na(abs_concordance))
 
-stack_list <- function(x) {
-  if (is.null(names(x)) == T) {
-    names(x) <- as.character(1:length(x))
-  }
-  stack(x)
-}
 
 iso_groups <- stack_list(unique(lapply(strain_list, function(x) {
   grouped_strains <- dplyr::filter(iso_set, (sample_i == x | sample_j == x)) %>%
   dplyr::select(sample_i, sample_j)
   sort(unique(unlist(grouped_strains)))
 }))) %>%
+  dplyr::group_by(ind) %>% 
+  tidyr::nest(values) %>%
+  dplyr::distinct(data, .keep_all = T) %>%
+  tidyr::unnest() %>%
   dplyr::rename(iso_group = ind, strain = values)  
  
 ggplot(df) +
@@ -372,17 +322,31 @@ ggplot(df) +
   theme(axis.title = ggplot2::element_text(size=14, face="bold", color="black", vjust=5)) +
   pub_theme
 
+iso_group_ids <- (readr::read_tsv("processed/sets/152/strain_isotype.tsv") %>%
+    dplyr::left_join(iso_groups))$iso_group
+# Compare with strain isotype
+n152_set_conflicts <- readr::read_tsv("processed/sets/152/strain_isotype.tsv") %>%
+  dplyr::left_join(iso_groups) %>%
+  dplyr::group_by(Isotype) %>%
+  dplyr::mutate(orig_n = n()) %>%
+  dplyr::group_by(iso_group) %>%
+  dplyr::mutate(iso_group_n = n()) %>%
+  dplyr::filter(orig_n != iso_group_n)
+  
 
 curr_isotypes <- readr::read_csv("http://andersenlab.org/publications/Cooketal/File%20S01%20-%20Strain%20isotype%20grouping%20and%20collection%20information.csv") %>%
                  dplyr::select(strain = Strain, Isotype ) %>%
                  dplyr::full_join(iso_groups) %>%
                  dplyr::group_by(Isotype) %>%
-                 dplyr::mutate(n = n()) %>%
-  dplyr::group_by(iso_group)
+                 dplyr::mutate(old_strain_count = n()) %>%
+  dplyr::group_by(iso_group) %>%
+  dplyr::mutate(new_strain_count = n())
 
-curr_isotypes %>% readr::write_tsv("processed/20160901.iso_groups.tsv")
+curr_isotypes %>% readr::write_tsv("processed/sets/20160901/20160901.iso_groups.tsv")
 
 ```
+
+__152 Set Conflicts:__ `r nrow(n152_set_conflicts)`
 
 `r datatable(iso_groups)`
 
